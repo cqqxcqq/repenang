@@ -1,7 +1,7 @@
 {
   "title": "Penang recycling locations — sourced research candidates",
   "researchedAt": "2026-11-09",
-  "coverage": "Partial research, not an exhaustive or independently verified directory. Includes source-listed community facilities, recycling centres and used-cooking-oil-only bins. Possible duplicates remain.",
+  "coverage": "Partial, source-listed research directory; all displayed candidates have coordinates. Current operation, access, precision, duplicates and material acceptance require confirmation.",
   "notes": [
     "The operator lists three entries as closed or relocated; retained with explicit status.",
     "The 2024 council list may be outdated; do not assume hours, materials or current operation.",
@@ -14,7 +14,9 @@
     "PGC household hazardous waste collection information was last updated in July 2024; accepted items and operation require confirmation.",
     "Historical KITAR apartment programme areas are kept separately because they are not confirmed public drop-off sites.",
     "2026-11-09 audit: corrected broken MBPP source URL, consolidated three repeated venue records, and added two omitted council-listed locations. PGC programme acceptance details are not a guarantee of present operation.",
-    "Coordinates added from individual MAMPAN records and previously source-reviewed operator destination links; coordinates do not establish present operation or public access."
+    "Coordinates added from individual MAMPAN records and previously source-reviewed operator destination links; coordinates do not establish present operation or public access.",
+    "Coordinates for 13 additional sites were transcribed from individual MAMPAN entries; exact present-day operation and marker accuracy have not been independently verified.",
+    "Unmapped candidates were removed from the live directory after source review; archived locally for research. Removal does not establish closure."
   ],
   "sources": [
     "https://www.mbpp.gov.my/en/media/news/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semua",
@@ -347,16 +349,17 @@
       "id": "riiicycle-candidate-6",
       "name": "MPKK Tanjung Bungah Recycling Station",
       "address": "Tanjung Bungah night market, Jalan Sungai Kelian, 11200 Tanjung Bungah, Pulau Pinang",
-      "lat": null,
-      "lng": null,
+      "lat": 5.463558870978095,
+      "lng": 100.28467374433843,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://www.riiicycle.com/recycling-stations",
       "sourcePublished": null,
-      "status": "not_independently_confirmed",
-      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule.",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule. Coordinates are listed by MAMPAN; current status and exact drop-off position are not independently verified.",
       "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
-      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/"
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "riiicycle-candidate-7",
@@ -411,34 +414,6 @@
       "sourceUrl": "https://www.riiicycle.com/recycling-stations",
       "sourcePublished": null,
       "status": "closed_until_further_notice",
-      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked."
-    },
-    {
-      "id": "riiicycle-candidate-11",
-      "name": "MPKK Paya Terubong Recycling Station",
-      "address": "32, Lebuh Rambai 1, Paya Terubong, 11500 Ayer Itam, Pulau Pinang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
-      "sourcePublished": null,
-      "status": "not_independently_confirmed",
-      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule.",
-      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
-      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/"
-    },
-    {
-      "id": "riiicycle-candidate-12",
-      "name": "Lebuh Cecil Recycling Station",
-      "address": "Lebuh Cecil, George Town, 10300 George Town, Pulau Pinang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
-      "sourcePublished": null,
-      "status": "not_independently_confirmed",
       "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked."
     },
     {
@@ -596,16 +571,17 @@
     {
       "id": "mampan-candidate-11",
       "name": "Pusat Kitar Semula Taman Cengal",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Lorong Cengal 2, 13440 Butterworth",
+      "lat": 5.43791,
+      "lng": 100.39647,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
       "sourceReportedMaterials": "Plastic, paper, glass bottles",
-      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-candidate-12",
@@ -640,16 +616,17 @@
     {
       "id": "mampan-candidate-14",
       "name": "Pusat Kitar Semula Taman Mutiara",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Persiaran Janggus, Taman Mutiara, 14000 Bukit Mertajam",
+      "lat": 5.359874,
+      "lng": 100.446468,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
       "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
-      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-candidate-15",
@@ -669,73 +646,62 @@
     {
       "id": "mampan-candidate-16",
       "name": "Pusat Kitar Semula Tambi Kecil",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Jalan Bunga Raya 2, Taman Bunga Raya, 13000 Butterworth",
+      "lat": 5.436186,
+      "lng": 100.38444,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
       "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron); old clothes",
-      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-candidate-17",
       "name": "Pusat Kitar Semula Yayasan Humanistik",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "No. 58, Lorong Tambun Indah 10, Taman Tambun Indah, Simpang Ampat",
+      "lat": 5.277465,
+      "lng": 100.465891,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
       "sourceReportedMaterials": null,
-      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate is listed by MAMPAN; present operation and precise drop-off location require confirmation.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-candidate-18",
       "name": "Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Lorong Tambun Indah 3, Taman Tambun Indah, 14100 Simpang Ampat",
+      "lat": 5.279153,
+      "lng": 100.463906,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
       "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam; old clothes; used cooking oil",
-      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-candidate-19",
       "name": "Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Menara Bandaraya, Jalan Perda Utama, Bandar Perda, Bukit Mertajam",
+      "lat": 5.370670764442157,
+      "lng": 100.43261101792159,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
       "sourceReportedMaterials": "Used phone battery, light tubes, batteries",
-      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
-    },
-    {
-      "id": "mampan-candidate-20",
-      "name": "Pusat Pengumpulan E - Waste Taman Pandan",
-      "address": "Taman Pandan, 13400 Butterworth",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedMaterials": null,
-      "notes": "MAMPAN gives only a neighbourhood-level Taman Pandan area; exact collection point needs confirmation before mapping.",
-      "coordinateSourceUrl": null
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate is listed by MAMPAN; present operation and precise drop-off location require confirmation.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-candidate-21",
@@ -785,16 +751,17 @@
     {
       "id": "mampan-candidate-24",
       "name": "Pusat Sumber Alam Sekitar Bandar Tasek Mutiara",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Pasar Awam Bandar Tasek Mutiara, Simpang Ampat, Penang",
+      "lat": 5.28348,
+      "lng": 100.48121,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
       "sourceReportedMaterials": "Common recyclables except glass; wearable clothes; electronics",
-      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinates are listed by MAMPAN; current status and exact drop-off position are not independently verified.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-candidate-25",
@@ -829,16 +796,17 @@
     {
       "id": "mampan-candidate-27",
       "name": "Pusat Sumber Alam Sekitar Taman Puteri Gunung",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Lorong Puteri Gunung 40, Taman Puteri Gunung, 14120 Simpang Ampat",
+      "lat": 5.283811,
+      "lng": 100.50183,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
       "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets; old clothes; used cooking oil",
-      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "rnc-candidate-1",
@@ -1108,14 +1076,15 @@
       "id": "tzuchi-candidate-1",
       "name": "Lumba Kuda Recycling Education Centre",
       "address": "8 Jalan Sekolah La Salle, Taman Lumba Kuda, 11400 George Town, Pulau Pinang",
-      "lat": null,
-      "lng": null,
+      "lat": 5.409129181212585,
+      "lng": 100.29956341026815,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://tzuchi.my/en/join-us/recycling-centres/locationtable",
       "sourcePublished": null,
       "status": "source_listed_not_currently_verified",
-      "notes": "Listed by Tzu Chi; current schedule, public access and acceptance require confirmation."
+      "notes": "Listed by Tzu Chi; current schedule, public access and acceptance require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "rnc-candidate-13",
@@ -2035,91 +2004,6 @@
       "notes": "Operator-listed deployed community facility; public access, exact items and current operation require confirmation."
     },
     {
-      "id": "riiicycle-ewaste-1",
-      "name": "Suntech E-Waste Bin",
-      "address": "1-10-03, Lintang Mayang Pasir 1, Bandar Bayan Baru, 11950 Bayan Lepas, Penang, Malaysia",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "e-waste bin"
-      ],
-      "sourceReportedPublicAccess": "public",
-      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
-    },
-    {
-      "id": "riiicycle-ewaste-2",
-      "name": "Penang Plaza E-Waste Bin",
-      "address": "Penang Plaza, 10050 George Town, Penang, Malaysia",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "e-waste bin"
-      ],
-      "sourceReportedPublicAccess": "public",
-      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
-    },
-    {
-      "id": "riiicycle-ewaste-3",
-      "name": "Olive Tree Hotel E-Waste Bin",
-      "address": "76, Jalan Mahsuri, Bandar Sunway Tunas, 11950 Bayan Lepas, Pulau Pinang, Malaysia",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "e-waste bin"
-      ],
-      "sourceReportedPublicAccess": "public",
-      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
-    },
-    {
-      "id": "riiicycle-ewaste-4",
-      "name": "HP CONCEPT STORE, Queensbay Mall E-Waste Bin",
-      "address": "Lot 2F-27, Queensbay Mall, 100, Persiaran Bayan Indah, 11900 Bayan Lepas, Pulau Pinang, Malaysia",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "e-waste bin"
-      ],
-      "sourceReportedPublicAccess": "public",
-      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
-    },
-    {
-      "id": "riiicycle-ewaste-5",
-      "name": "1ST AVENUE MALL E-Waste Bin",
-      "address": "182, Jalan Magazine, 10300 George Town, Pulau Pinang, Malaysia",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "e-waste bin"
-      ],
-      "sourceReportedPublicAccess": "public",
-      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
-    },
-    {
       "id": "pgc-hazardous-1",
       "name": "Stor JPP MBPP, Jalan Sungai",
       "address": "Jalan Sungai, Penang",
@@ -2143,142 +2027,17 @@
       "hours": null,
       "sourceUrl": "https://www.pgc.com.my/en/faq/",
       "sourcePublished": "2024-07-03",
-      "status": "source_listed_not_currently_verified",
+      "status": "duplicate_of_source_listed_location",
       "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
-      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
-    },
-    {
-      "id": "pgc-hazardous-3",
-      "name": "Pejabat Cawangan MBSP Jawi hazardous household waste collection",
-      "address": "Pejabat Cawangan MBSP Jawi, 14200 Sungai Jawi, Pulau Pinang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.pgc.com.my/en/faq/",
-      "sourcePublished": "2024-07-03",
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
-      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
-    },
-    {
-      "id": "pgc-hazardous-4",
-      "name": "Kompleks Mahkamah Municipal Seberang Perai hazardous household waste collection",
-      "address": "Jalan Kg. Jawa, Taman Jawa, 12000 Butterworth, Pulau Pinang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.pgc.com.my/en/faq/",
-      "sourcePublished": "2024-07-03",
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
-      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
-    },
-    {
-      "id": "pgc-hazardous-5",
-      "name": "Pejabat Cawangan MBSP Jalan Betek hazardous household waste collection",
-      "address": "Jalan Betek, Kawasan Perniagaan Sungai Rambai, 14000 Bukit Mertajam, Pulau Pinang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.pgc.com.my/en/faq/",
-      "sourcePublished": "2024-07-03",
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
-      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
-    },
-    {
-      "id": "riiicycle-smart-1",
-      "name": "Kitar Hub Komtar smart collection machines",
-      "address": "36, Lebuh Tek Soon, George Town, 10100 George Town, Pulau Pinang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/smart-collection-machines",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "smart collection machine"
-      ],
-      "sourceReportedMaterials": [
-        "UBC (operator abbreviation; confirm meaning)",
-        "mixed plastic",
-        "mixed metal",
-        "e-waste"
-      ],
-      "notes": "Four machine listings share this address and are grouped as one site. Exact acceptance and access require confirmation."
-    },
-    {
-      "id": "riiicycle-smart-2",
-      "name": "SB Setia Fontaines",
-      "address": "Setia Fontaines, Ground Floor, Waterfront Lifestyle Centre, Bandar Setia Fontaines, 13200 Kepala Batas, Pulau Pinang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/smart-collection-machines",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "smart collection machine"
-      ],
-      "sourceReportedMaterials": [
-        "mixed waste"
-      ],
-      "notes": "Operator category is broad; confirm eligible materials and access."
-    },
-    {
-      "id": "riiicycle-smart-3",
-      "name": "Smart Station Taman Perdana",
-      "address": "NO.A-G, 06, Solok Perdana, Taman Perdana, 14100 Simpang Ampat, Penang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/smart-collection-machines",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "smart collection machine"
-      ],
-      "sourceReportedMaterials": [
-        "mixed paper",
-        "carton box",
-        "mixed metal",
-        "mixed plastic",
-        "e-waste",
-        "used cooking oil"
-      ],
-      "notes": "Station and used-cooking-oil machine are grouped as one site. Confirm current acceptance and access."
-    },
-    {
-      "id": "riiicycle-smart-4",
-      "name": "SB Tanjung Bungah",
-      "address": "Tanjung Bungah Market and Food Complex, Jalan Sungai Kelian, Tanjung Tokong, 11200 Tanjung Bungah, Pulau Pinang",
-      "lat": null,
-      "lng": null,
-      "materials": null,
-      "hours": null,
-      "sourceUrl": "https://www.riiicycle.com/smart-collection-machines",
-      "sourcePublished": null,
-      "status": "source_listed_not_currently_verified",
-      "sourceReportedFacilityTypes": [
-        "smart collection machine"
-      ],
-      "sourceReportedMaterials": [
-        "mixed waste"
-      ],
-      "notes": "May share site with riiicycle-candidate-6; different device, investigate before treating as a distinct place."
+      "notes": "Same MBSP Menara Bandaraya collection point also listed by MAMPAN; retained for provenance.",
+      "duplicateOf": "mampan-candidate-19"
     },
     {
       "id": "mampan-pink-bin-1",
       "name": "MBPP Pink Bin @Bangunan IOC Jalan Timah",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Jalan Timah, Georgetown, Penang",
+      "lat": 5.41075,
+      "lng": 100.32566,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2288,14 +2047,15 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-pink-bin-2",
       "name": "MBPP Pink Bin @Dewan MPKK Jalan Tengah",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Jalan Tengah Selatan, Pangsapuri Jalan Tengah, Bayan Lepas",
+      "lat": 5.3196155,
+      "lng": 100.2858482,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2305,14 +2065,15 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-pink-bin-3",
       "name": "MBPP Pink Bin @Dewan MPKK Ladang Lada",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Fettes W Ave, Tanjung Bungah",
+      "lat": 5.45617,
+      "lng": 100.30089,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2322,14 +2083,15 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-pink-bin-4",
       "name": "MBPP Pink Bin @Kebun Komuniti Kampung Baru",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Jalan Padang Tembak, Georgetown",
+      "lat": 5.40794,
+      "lng": 100.29349,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2339,7 +2101,8 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-pink-bin-5",
@@ -2362,9 +2125,9 @@
     {
       "id": "mampan-pink-bin-6",
       "name": "MBPP Pink Bin @Pusat Kitar Semula Mount Erskine",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Tingkat Mount Erskine 1, Taman Teguh",
+      "lat": 5.4406,
+      "lng": 100.30352,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2374,14 +2137,15 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-pink-bin-7",
       "name": "MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Jalan Pasar, Pulau Tikus, Georgetown",
+      "lat": 5.42996,
+      "lng": 100.3122,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2391,14 +2155,15 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; present operation and precise drop-off location require confirmation.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-pink-bin-8",
       "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Pesara Claimant, Georgetown",
+      "lat": 5.41685,
+      "lng": 100.3345,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2408,14 +2173,15 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-pink-bin-9",
       "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Lebuh Presgrave, Georgetown",
+      "lat": 5.41131,
+      "lng": 100.33,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2425,14 +2191,15 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; present operation and precise drop-off location require confirmation.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mampan-pink-bin-10",
       "name": "MBPP Pink Bin @Rumah Awam Jalan Irrawadi",
-      "address": null,
-      "lat": null,
-      "lng": null,
+      "address": "Jalan Irrawadi, Georgetown",
+      "lat": 5.4245,
+      "lng": 100.32314,
       "materials": null,
       "hours": null,
       "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
@@ -2442,7 +2209,8 @@
         "reusable goods bin"
       ],
       "sourceReportedMaterials": "Clothing, jewellery, toys and more",
-      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate is listed by MAMPAN; exact current collection point and operation have not been independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
     },
     {
       "id": "mbpp-candidate-18",

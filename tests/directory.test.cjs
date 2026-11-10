@@ -72,7 +72,8 @@ test('source-listed research pins remain unverified and records without coordina
  const mapped=api.prepareRecords(listed).filter(api.hasMapLocation);
  assert(mapped.length>0);
  for(const r of mapped){assert(api.safeUrl(r.sourceUrl));assert(!api.hasVerifiedDirections(r));}
- assert(api.prepareRecords(listed).some(r=>!api.hasMapLocation(r)));
+ assert.equal(api.prepareRecords(listed).filter(r=>!api.hasMapLocation(r)).length,0);
+ assert(!api.hasMapLocation({...listed[0],lat:null,lng:null}));
  const sample=listed.find(r=>Number.isFinite(r.lat));
  assert(!api.hasMapLocation({...sample,status:'closed_until_further_notice'}));
  assert(!api.hasMapLocation({...sample,sourceUrl:'javascript:alert(1)'}));
@@ -81,10 +82,12 @@ test('material filters use explicit source claims and preserve unknowns and excl
  const byId=id=>api.prepareRecords([research.locations.find(r=>r.id===id)])[0];
  assert(byId('mampan-candidate-1').reportedMaterials.includes('glass'));
  assert(!byId('mampan-candidate-24').reportedMaterials.includes('glass'));
- assert(byId('riiicycle-ewaste-1').reportedMaterials.includes('e waste'));
+ const [ewaste]=api.prepareRecords([{id:'fixture-ewaste',name:'Fixture',sourceReportedFacilityTypes:['e-waste bin']}]);
+ assert(ewaste.reportedMaterials.includes('e waste'));
  assert(byId('rnc-candidate-1').reportedMaterials.includes('cooking oil'));
  assert(!byId('rnc-candidate-1').reportedMaterials.includes('plastic'));
- assert(!byId('riiicycle-smart-2').reportedMaterials.includes('plastic'));
+ const [mixed]=api.prepareRecords([{id:'fixture-mixed',name:'Fixture',sourceReportedMaterials:['mixed waste']}]);
+ assert(!mixed.reportedMaterials.includes('plastic'));
  assert.equal(byId('mbpp-candidate-1').reportedMaterials.length,0);
 });
 test('nearest selection uses distance and skips unmapped or fictional places',()=>{
