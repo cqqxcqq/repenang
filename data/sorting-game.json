@@ -1,0 +1,18 @@
+{
+  "reviewedAt": "2026-11-10",
+  "sourceUrl": "https://www.pgc.com.my/en/faq/",
+  "bags": [
+    {"name":"After a day at home","items":["paper","bottle","can","tissue","battery","jar"]},
+    {"name":"Same materials. A few surprises.","items":["dirty-paper","bottle","can","tissue","phone","jar"]}
+  ],
+  "items": [
+    {"id":"paper","name":"Newspaper","icon":"paper","condition":"Dry, clean pages. No food or oil.","destination":"recycling","explanation":"Keep clean paper dry and separate from dirty waste.","material":"paper","hint":"These pages are clean and dry. Keep them with the other ordinary recyclables."},
+    {"id":"dirty-paper","name":"Greasy paper","icon":"paper","condition":"This takeaway paper is soaked with food oil.","destination":"residual","explanation":"Food-soiled paper belongs with residual waste in this exercise. Washing does not turn oily paper into clean paper.","hint":"The material is paper, but its condition matters. The food oil makes the difference."},
+    {"id":"bottle","name":"Drink bottle","icon":"bottle","condition":"A plastic water bottle with a little water left inside.","readyCondition":"Emptied. Clean and ready to separate.","preparation":"Empty the water","preparationExplanation":"The water is out. Keep the bottle separate from dirty waste and check the collector’s plastic requirements.","destination":"recycling","explanation":"Separate clean, empty plastic bottles for recycling. Exact plastic acceptance varies by collector.","material":"plastic","hint":"Check inside before sorting. There is still some water to empty."},
+    {"id":"can","name":"Aluminium can","icon":"can","condition":"An empty, clean drink can.","destination":"recycling","explanation":"An empty, clean aluminium can can be separated with ordinary recyclables.","material":"metal","hint":"This can is already empty and clean. It does not need a special waste collection."},
+    {"id":"tissue","name":"Used tissue","icon":"tissue","condition":"Used to wipe up a spill. Dirty and damp.","destination":"residual","explanation":"Dirty tissues are residual waste, even though they began as paper.","hint":"Being made of paper is only part of the story. This tissue is dirty."},
+    {"id":"battery","name":"Used battery","icon":"battery","condition":"An intact household battery. Not leaking or damaged.","destination":"special","explanation":"Keep batteries separate and use an appropriate designated collection point. Confirm which battery types it accepts.","material":"battery","hint":"Batteries need their own collection arrangements. Keep them out of ordinary recycling and residual waste."},
+    {"id":"phone","name":"Old phone","icon":"phone","condition":"An unwanted phone. Personal data has already been removed.","destination":"special","explanation":"Use a collector that accepts this type of e-waste. Do not put the phone in ordinary recycling or residual waste.","material":"e waste","hint":"Electronics need an appropriate e-waste collection point."},
+    {"id":"jar","name":"Glass food jar","icon":"jar","condition":"An empty, clean food jar. No lid, no broken glass.","destination":"special","explanation":"For this game, set glass aside for a collector that explicitly accepts food and drink containers. This is recyclable glass, not general rubbish.","material":"glass","hint":"Glass can be recycled, but acceptance varies. Set it aside for a collector that specifically accepts it."}
+  ]
+}

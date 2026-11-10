@@ -1,0 +1,52 @@
+[
+  {
+    "id": "riiicycle-midlands",
+    "name": "Riiicycle — Midlands Recycling Station",
+    "lat": 5.433082,
+    "lng": 100.306377,
+    "address": "488, Jalan Burma, 10350 George Town, Pulau Pinang",
+    "district": "Timur Laut",
+    "materials": [
+      "paper",
+      "plastic",
+      "metal",
+      "e-waste"
+    ],
+    "hours": "Fri–Sat 15:00–17:00; other days closed. Check the operator for exceptions.",
+    "phone": "+60 11 2669 9168",
+    "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+    "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/",
+    "hoursSourceUrl": "https://www.riiicycle.com/station-schedule",
+    "coordinateSourceUrl": "https://maps.app.goo.gl/r2R29rbcn25HBV5v7",
+    "coordinatesVerified": true,
+    "verificationMethod": "published-sources",
+    "verifiedAt": "2026-11-09",
+    "status": "verified",
+    "notes": "Plastic bottles/containers only; no mixed plastics, glass, fabric, non-rechargeable batteries or lamps. Confirm your items and scheduled session with Riiicycle. Online source review only; not visited."
+  },
+  {
+    "id": "riiicycle-auto-city",
+    "name": "Riiicycle — Auto City Recycling Station",
+    "lat": 5.3375278,
+    "lng": 100.4266667,
+    "address": "C24, Auto City Fashion Market, Lorong Perusahaan Maju 8, 13600 Bukit Tengah, Pulau Pinang",
+    "district": "Seberang Perai Tengah",
+    "materials": [
+      "paper",
+      "plastic",
+      "metal",
+      "e-waste"
+    ],
+    "hours": "Sun 09:00–12:00; other days closed. Check the operator for exceptions.",
+    "phone": "+60 11 2669 9168",
+    "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+    "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/",
+    "hoursSourceUrl": "https://www.riiicycle.com/station-schedule",
+    "coordinateSourceUrl": "https://goo.gl/maps/PwoGhBeCsFaafA8P8",
+    "coordinatesVerified": true,
+    "verificationMethod": "published-sources",
+    "verifiedAt": "2026-11-09",
+    "status": "verified",
+    "notes": "Plastic bottles/containers only; no mixed plastics, glass, fabric, non-rechargeable batteries or lamps. Confirm your items and scheduled session with Riiicycle. Online source review only; not visited."
+  }
+]

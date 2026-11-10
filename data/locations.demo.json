@@ -1,0 +1,44 @@
+[
+  {
+    "id": "demo-george-town",
+    "name": "DEMO — George Town area",
+    "lat": 5.414,
+    "lng": 100.329,
+    "address": "Fictional sample position; not a real recycling centre",
+    "district": "Timur Laut",
+    "materials": ["battery", "e-waste"],
+    "hours": null,
+    "phone": null,
+    "sourceUrl": null,
+    "verifiedAt": null,
+    "status": "demo"
+  },
+  {
+    "id": "demo-butterworth",
+    "name": "DEMO — Butterworth area",
+    "lat": 5.4,
+    "lng": 100.37,
+    "address": "Fictional sample position; not a real recycling centre",
+    "district": "Seberang Perai Utara",
+    "materials": ["battery", "metal"],
+    "hours": null,
+    "phone": null,
+    "sourceUrl": null,
+    "verifiedAt": null,
+    "status": "demo"
+  },
+  {
+    "id": "demo-bayan-lepas",
+    "name": "DEMO — Bayan Lepas area",
+    "lat": 5.3,
+    "lng": 100.27,
+    "address": "Fictional sample position; not a real recycling centre",
+    "district": "Barat Daya",
+    "materials": ["plastic", "paper"],
+    "hours": null,
+    "phone": null,
+    "sourceUrl": null,
+    "verifiedAt": null,
+    "status": "demo"
+  }
+]

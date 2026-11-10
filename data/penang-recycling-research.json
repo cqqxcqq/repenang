@@ -1,0 +1,2511 @@
+{
+  "title": "Penang recycling locations — sourced research candidates",
+  "researchedAt": "2026-11-09",
+  "coverage": "Partial research, not an exhaustive or independently verified directory. Includes source-listed community facilities, recycling centres and used-cooking-oil-only bins. Possible duplicates remain.",
+  "notes": [
+    "The operator lists three entries as closed or relocated; retained with explicit status.",
+    "The 2024 council list may be outdated; do not assume hours, materials or current operation.",
+    "Potential overlaps between the council and operator lists require manual site-level review.",
+    "The supplied September 2005 PDF is historical and is not treated as evidence of current operation.",
+    "MAMPAN contains other types of sustainable businesses; only selected named recycling or collection sites are included.",
+    "RECYCLEnCASH coordinates and Google Maps links are operator-provided, not independently checked on the ground; community access and accepted materials must be confirmed.",
+    "MAMPAN material descriptions are historical source claims and must be confirmed before use.",
+    "Google Maps short links could not be opened by the research browser; they are operator-supplied links, not independently verified Google Maps results.",
+    "PGC household hazardous waste collection information was last updated in July 2024; accepted items and operation require confirmation.",
+    "Historical KITAR apartment programme areas are kept separately because they are not confirmed public drop-off sites.",
+    "2026-11-09 audit: corrected broken MBPP source URL, consolidated three repeated venue records, and added two omitted council-listed locations. PGC programme acceptance details are not a guarantee of present operation.",
+    "Coordinates added from individual MAMPAN records and previously source-reviewed operator destination links; coordinates do not establish present operation or public access."
+  ],
+  "sources": [
+    "https://www.mbpp.gov.my/en/media/news/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semua",
+    "https://www.riiicycle.com/recycling-stations",
+    "https://www.pgc.com.my/en/mampan-directory/",
+    "https://www.mbsp.gov.my/db/ucapan/2025/kitar-semula-tsdu.pdf",
+    "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+    "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+    "https://tzuchi.my/en/join-us/recycling-centres/locationtable",
+    "https://www.mbsp.gov.my/db/ucapan/2024/pks-bt.pdf",
+    "https://www.riiicycle.com/e-waste-bins",
+    "https://www.pgc.com.my/en/faq/",
+    "https://www.riiicycle.com/smart-collection-machines",
+    "https://www.nestle.com.my/sites/g/files/pydnoa251/files/2025-04/Penang-KITAR-collection-April-2025.pdf",
+    "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+    "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/"
+  ],
+  "locations": [
+    {
+      "id": "mbpp-candidate-1",
+      "name": "Hub 3R @ Taman Serina",
+      "address": "32, Hilir Sungai Pinang, George Town, 10300 Jelutong, Pulau Pinang",
+      "lat": 5.402617,
+      "lng": 100.326987,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-2",
+      "name": "Hub 3R @ Midlands Park",
+      "address": "32, Persiaran Midlands, George Town, 10250 George Town, Pulau Pinang",
+      "lat": 5.434089,
+      "lng": 100.305986,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-3",
+      "name": "New World Park",
+      "address": "102, Jalan Burma, George Town, 10050 George Town, Pulau Pinang",
+      "lat": 5.42031,
+      "lng": 100.326872,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified. Operator lists a station at this venue; schedule and exact location should be checked before visiting. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule.",
+      "additionalSources": [
+        "https://www.riiicycle.com/recycling-stations"
+      ],
+      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/"
+    },
+    {
+      "id": "mbpp-candidate-4",
+      "name": "Setia Spice",
+      "address": "108C, Jalan Tun Dr Awang, Bayan Baru, 11900 Bayan Lepas, Pulau Pinang",
+      "lat": 5.33019,
+      "lng": 100.280173,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified. Operator lists a station at this venue; schedule and exact location should be checked before visiting. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule.",
+      "additionalSources": [
+        "https://www.riiicycle.com/recycling-stations"
+      ],
+      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/"
+    },
+    {
+      "id": "mbpp-candidate-5",
+      "name": "Strait Quay",
+      "address": "Seri Tanjung Pinang, Tanjung Tokong, Penang",
+      "lat": 5.45795,
+      "lng": 100.313129,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified. Operator lists a station at this venue; schedule and exact location should be checked before visiting. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule.",
+      "additionalSources": [
+        "https://www.riiicycle.com/recycling-stations"
+      ],
+      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/"
+    },
+    {
+      "id": "mbpp-candidate-6",
+      "name": "Hub 3R @ Lebuh Cecil",
+      "address": "24, Lebuh Cecil, George Town, 10300 George Town, Pulau Pinang",
+      "lat": 5.407759,
+      "lng": 100.328857,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-7",
+      "name": "Hub 3R @ Kampung Baru, Air Itam",
+      "address": "Kampung Baru, Air Itam",
+      "lat": 5.40793,
+      "lng": 100.293629,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-8",
+      "name": "Hub 3R @ Jalan Gangsa",
+      "address": "Jalan Gangsa, 11600 Island Park, Greenlane, Penang",
+      "lat": 5.392306,
+      "lng": 100.297779,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-9",
+      "name": "Hub 3R @ Penang Hill",
+      "address": "Lower Station, Penang Hill",
+      "lat": 5.407979,
+      "lng": 100.27762,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-10",
+      "name": "Hub 3R @ Jalan Tengah",
+      "address": "Dewan JKKK Jalan Tengah",
+      "lat": 5.319221,
+      "lng": 100.285483,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-11",
+      "name": "Hub 3R @ Giant Bayan Baru",
+      "address": "78, Lintang Bayan, Bayan Baru, 11900 Bayan Lepas, Pulau Pinang",
+      "lat": 5.321319,
+      "lng": 100.28505,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-12",
+      "name": "PPR Jalan Sungai",
+      "address": "Jalan Sungai, 10000 George Town, Pulau Pinang",
+      "lat": 5.407453,
+      "lng": 100.324509,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-13",
+      "name": "Masjid Maqbul, Kampung Selut",
+      "address": "Sungai Pinang",
+      "lat": 5.403006,
+      "lng": 100.324122,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-14",
+      "name": "Dewan Aktiviti Taman Tun Sardon",
+      "address": "Hilir Pemancar, Taman Tun Sardon, 11700 Gelugor, Pulau Pinang",
+      "lat": 5.372148,
+      "lng": 100.302449,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-15",
+      "name": "MPKK Mahsuri, Sungai Nibong",
+      "address": "Lorong Mahsuri 7, Bayan Baru, 11950 Bayan Lepas, Pulau Pinang",
+      "lat": 5.328475,
+      "lng": 100.290371,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-16",
+      "name": "TNB Sungai Ara",
+      "address": "Persiaran Bayan 2, Kampung Manggis, 11900 Bayan Lepas, Pulau Pinang",
+      "lat": 5.327563,
+      "lng": 100.274505,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-17",
+      "name": "SMK Pondok Upeh, Balik Pulau",
+      "address": "Jalan Balik Pulau, 11000 Balik Pulau, Pulau Pinang",
+      "lat": 5.335045,
+      "lng": 100.220652,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "riiicycle-candidate-1",
+      "name": "Straits Quay Recycling Station",
+      "address": "Jalan Seri Tanjung Pinang, Seri Tanjung Pinang, 10470 Tanjong Tokong, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "duplicate_of_source_listed_location",
+      "notes": "Same named venue in MBPP and Riiicycle records; retained for audit and excluded from live list.",
+      "duplicateOf": "mbpp-candidate-5"
+    },
+    {
+      "id": "riiicycle-candidate-2",
+      "name": "New World Park Recycling Station",
+      "address": "102, Jalan Burma, George Town, 10500, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "duplicate_of_source_listed_location",
+      "notes": "Same named venue in MBPP and Riiicycle records; retained for audit and excluded from live list.",
+      "duplicateOf": "mbpp-candidate-3"
+    },
+    {
+      "id": "riiicycle-candidate-3",
+      "name": "Setia Spice Recycling Station",
+      "address": "108C, Jalan Tun Dr Awang, Bayan Baru, 11900 Bayan Lepas, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "duplicate_of_source_listed_location",
+      "notes": "Same named venue in MBPP and Riiicycle records; retained for audit and excluded from live list.",
+      "duplicateOf": "mbpp-candidate-4"
+    },
+    {
+      "id": "riiicycle-candidate-4",
+      "name": "Karpal Singh Drive Recycling Station",
+      "address": "Maritime Suite, Karpal Singh Drive, 11600 George Town, Pulau Pinang",
+      "lat": 5.398215,
+      "lng": 100.329706,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule. Approximate source coordinate is from MBPP Karpal Singh venue (2024); verify the exact collection point.",
+      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/",
+      "coordinateSourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula"
+    },
+    {
+      "id": "riiicycle-candidate-5",
+      "name": "Auto City Recycling Station",
+      "address": "C24, Auto City Fashion Market, Lorong Perusahaan Maju 8, 13600 Bukit Tengah, Pulau Pinang",
+      "lat": 5.3375278,
+      "lng": 100.4266667,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule. Coordinate comes from the previously source-reviewed operator destination link; current operation is not independently verified.",
+      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/",
+      "coordinateSourceUrl": "https://goo.gl/maps/PwoGhBeCsFaafA8P8"
+    },
+    {
+      "id": "riiicycle-candidate-6",
+      "name": "MPKK Tanjung Bungah Recycling Station",
+      "address": "Tanjung Bungah night market, Jalan Sungai Kelian, 11200 Tanjung Bungah, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "not_independently_confirmed",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule.",
+      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/"
+    },
+    {
+      "id": "riiicycle-candidate-7",
+      "name": "MPKK Pantai Molek Recycling Station",
+      "address": "Tingkat Mount Erskine 1, Taman Teguh, 10250 George Town, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "closed_until_further_notice",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked."
+    },
+    {
+      "id": "riiicycle-candidate-8",
+      "name": "Udini Square Recycling Station",
+      "address": "Lebuh Tunku Kudin 3, 11700 Gelugor, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "closed_and_relocated",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked."
+    },
+    {
+      "id": "riiicycle-candidate-9",
+      "name": "Midlands Recycling Station",
+      "address": "488, Jalan Burma, 10350 George Town, Pulau Pinang",
+      "lat": 5.433082,
+      "lng": 100.306377,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule. Coordinate comes from the previously source-reviewed operator destination link; current operation is not independently verified.",
+      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/",
+      "coordinateSourceUrl": "https://maps.app.goo.gl/r2R29rbcn25HBV5v7"
+    },
+    {
+      "id": "riiicycle-candidate-10",
+      "name": "Balik Pulau Recycling Station",
+      "address": "MBPP Makerspace, 11000 Balik Pulau, Penang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "closed_until_further_notice",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked."
+    },
+    {
+      "id": "riiicycle-candidate-11",
+      "name": "MPKK Paya Terubong Recycling Station",
+      "address": "32, Lebuh Rambai 1, Paya Terubong, 11500 Ayer Itam, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "not_independently_confirmed",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked. 2026 PGC programme lists these categories at the station; no mixed plastic, glass bottles, fabric, non-rechargeable batteries or lamps. Check the current programme and schedule.",
+      "sourceReportedMaterials": "Aluminium, tin, scrap metal; paper, newspaper, mixed paper, carton box; e-waste; plastic bottles and containers only",
+      "materialsSourceUrl": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/"
+    },
+    {
+      "id": "riiicycle-candidate-12",
+      "name": "Lebuh Cecil Recycling Station",
+      "address": "Lebuh Cecil, George Town, 10300 George Town, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "sourcePublished": null,
+      "status": "not_independently_confirmed",
+      "notes": "Operator-listed station; confirm current schedule and accepted items. Coordinates not independently checked."
+    },
+    {
+      "id": "mampan-candidate-1",
+      "name": "Pusat Kitar Semula Balai Raya Bukit Tambun",
+      "address": "Bukit Tambun, 14100 Simpang Ampat",
+      "lat": 5.2723,
+      "lng": 100.45097,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation.",
+      "additionalSources": [
+        "https://www.mbsp.gov.my/db/ucapan/2024/pks-bt.pdf"
+      ]
+    },
+    {
+      "id": "mampan-candidate-2",
+      "name": "Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)",
+      "address": "Dewan Orang Ramai Panchur Mutiara, Jalan Belatuk, Taman Bukit Panchor, 14300 Nibong Tebal",
+      "lat": 5.173707,
+      "lng": 100.486703,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium), cans, drink packets; used cooking oil",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-3",
+      "name": "Pusat Kitar Semula Kampung Permatang Pasir",
+      "address": "Permatang Pasir, Permatang Pauh",
+      "lat": 5.419719,
+      "lng": 100.436832,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, metals (aluminium)",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-4",
+      "name": "Pusat Kitar Semula Kampung Sekolah, Juru",
+      "address": "Jalan Masjid, Kampung Sekolah, Juru, 14100",
+      "lat": 5.31802,
+      "lng": 100.42163,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-5",
+      "name": "Pusat Kitar Semula Mak Mandin",
+      "address": "Tingkat Mak Mandin 1, Butterworth",
+      "lat": 5.42598,
+      "lng": 100.38823,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass, aluminium; clothes",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-6",
+      "name": "Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor",
+      "address": "Jalan Pengkalan Batu, 13300 Tasek Gelugor",
+      "lat": 5.47219,
+      "lng": 100.49341,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, aluminium, cans, drink packets",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-7",
+      "name": "Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)",
+      "address": "Lorong 2, Perkampungan Jawi, 14200 Sungai Jawi",
+      "lat": 5.213351,
+      "lng": 100.495337,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, metals (iron, aluminium, copper), cans; old clothes; used cooking oil",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-8",
+      "name": "Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)",
+      "address": "Kampung Padang Benggali, 13100 Butterworth, Penang",
+      "lat": 5.497505,
+      "lng": 100.378827,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Paper, plastic, cans",
+      "notes": "MAMPAN lists a distinct address and coordinate for this entry; present operation and access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-9",
+      "name": "Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)",
+      "address": "Kampung Baru, 13100 Penaga, Pulau Pinang",
+      "lat": 5.531042,
+      "lng": 100.378677,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Paper, plastic, cans",
+      "notes": "MAMPAN lists a distinct address and coordinate for this entry; present operation and access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-10",
+      "name": "Pusat Kitar Semula Surau Taman Pauh Jaya",
+      "address": "Jalan Pauh Jaya 1, Taman Pauh Jaya, 13700 Bukit Mertajam",
+      "lat": 5.37379,
+      "lng": 100.41194,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-11",
+      "name": "Pusat Kitar Semula Taman Cengal",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+    },
+    {
+      "id": "mampan-candidate-12",
+      "name": "Pusat Kitar Semula Taman Halaman Indah",
+      "address": "Jalan Halaman Indah, 14200 Sungai Jawi",
+      "lat": 5.19478,
+      "lng": 100.51077,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-13",
+      "name": "Pusat Kitar Semula Taman Kerapu",
+      "address": "29, Lintang Kerapu, Taman Kerapu, 13400 Butterworth",
+      "lat": 5.40857,
+      "lng": 100.39799,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-14",
+      "name": "Pusat Kitar Semula Taman Mutiara",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+    },
+    {
+      "id": "mampan-candidate-15",
+      "name": "Pusat Kitar Semula Taman Segar Indah",
+      "address": "8, Lorong Segar Indah 8, Taman Bayu, 13400 Butterworth",
+      "lat": 5.42522,
+      "lng": 100.39006,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-16",
+      "name": "Pusat Kitar Semula Tambi Kecil",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron); old clothes",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+    },
+    {
+      "id": "mampan-candidate-17",
+      "name": "Pusat Kitar Semula Yayasan Humanistik",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": null,
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+    },
+    {
+      "id": "mampan-candidate-18",
+      "name": "Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam; old clothes; used cooking oil",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+    },
+    {
+      "id": "mampan-candidate-19",
+      "name": "Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Used phone battery, light tubes, batteries",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+    },
+    {
+      "id": "mampan-candidate-20",
+      "name": "Pusat Pengumpulan E - Waste Taman Pandan",
+      "address": "Taman Pandan, 13400 Butterworth",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": null,
+      "notes": "MAMPAN gives only a neighbourhood-level Taman Pandan area; exact collection point needs confirmation before mapping.",
+      "coordinateSourceUrl": null
+    },
+    {
+      "id": "mampan-candidate-21",
+      "name": "Pusat Pengumpulan Gereja St. Ann",
+      "address": "Gereja St. Ann, Bukit Mertajam, Penang",
+      "lat": 5.3525733499662715,
+      "lng": 100.47728512592977,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Papers, cartons, plastics, aluminium cans; old clothes (wearable and clean); general e-waste",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-22",
+      "name": "Pusat Pengumpulan Kitar Semula JKKP Sempilai Jaya",
+      "address": "JKKP, Tingkat 3A, Kompleks Sempilai Seberang Jaya",
+      "lat": 5.407101677181116,
+      "lng": 100.4087071836014,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": null,
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-23",
+      "name": "Pusat Pengumpulan Surau Taman Jawi Jaya",
+      "address": "Jalan Jawi Jaya, Taman Jawi Jaya, 14200 Sungai Jawi, Pulau Pinang",
+      "lat": 5.194716,
+      "lng": 100.496703,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, metals (iron, aluminium, copper), cans, drink packets; used cooking oil",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-24",
+      "name": "Pusat Sumber Alam Sekitar Bandar Tasek Mutiara",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Common recyclables except glass; wearable clothes; electronics",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+    },
+    {
+      "id": "mampan-candidate-25",
+      "name": "Pusat Sumber Alam Sekitar Taman Bagan Lalang",
+      "address": "Taman Bagan Lalang, 13400 Butterworth, Pulau Pinang",
+      "lat": 5.434263,
+      "lng": 100.401083,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets; old clothes; used cooking oil",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-26",
+      "name": "Pusat Sumber Alam Sekitar Taman Makok",
+      "address": "Lorong Janggus 2, 14000 Bukit Mertajam",
+      "lat": 5.362988,
+      "lng": 100.447136,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets; old clothes; used cooking oil",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-27",
+      "name": "Pusat Sumber Alam Sekitar Taman Puteri Gunung",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets; old clothes; used cooking oil",
+      "notes": "MAMPAN-listed candidate; exact location, current operation, materials and public access require confirmation."
+    },
+    {
+      "id": "rnc-candidate-1",
+      "name": "JPKKP KG DODOL",
+      "address": null,
+      "lat": 5.4059465,
+      "lng": 100.3153823,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10001",
+        "SUCO-A10063"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-2",
+      "name": "JPKKP TAMAN SERENA",
+      "address": null,
+      "lat": 5.3998519,
+      "lng": 100.3253467,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": "https://maps.app.goo.gl/KzBqHBLfiJJMdACF6",
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10002",
+        "SUCO-A10040"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-3",
+      "name": "JPKKP KG DESA PINANG 1",
+      "address": null,
+      "lat": 5.4225,
+      "lng": 100.340417,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10003",
+        "SUCO-A10050"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-4",
+      "name": "JPKKP TAMAN SAMAK",
+      "address": null,
+      "lat": 5.409789,
+      "lng": 100.321395,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": "https://maps.app.goo.gl/rto8RTcYFE3rGhzt8",
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10004",
+        "SUCO-A10114"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-5",
+      "name": "JPKKP TAMAN SRI PINANG",
+      "address": null,
+      "lat": 5.407241,
+      "lng": 100.323039,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": "https://maps.app.goo.gl/cm4JskEB8SsWNcLV6",
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10005",
+        "SUCO-A10041"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-6",
+      "name": "JPKKP KG SEBERANG PAYA",
+      "address": null,
+      "lat": 5.3401727,
+      "lng": 100.2927441,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10023",
+        "SUCO-A10006"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-7",
+      "name": "JPKKP KG PERSIARAN STADIUM",
+      "address": null,
+      "lat": 5.411222,
+      "lng": 100.31375,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10007",
+        "SUCO-A10058"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-8",
+      "name": "JPKKP KG SELUT",
+      "address": null,
+      "lat": 5.405139,
+      "lng": 100.322722,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10008",
+        "SUCO-A10060"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-9",
+      "name": "JPKKP KG JALAN PATANI",
+      "address": null,
+      "lat": 5.4065,
+      "lng": 100.317611,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10009",
+        "SUCO-A10032"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-10",
+      "name": "JPKKP KG JELUTONG",
+      "address": null,
+      "lat": 5.392611,
+      "lng": 100.317222,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10010",
+        "SUCO-A10053"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-11",
+      "name": "JPKKP TAMAN PONDOK UPEH",
+      "address": null,
+      "lat": 5.334083,
+      "lng": 100.227833,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10078",
+        "SUCO-A10117"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "rnc-candidate-12",
+      "name": "JPKKP TAMAN SRI INDAH",
+      "address": null,
+      "lat": 5.343611,
+      "lng": 100.228056,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "googleMapsUrl": null,
+      "notes": "Operator-listed deployed community facility; coordinate is operator-supplied. Access, accepted materials and present operation require confirmation.",
+      "stationIds": [
+        "SDTRC-A10090",
+        "SUCO-A10126"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ]
+    },
+    {
+      "id": "tzuchi-candidate-1",
+      "name": "Lumba Kuda Recycling Education Centre",
+      "address": "8 Jalan Sekolah La Salle, Taman Lumba Kuda, 11400 George Town, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://tzuchi.my/en/join-us/recycling-centres/locationtable",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by Tzu Chi; current schedule, public access and acceptance require confirmation."
+    },
+    {
+      "id": "rnc-candidate-13",
+      "name": "JPKKP KG PISANG AWAK",
+      "address": null,
+      "lat": 5.384444,
+      "lng": 100.314722,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10011",
+        "SUCO-A10039"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-14",
+      "name": "BPB PANGSAPURI SERI SERDANG",
+      "address": null,
+      "lat": 5.506011,
+      "lng": 100.430722,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10012",
+        "SUCO-A10046"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-15",
+      "name": "MPKK KG MAKAM",
+      "address": null,
+      "lat": 5.408759,
+      "lng": 100.322575,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10013",
+        "SUCO-A10055"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-16",
+      "name": "JPKKP KG DESA BERTAM INDAH",
+      "address": null,
+      "lat": 5.521349,
+      "lng": 100.436236,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10014",
+        "SUCO-A10034"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-17",
+      "name": "MPKK BUKIT MINYAK MUKIM 13",
+      "address": null,
+      "lat": 5.320928,
+      "lng": 100.440974,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10015",
+        "SUCO-A10033"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-18",
+      "name": "MPKK SUNGAI DURI MK. 5",
+      "address": null,
+      "lat": 5.20937,
+      "lng": 100.531103,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10022",
+        "SUCO-A10051"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-19",
+      "name": "MPKK PADANG LALANG",
+      "address": null,
+      "lat": 5.278873,
+      "lng": 100.508401,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10016",
+        "SUCO-A10049"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-20",
+      "name": "PP BERTAM PERDANA",
+      "address": null,
+      "lat": 5.535132,
+      "lng": 100.470624,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10018",
+        "SUCO-A10037"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-21",
+      "name": "MPKK SUNGAI KECHIL",
+      "address": null,
+      "lat": 5.163519,
+      "lng": 100.512053,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10017",
+        "SUCO-A10052"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-22",
+      "name": "MPKK TASEK MUTIARA UTARA A",
+      "address": null,
+      "lat": 5.280067,
+      "lng": 100.484041,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SUCO-A10048"
+      ],
+      "sourceReportedFacilityTypes": [
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-23",
+      "name": "BPB PANGSAPURI INDAH FASA 1C",
+      "address": null,
+      "lat": 5.492865,
+      "lng": 100.382197,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10021",
+        "SUCO-A10038"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-24",
+      "name": "MPKK BERTAM INDAH",
+      "address": null,
+      "lat": 5.526446,
+      "lng": 100.435528,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10029",
+        "SUCO-A10047"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-25",
+      "name": "MPKK TASEK MUTIARA UTARA B",
+      "address": null,
+      "lat": 5.283473,
+      "lng": 100.482474,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SUCO-A10061"
+      ],
+      "sourceReportedFacilityTypes": [
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-26",
+      "name": "MPKK MENGKUANG TITI",
+      "address": null,
+      "lat": 5.41437,
+      "lng": 100.491942,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10030",
+        "SUCO-A10111"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-27",
+      "name": "MPKK KG BARU SUNGAI KECHIL",
+      "address": null,
+      "lat": 5.164486,
+      "lng": 100.523944,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10077",
+        "SUCO-A10118"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-28",
+      "name": "MPKK KG BARU WELLESLEY",
+      "address": null,
+      "lat": 5.211556,
+      "lng": 100.514917,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10076",
+        "SUCO-A10099"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-29",
+      "name": "MPKK TASEK",
+      "address": null,
+      "lat": 5.281749,
+      "lng": 100.520505,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10031",
+        "SUCO-A10121"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-30",
+      "name": "MPKK KG CHANGKAT DAIN",
+      "address": null,
+      "lat": 5.192778,
+      "lng": 100.509944,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10067",
+        "SUCO-A10106"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-31",
+      "name": "MPKK KG BESAR",
+      "address": null,
+      "lat": 5.172802,
+      "lng": 100.546397,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10068",
+        "SUCO-A10098"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-32",
+      "name": "PP TAMAN BAKAP INDAH SPS",
+      "address": null,
+      "lat": 5.238472,
+      "lng": 100.499889,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10072",
+        "SUCO-A10100"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-33",
+      "name": "JPKKP TAMAN SRI DAMAI",
+      "address": null,
+      "lat": 5.392833,
+      "lng": 100.306472,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10020",
+        "SUCO-A10035"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-34",
+      "name": "JPKKP KG JALAN KURAU",
+      "address": null,
+      "lat": 5.394861,
+      "lng": 100.311667,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10019",
+        "SUCO-A10036"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-35",
+      "name": "JPKKP KG DESA PENAGA",
+      "address": null,
+      "lat": 5.403,
+      "lng": 100.309944,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10025",
+        "SUCO-A10054"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-36",
+      "name": "JPKKP KG MAQBUL",
+      "address": null,
+      "lat": 5.403778,
+      "lng": 100.324556,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10027",
+        "SUCO-A10062"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-37",
+      "name": "JPKKP KG DESA PINANG",
+      "address": null,
+      "lat": 5.413823,
+      "lng": 100.317115,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10028",
+        "SUCO-A10123"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-38",
+      "name": "JPKKP KG PERMATANG TENGAH",
+      "address": null,
+      "lat": 5.275472,
+      "lng": 100.266139,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10026",
+        "SUCO-A10059"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-39",
+      "name": "JPKKP KG BARU SUNGAI ARA",
+      "address": null,
+      "lat": 5.320333,
+      "lng": 100.276361,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10024",
+        "SUCO-A10056"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-40",
+      "name": "UNIVERSITI SAINS MALAYSIA",
+      "address": null,
+      "lat": 5.355687,
+      "lng": 100.302125,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10093"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-41",
+      "name": "JPKKP KEBUN LAMA",
+      "address": null,
+      "lat": 5.410926,
+      "lng": 100.308845,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10080",
+        "SUCO-A10115"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-42",
+      "name": "JPKKP KG PAYA KONGSI",
+      "address": null,
+      "lat": 5.352306,
+      "lng": 100.229833,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10069",
+        "SUCO-A10102"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-43",
+      "name": "JPKKP TAMAN SUNGAI ARA",
+      "address": null,
+      "lat": 5.326333,
+      "lng": 100.271778,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10070",
+        "SUCO-A10109"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-44",
+      "name": "JPKKP KG SUNGAI PINANG",
+      "address": null,
+      "lat": 5.393417,
+      "lng": 100.210778,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10071",
+        "SUCO-A10104"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-45",
+      "name": "JPKKP KG BAYAN LEPAS",
+      "address": null,
+      "lat": 5.293852,
+      "lng": 100.258865,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10073",
+        "SUCO-A10112"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-46",
+      "name": "JPKKP KG SAUJANA HEIGHTS",
+      "address": null,
+      "lat": 5.288722,
+      "lng": 100.246917,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10075",
+        "SUCO-A10110"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-47",
+      "name": "JPKKP KG TERANG",
+      "address": null,
+      "lat": 5.326639,
+      "lng": 100.212722,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10091",
+        "SUCO-A10097"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-48",
+      "name": "PP MAYANG PASIR 1",
+      "address": null,
+      "lat": 5.316103,
+      "lng": 100.279932,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10081",
+        "SUCO-A10116"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-candidate-49",
+      "name": "JPKKP KG DESA MAYANG A & B",
+      "address": null,
+      "lat": 5.319528,
+      "lng": 100.278028,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SUCO-A10057",
+        "SUCO-A10107"
+      ],
+      "sourceReportedFacilityTypes": [
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed community facility; deployed does not establish present operation or unrestricted public access. Confirm exact accepted items and app requirements."
+    },
+    {
+      "id": "rnc-extra-1",
+      "name": "PP MAYANG PASIR 4",
+      "address": null,
+      "lat": 5.31525,
+      "lng": 100.281583,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10084",
+        "SUCO-A10105"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed deployed community facility; public access, exact items and current operation require confirmation."
+    },
+    {
+      "id": "rnc-extra-2",
+      "name": "JPKKP KG BINJAI",
+      "address": null,
+      "lat": 5.284448,
+      "lng": 100.256125,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10089",
+        "SUCO-A10108"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed deployed community facility; public access, exact items and current operation require confirmation."
+    },
+    {
+      "id": "rnc-extra-3",
+      "name": "JPKKP KG PONDOK UPEH",
+      "address": null,
+      "lat": 5.338139,
+      "lng": 100.230278,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10086",
+        "SUCO-A10125"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed deployed community facility; public access, exact items and current operation require confirmation."
+    },
+    {
+      "id": "rnc-extra-4",
+      "name": "BPB SAUJANA HEIGHTS APARTMENT",
+      "address": null,
+      "lat": 5.290528,
+      "lng": 100.248583,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10079",
+        "SUCO-A10122"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed deployed community facility; public access, exact items and current operation require confirmation."
+    },
+    {
+      "id": "rnc-extra-5",
+      "name": "PP MAYANG PASIR 2",
+      "address": null,
+      "lat": 5.316,
+      "lng": 100.279583,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10082",
+        "SUCO-A10064"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed deployed community facility; public access, exact items and current operation require confirmation."
+    },
+    {
+      "id": "rnc-extra-6",
+      "name": "PP MAYANG PASIR 3",
+      "address": null,
+      "lat": 5.315056,
+      "lng": 100.281361,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10083",
+        "SUCO-A10113"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed deployed community facility; public access, exact items and current operation require confirmation."
+    },
+    {
+      "id": "rnc-extra-7",
+      "name": "PP MAYANG PASIR 5",
+      "address": null,
+      "lat": 5.315389,
+      "lng": 100.282389,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "stationIds": [
+        "SDTRC-A10085",
+        "SUCO-A10101"
+      ],
+      "sourceReportedFacilityTypes": [
+        "smart drive-through recycling centre",
+        "used cooking oil bin"
+      ],
+      "notes": "Operator-listed deployed community facility; public access, exact items and current operation require confirmation."
+    },
+    {
+      "id": "riiicycle-ewaste-1",
+      "name": "Suntech E-Waste Bin",
+      "address": "1-10-03, Lintang Mayang Pasir 1, Bandar Bayan Baru, 11950 Bayan Lepas, Penang, Malaysia",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "e-waste bin"
+      ],
+      "sourceReportedPublicAccess": "public",
+      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
+    },
+    {
+      "id": "riiicycle-ewaste-2",
+      "name": "Penang Plaza E-Waste Bin",
+      "address": "Penang Plaza, 10050 George Town, Penang, Malaysia",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "e-waste bin"
+      ],
+      "sourceReportedPublicAccess": "public",
+      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
+    },
+    {
+      "id": "riiicycle-ewaste-3",
+      "name": "Olive Tree Hotel E-Waste Bin",
+      "address": "76, Jalan Mahsuri, Bandar Sunway Tunas, 11950 Bayan Lepas, Pulau Pinang, Malaysia",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "e-waste bin"
+      ],
+      "sourceReportedPublicAccess": "public",
+      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
+    },
+    {
+      "id": "riiicycle-ewaste-4",
+      "name": "HP CONCEPT STORE, Queensbay Mall E-Waste Bin",
+      "address": "Lot 2F-27, Queensbay Mall, 100, Persiaran Bayan Indah, 11900 Bayan Lepas, Pulau Pinang, Malaysia",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "e-waste bin"
+      ],
+      "sourceReportedPublicAccess": "public",
+      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
+    },
+    {
+      "id": "riiicycle-ewaste-5",
+      "name": "1ST AVENUE MALL E-Waste Bin",
+      "address": "182, Jalan Magazine, 10300 George Town, Pulau Pinang, Malaysia",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/e-waste-bins",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "e-waste bin"
+      ],
+      "sourceReportedPublicAccess": "public",
+      "notes": "Operator lists this as public; confirm eligible small e-waste, access, current hours and operation before visiting."
+    },
+    {
+      "id": "pgc-hazardous-1",
+      "name": "Stor JPP MBPP, Jalan Sungai",
+      "address": "Jalan Sungai, Penang",
+      "lat": 5.40588,
+      "lng": 100.32459,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.pgc.com.my/en/faq/",
+      "sourcePublished": "2024-07-03",
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
+      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
+    },
+    {
+      "id": "pgc-hazardous-2",
+      "name": "MBSP Menara Bandaraya hazardous household waste collection",
+      "address": "Menara Bandaraya, Jalan Perda Utama, Bandar Perda, 14000 Bukit Mertajam, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.pgc.com.my/en/faq/",
+      "sourcePublished": "2024-07-03",
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
+      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
+    },
+    {
+      "id": "pgc-hazardous-3",
+      "name": "Pejabat Cawangan MBSP Jawi hazardous household waste collection",
+      "address": "Pejabat Cawangan MBSP Jawi, 14200 Sungai Jawi, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.pgc.com.my/en/faq/",
+      "sourcePublished": "2024-07-03",
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
+      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
+    },
+    {
+      "id": "pgc-hazardous-4",
+      "name": "Kompleks Mahkamah Municipal Seberang Perai hazardous household waste collection",
+      "address": "Jalan Kg. Jawa, Taman Jawa, 12000 Butterworth, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.pgc.com.my/en/faq/",
+      "sourcePublished": "2024-07-03",
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
+      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
+    },
+    {
+      "id": "pgc-hazardous-5",
+      "name": "Pejabat Cawangan MBSP Jalan Betek hazardous household waste collection",
+      "address": "Jalan Betek, Kawasan Perniagaan Sungai Rambai, 14000 Bukit Mertajam, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.pgc.com.my/en/faq/",
+      "sourcePublished": "2024-07-03",
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedMaterials": "Fluorescent tubes / lamps and batteries",
+      "notes": "PGC FAQ lists this as a designated collection point for specified household hazardous waste; confirm current access, exact items and operation."
+    },
+    {
+      "id": "riiicycle-smart-1",
+      "name": "Kitar Hub Komtar smart collection machines",
+      "address": "36, Lebuh Tek Soon, George Town, 10100 George Town, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/smart-collection-machines",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "smart collection machine"
+      ],
+      "sourceReportedMaterials": [
+        "UBC (operator abbreviation; confirm meaning)",
+        "mixed plastic",
+        "mixed metal",
+        "e-waste"
+      ],
+      "notes": "Four machine listings share this address and are grouped as one site. Exact acceptance and access require confirmation."
+    },
+    {
+      "id": "riiicycle-smart-2",
+      "name": "SB Setia Fontaines",
+      "address": "Setia Fontaines, Ground Floor, Waterfront Lifestyle Centre, Bandar Setia Fontaines, 13200 Kepala Batas, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/smart-collection-machines",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "smart collection machine"
+      ],
+      "sourceReportedMaterials": [
+        "mixed waste"
+      ],
+      "notes": "Operator category is broad; confirm eligible materials and access."
+    },
+    {
+      "id": "riiicycle-smart-3",
+      "name": "Smart Station Taman Perdana",
+      "address": "NO.A-G, 06, Solok Perdana, Taman Perdana, 14100 Simpang Ampat, Penang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/smart-collection-machines",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "smart collection machine"
+      ],
+      "sourceReportedMaterials": [
+        "mixed paper",
+        "carton box",
+        "mixed metal",
+        "mixed plastic",
+        "e-waste",
+        "used cooking oil"
+      ],
+      "notes": "Station and used-cooking-oil machine are grouped as one site. Confirm current acceptance and access."
+    },
+    {
+      "id": "riiicycle-smart-4",
+      "name": "SB Tanjung Bungah",
+      "address": "Tanjung Bungah Market and Food Complex, Jalan Sungai Kelian, Tanjung Tokong, 11200 Tanjung Bungah, Pulau Pinang",
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.riiicycle.com/smart-collection-machines",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "smart collection machine"
+      ],
+      "sourceReportedMaterials": [
+        "mixed waste"
+      ],
+      "notes": "May share site with riiicycle-candidate-6; different device, investigate before treating as a distinct place."
+    },
+    {
+      "id": "mampan-pink-bin-1",
+      "name": "MBPP Pink Bin @Bangunan IOC Jalan Timah",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mampan-pink-bin-2",
+      "name": "MBPP Pink Bin @Dewan MPKK Jalan Tengah",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mampan-pink-bin-3",
+      "name": "MBPP Pink Bin @Dewan MPKK Ladang Lada",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mampan-pink-bin-4",
+      "name": "MBPP Pink Bin @Kebun Komuniti Kampung Baru",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mampan-pink-bin-5",
+      "name": "MBPP Pink Bin @Pusat Gelandangan Jalan Magazine",
+      "address": "19, Jalan C.Y. Choy, Georgetown, Penang",
+      "lat": 5.41148,
+      "lng": 100.33361,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation. Coordinate and address are source-listed, not independently checked.",
+      "coordinateSourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-6",
+      "name": "MBPP Pink Bin @Pusat Kitar Semula Mount Erskine",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mampan-pink-bin-7",
+      "name": "MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mampan-pink-bin-8",
+      "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mampan-pink-bin-9",
+      "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mampan-pink-bin-10",
+      "name": "MBPP Pink Bin @Rumah Awam Jalan Irrawadi",
+      "address": null,
+      "lat": null,
+      "lng": null,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "sourcePublished": null,
+      "status": "source_listed_not_currently_verified",
+      "sourceReportedFacilityTypes": [
+        "reusable goods bin"
+      ],
+      "sourceReportedMaterials": "Clothing, jewellery, toys and more",
+      "notes": "MAMPAN lists reusable goods rather than a general recycling centre; exact location, access, accepted items and current operation require confirmation."
+    },
+    {
+      "id": "mbpp-candidate-18",
+      "name": "Hub 3R @ Batu Lancang",
+      "address": "25, Lintang Batu Lancang, Jelutong, 11600 Jelutong, Pulau Pinang",
+      "lat": 5.390039,
+      "lng": 100.30658,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Present operation, access and accepted items are not independently verified."
+    },
+    {
+      "id": "mbpp-candidate-19",
+      "name": "Pasar Tanjung Bungah recycling point",
+      "address": "Jalan Tanjung Bungah, Taman Tanjung Bunga, 11200 Tanjung Bungah, Penang",
+      "lat": 5.46431,
+      "lng": 100.284937,
+      "materials": null,
+      "hours": null,
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula",
+      "sourcePublished": "2024-12-11",
+      "status": "source_listed_not_currently_verified",
+      "notes": "Listed by MBPP in 2024. Potential overlap with Riiicycle Tanjung Bungah station; exact relationship and current operation require confirmation."
+    }
+  ],
+  "historicalServiceAreas": {
+    "title": "Nestlé KITAR apartment recycling programme, April 2025",
+    "sourceUrl": "https://www.nestle.com.my/sites/g/files/pydnoa251/files/2025-04/Penang-KITAR-collection-April-2025.pdf",
+    "sourcePublished": "2025-04",
+    "status": "historical_service_area_not_currently_verified",
+    "notes": "Apartment programme service areas, not confirmed public drop-off points. Source asks residents to contact the building Joint Management Body. Names alone do not establish addresses, access or current participation.",
+    "buildings": [
+      "Quayside",
+      "Tamarind",
+      "Straits Garden",
+      "168 Regency",
+      "Skyhome",
+      "Straits Quay",
+      "Novus",
+      "Skyridge Garden",
+      "Fairview Residence",
+      "BM Residence",
+      "Luminari Residence",
+      "Goodfields Residence",
+      "Fiera Vista",
+      "Vista Bay",
+      "79 Residence",
+      "Summer Place",
+      "The Naven",
+      "The Promenade",
+      "One World",
+      "Orchard Ville",
+      "Mercury Apartment",
+      "Ideal One Foresta",
+      "The Clovers",
+      "Spectrum",
+      "98 Nibong Residence",
+      "Iconic Skies",
+      "Parkview Residence",
+      "Apt Lmbh Permai"
+    ]
+  }
+}
