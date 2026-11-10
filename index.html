@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the September 2005 Penang recycling directory. Historical listings need current confirmation; checked map pins identify buildings, not confirmed drop-off services.">
+  <meta name="description" content="Explore recycling locations across Penang and learn how to sort everyday items. Check accepted materials and opening details with each collection point.">
   <title>repenang — recycling points</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -60,7 +60,7 @@
       </aside>
       <main class="map" id="main" aria-label="Penang recycling map">
         <div id="map" aria-label="Interactive map of Penang Island and Seberang Perai"></div>
-        <div class="mapmode" id="mapmode" role="status">2005 directory · recycling not reconfirmed</div>
+        <div class="mapmode" id="mapmode" role="status">Loading recycling locations…</div>
         <div class="map-error" id="map-error" role="alert" hidden></div>
         <section class="placeholder" id="placeholder" hidden>
           <div class="placeholder-inner"></div>
@@ -68,6 +68,6 @@
       </main>
     </div>
   </div>
-  <noscript>JavaScript is required to load the interactive map and fictional demo points.</noscript>
+  <noscript>JavaScript is required to load the interactive map and recycling guide.</noscript>
 </body>
 </html>
