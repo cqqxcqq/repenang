@@ -1,4 +1,6 @@
-# RePenang
+# Pulang
+
+Pulang is the new public-facing name for this project. The repository and deployment URL retain their existing RePenang names. The logo combines a P-shaped return path with a separate resource tile and uses the site's existing green and terracotta palette. SVG artwork is in `assets`; the monochrome mark is supplied for single-colour use. The name is a design choice, not a claim of trademark or domain availability.
 
 A Penang recycling directory built with HTML, CSS, vanilla JavaScript, Leaflet and OpenStreetMap. The map displays sourced research candidates, not independently verified or comprehensive listings.
 

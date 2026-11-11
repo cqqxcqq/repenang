@@ -57,6 +57,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 27px;
   font-weight: 750;
   letter-spacing: -1.5px;
@@ -64,6 +67,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   line-height: 1;
   text-decoration: none;
 }
+
+.brand img { display: block; flex: none; }
 
 .short-text {
   display: none;

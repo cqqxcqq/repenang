@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
   const target = file === root ? path.join(root, 'index.html') : file;
   fs.readFile(target, (error, body) => {
     if (error) { res.writeHead(404).end(); return; }
-    res.setHeader('Content-Type', ({'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json'})[path.extname(target)] || 'application/octet-stream');
+    res.setHeader('Content-Type', ({'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml'})[path.extname(target)] || 'application/octet-stream');
     res.end(body);
   });
 });
@@ -27,6 +27,7 @@ const server = http.createServer((req, res) => {
       const errors = [];
       page.on('pageerror', (error) => errors.push(error.message));
       await page.goto(`http://127.0.0.1:${server.address().port}/`, { waitUntil: 'domcontentloaded' });
+      assert(await page.locator('.brand img').evaluate((image) => image.complete && image.naturalWidth > 0));
       await page.locator('#material-options .material-option').first().waitFor({ state: 'attached' });
       await page.locator('#material-menu summary').click();
       assert.equal(await page.locator('#material-options svg').count(), await page.locator('#material-options button').count());
