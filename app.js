@@ -509,6 +509,7 @@ function resizeMap() {
 }
 
 function openTab(tab) {
+  window.PulangBag?.close();
   closeSheet();
   locationRequest += 1;
   currentTab = tab;
@@ -579,6 +580,10 @@ async function initialize() {
   });
   document.querySelectorAll('[data-tab]').forEach((button) => {
     button.addEventListener('click', () => openTab(button.dataset.tab));
+  });
+  $('bag-nav-main').addEventListener('click', () => {
+    openTab('map');
+    window.PulangBag?.open();
   });
   document.querySelector('.brand').addEventListener('click', (event) => {
     event.preventDefault();

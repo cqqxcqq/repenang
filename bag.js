@@ -10,7 +10,12 @@
   let directory,items=[],entries=[],selectPlace,opened=false;
   const $=id=>document.getElementById(id);
   const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;};
-  function close(){opened=false;$('bag-panel').hidden=true;$('bag-toggle').setAttribute('aria-expanded','false');}
+  function syncNavigation(active){
+    const nav=$('bag-nav-main');nav.setAttribute('aria-expanded',String(active));nav.classList.toggle('active',active);
+    if(active){document.querySelectorAll('[data-tab]').forEach(b=>{b.classList.remove('active');b.removeAttribute('aria-current');});nav.setAttribute('aria-current','page');}
+    else {nav.removeAttribute('aria-current');const mapButton=document.querySelector('[data-tab="map"]');mapButton.classList.add('active');mapButton.setAttribute('aria-current','page');}
+  }
+  function close(){const wasOpen=opened;opened=false;$('bag-panel').hidden=true;$('bag-toggle').setAttribute('aria-expanded','false');if(wasOpen)syncNavigation(false);}
   function save(){try{localStorage.setItem('pulang-bag-v1',JSON.stringify(entries));}catch{}$('bag-count').textContent=entries.length;}
   let view='items', editing=null;
   function icon(material){
@@ -38,15 +43,15 @@
     }else{
       const result=el('section',null,'bag-suggestions');result.setAttribute('aria-label','Suggested collection points');body.append(result);
       const ranked=entries.length?suggestions(directory,items,entries,root.PulangDirectory.today()):[];
-      const live=el('p',!entries.length?'Choose items to find places.':ranked.length?'Matched to your items, with collection conditions below.':'No supported match. Check your item conditions.','bag-summary');live.setAttribute('role','status');result.append(live);
-      const names={source_listed:'Listed',confirm_item:'Confirm with collector',prepare_first:'Prepare first',not_accepted:'Not accepted',not_listed:'Not listed',unsuitable:'Separate handling',review_required:'Needs source review'};
+      if(!ranked.length){const live=el('p',entries.length?'No matching places.':'Choose items first.','bag-summary');live.setAttribute('role','status');result.append(live);}
+      const names={source_listed:'Listed',confirm_item:'Confirm first',prepare_first:'Prepare first',not_accepted:'Not accepted',not_listed:'Not listed',unsuitable:'Separate handling',review_required:'Review needed'};
       for(const rec of ranked.slice(0,3)){
-        const article=el('article',null,'bag-suggestion');const title=el('button',rec.place.name,'bag-place-name');title.type='button';title.onclick=()=>{close();selectPlace(rec.place.id);};article.append(title,el('p',rec.listed+' of '+entries.length+' items explicitly listed'+(rec.confirm?' · '+rec.confirm+' to confirm':''),'bag-coverage'),el('p',rec.place.hours.display,'bag-hours'));
-        const details=el('details');details.append(el('summary','Item details'));for(const match of rec.matches)details.append(el('p',match.item.label+': '+names[match.status]+'. '+match.reason));article.append(details);
-        const open=el('button','View place on map','bag-view');open.type='button';open.onclick=()=>{close();selectPlace(rec.place.id);};article.append(open);result.append(article);
+        const article=el('article',null,'bag-suggestion');const title=el('button',rec.place.name,'bag-place-name');title.type='button';title.onclick=()=>{close();selectPlace(rec.place.id);};article.append(title,el('p',rec.listed+'/'+entries.length+' listed'+(rec.confirm?' · '+rec.confirm+' to confirm':''),'bag-coverage'),el('p',rec.place.hours.display,'bag-hours'));
+        const details=el('details');details.append(el('summary','Items'));for(const match of rec.matches)details.append(el('p',match.item.label+' · '+names[match.status]));article.append(details);
+        const open=el('button','View on map','bag-view');open.type='button';open.onclick=()=>{close();selectPlace(rec.place.id);};article.append(open);result.append(article);
       }
       const covered=new Set(ranked.flatMap(r=>r.matches.filter(m=>['source_listed','confirm_item'].includes(m.status)).map(m=>m.item.id)));
-      for(const entry of entries.filter(e=>!covered.has(e.id))){const item=items.find(i=>i.id===entry.id);result.append(el('p',item.label+': '+(entry.condition==='needs_preparation'?item.preparation:item.route==='residual'?'Keep with residual waste.':entry.condition==='damaged'?item.caution:'No supported collection match in this directory.'),'bag-unmatched'));}
+      for(const entry of entries.filter(e=>!covered.has(e.id))){const item=items.find(i=>i.id===entry.id);result.append(el('p',item.label+' · '+(entry.condition==='needs_preparation'?'Prepare first':item.route==='residual'?'Residual waste':entry.condition==='damaged'?'Contact a specialist':'No listed match'),'bag-unmatched'));}
     }
     const footer=el('div',null,'bag-footer');const action=el('button',view==='items'?'Find places'+(entries.length?' · '+entries.length:''):'Edit items','bag-primary');action.type='button';action.disabled=view==='items'&&!entries.length;action.onclick=()=>switchView(view==='items'?'places':'items');footer.append(action);
     if(entries.length){const clear=el('button','Empty bag','bag-clear');clear.type='button';clear.onclick=()=>{entries=[];editing=null;view='items';save();draw();};footer.append(clear);}panel.append(footer);
@@ -57,7 +62,7 @@
     try { const saved=JSON.parse(localStorage.getItem('pulang-bag-v1')); if(Array.isArray(saved))$('bag-count').textContent=Math.min(17,new Set(saved.filter(e=>typeof e?.id==='string').map(e=>e.id)).size); } catch {}
     toggle.onclick=async()=>{
       if(opened){close();return;}
-      opened=true;$('bag-panel').hidden=false;toggle.setAttribute('aria-expanded','true');
+      opened=true;$('bag-panel').hidden=false;toggle.setAttribute('aria-expanded','true');syncNavigation(true);
       if(items.length){draw();$('bag-panel').querySelector('.bag-close').focus();return;}
       $('bag-panel').textContent='Opening your bag…';
       try{const response=await fetch('data/items.json',{cache:'no-cache'});if(!response.ok)throw Error('catalogue unavailable');const catalogue=await response.json();if(catalogue.reviewDueAt<root.PulangDirectory.today()||!Array.isArray(catalogue.items)||!catalogue.items.length)throw Error('catalogue needs review');items=catalogue.items;
@@ -66,6 +71,8 @@
       }catch{const panel=$('bag-panel');panel.replaceChildren(el('p','The item list could not load. Close the bag and try again.'));const button=el('button','Close bag');button.onclick=close;panel.append(button);}
     };
     document.addEventListener('keydown',event=>{if(event.key==='Escape'&&opened){close();toggle.focus();}});
+    api.open=()=>{if(!opened)return toggle.onclick();};
+    $('bag-nav-main').disabled=false;
     api.ready=true;
   }
   const api={mount,close,suggestions,ready:false};root.PulangBag=api;

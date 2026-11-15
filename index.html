@@ -13,8 +13,8 @@
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script defer src="sorting-game.js?v=sorting-20261110c"></script>
   <script defer src="directory-data.js?v=review-20261115"></script>
-  <script defer src="bag.js?v=picker-20261115"></script>
-  <script defer src="app.js?v=bag-20261115"></script>
+  <script defer src="bag.js?v=concise-20261115"></script>
+  <script defer src="app.js?v=bag-nav-20261115"></script>
 </head>
 <body>
   <div class="shell">
@@ -22,6 +22,7 @@
       <a class="brand" href="#map" aria-label="Pulang — map"><img src="assets/pulang-mark.svg" width="27" height="30" alt=""><span>pulang</span></a>
       <nav class="nav" aria-label="Main navigation">
         <button type="button" class="active" data-tab="map" aria-current="page">Map</button>
+        <button type="button" id="bag-nav-main" aria-controls="bag-panel" aria-expanded="false" disabled>My bag</button>
         <button type="button" data-tab="guide">Guide</button>
         <button type="button" data-tab="feedback"><span class="long-text">Suggest a place</span><span class="short-text">Suggest</span></button>
       </nav>
