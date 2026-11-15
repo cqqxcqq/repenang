@@ -519,6 +519,8 @@ function openTab(tab) {
     else button.removeAttribute('aria-current');
   });
   const isMap = tab === 'map';
+  if ($('bag-toggle')) $('bag-toggle').hidden = !isMap || !window.PulangBag?.ready;
+  if (!isMap) window.PulangBag?.close();
   document.querySelector('.sidebar').hidden = !isMap;
   document.querySelector('.workspace').classList.toggle('support-view', !isMap);
   $('map').hidden = !isMap;
@@ -689,6 +691,11 @@ async function initialize() {
     $('material').disabled = false;
     dataState = 'ready';
     renderPoints();
+    window.PulangBag?.mount(directory, (id) => {
+      $('search').value = ''; $('material').value = 'all';
+      renderPoints();
+      selectPoint(id, $('bag-toggle'));
+    });
   } catch (error) {
     dataState = 'error';
     $('resultcount').textContent = 'Directory unavailable';

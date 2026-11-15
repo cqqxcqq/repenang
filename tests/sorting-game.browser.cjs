@@ -31,6 +31,23 @@ const server = http.createServer((req, res) => {
       assert(await page.locator('.brand img').evaluate((image) => image.complete && image.naturalWidth > 0));
       await page.locator('#material-options .material-option').first().waitFor({ state: 'attached' });
       assert.equal(await page.locator('#results .result').count(), directory.locations.length);
+      await page.getByRole('button',{name:'Open your recycling bag',exact:true}).click();
+      await page.locator('#bag-panel input[data-bag-item="newspaper"]').check();
+      await page.locator('#bag-panel input[data-bag-item="plastic-bottle"]').check();
+      assert.equal(await page.locator('#bag-count').textContent(),'2');
+      assert((await page.locator('.bag-suggestions').innerText()).includes('2 of 2 items explicitly listed'));
+      await page.locator('#bag-panel select[data-bag-item="plastic-bottle"]').selectOption('needs_preparation');
+      assert(!(await page.locator('.bag-suggestions').innerText()).includes('2 of 2 items explicitly listed'));
+      await page.locator('#bag-panel select[data-bag-item="plastic-bottle"]').selectOption('ready');
+      await page.locator('.bag-suggestion details').first().evaluate(e=>e.textContent); // inspect without altering state
+      await page.screenshot({path:path.join(root,'outputs',`bag-${viewport.width}.png`),fullPage:true});
+      await page.locator('.bag-view').filter({hasText:'View place on map'}).first().click();
+      assert(await page.locator('#bag-panel').isHidden());
+      await page.getByRole('button',{name:'Close details',exact:true}).click();
+      await page.getByRole('button',{name:'Open your recycling bag',exact:true}).click();
+      assert.equal(await page.locator('#bag-panel input:checked').count(),2);
+      await page.getByRole('button',{name:'Empty bag',exact:true}).click();
+      await page.getByRole('button',{name:'Close bag',exact:true}).click();
       await page.locator('#results .result').first().click();
       await page.getByRole('link', { name: 'Get directions', exact: true }).waitFor();
       assert.match(await page.locator('#mobile-detail a[href^="tel:"]').first().getAttribute('href'), /^tel:\+60/);

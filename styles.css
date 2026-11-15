@@ -963,3 +963,25 @@ button:disabled, select:disabled, input:disabled {
 @media (prefers-reduced-motion: reduce) {
   .game-item svg { transition: none; }
 }
+/* The bag uses the existing sidebar, keeping location pins unobscured. */
+.bag-toggle { position:absolute; right:20px; bottom:38px; z-index:500; display:flex; align-items:center; gap:9px; border:1px solid #bcc8c2; background:#fff; color:#174b40; padding:12px 16px; font:inherit; cursor:pointer; }
+.bag-toggle svg { width:23px; height:25px; fill:none; stroke:currentColor; stroke-width:1.5; }
+.bag-toggle[hidden],.bag-panel[hidden] { display:none; }
+.sidebar { position:relative; }
+.bag-panel { position:absolute; inset:0; z-index:20; overflow:auto; background:#fafbf8; padding:24px 28px; color:#20312c; }
+.bag-heading { display:flex; align-items:center; justify-content:space-between; }
+.bag-heading h2 { margin:0; font-size:23px; }
+.bag-close { border:0; background:none; font-size:27px; color:inherit; cursor:pointer; padding:6px 10px; }
+.bag-intro,.bag-summary { color:#60736b; line-height:1.6; font-size:13px; }
+.bag-item { padding:11px 0; border-bottom:1px solid #dce2dd; }
+.bag-item label { display:flex; align-items:center; gap:10px; font-size:14px; cursor:pointer; }
+.bag-item input { accent-color:#174b40; width:17px; height:17px; }
+.bag-preparation { font-size:12px; line-height:1.5; color:#60736b; margin:9px 0 8px 27px; }
+.bag-item select { font:inherit; font-size:12px; max-width:100%; border:1px solid #bcc8c2; background:white; color:inherit; padding:6px; }
+.bag-suggestions h3 { font-size:18px; margin:26px 0 12px; }
+.bag-suggestion { border-bottom:1px solid #dce2dd; padding:16px 0; }
+.bag-suggestion h4 { font-size:15px; margin:0 0 8px; }
+.bag-suggestion p,.bag-suggestion summary,.bag-unmatched { font-size:12px; line-height:1.6; }
+.bag-view,.bag-clear { font:inherit; font-size:13px; color:#174b40; border:0; border-bottom:1px solid currentColor; padding:6px 0; margin-top:12px; background:none; cursor:pointer; }
+.bag-panel :focus-visible,.bag-toggle:focus-visible { outline:2px solid #174b40; outline-offset:3px; }
+@media(max-width:820px) { .sidebar:has(.bag-panel:not([hidden])) { height:52dvh; max-height:52dvh; flex:0 0 52dvh; } .bag-panel { padding:18px; } .bag-toggle { right:12px; bottom:34px; padding:10px 12px; } }

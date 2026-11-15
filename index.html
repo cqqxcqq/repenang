@@ -8,12 +8,13 @@
   <link rel="icon" type="image/svg+xml" href="assets/pulang-mark.svg">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-  <link rel="stylesheet" href="styles.css?v=pulang-20261111">
+  <link rel="stylesheet" href="styles.css?v=bag-20261115">
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script defer src="sorting-game.js?v=sorting-20261110c"></script>
   <script defer src="directory-data.js?v=review-20261115"></script>
-  <script defer src="app.js?v=review-20261115"></script>
+  <script defer src="bag.js?v=20261115"></script>
+  <script defer src="app.js?v=bag-20261115"></script>
 </head>
 <body>
   <div class="shell">
@@ -55,6 +56,7 @@
           <button type="button" class="reset" disabled>Reset</button>
         </div>
         <div class="results" id="results"></div>
+        <section id="bag-panel" class="bag-panel" aria-label="Your recycling bag" hidden></section>
         <section class="mobile-sheet" id="mobile-sheet" aria-label="Location details" hidden>
           <button class="dismiss" type="button" aria-label="Close details">×</button>
           <div id="mobile-detail"></div>
@@ -64,6 +66,7 @@
         <div id="map" aria-label="Interactive map of Penang Island and Seberang Perai"></div>
         <div class="mapmode" id="mapmode" role="status">Loading recycling locations…</div>
         <div class="map-error" id="map-error" role="alert" hidden></div>
+        <button type="button" id="bag-toggle" class="bag-toggle" aria-label="Open your recycling bag" aria-expanded="false" aria-controls="bag-panel" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Zm3 0V6a4 4 0 0 1 8 0v2"/></svg><span>My bag</span><span id="bag-count">0</span></button>
         <section class="placeholder" id="placeholder" hidden>
           <div class="placeholder-inner"></div>
         </section>

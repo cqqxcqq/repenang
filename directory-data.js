@@ -71,7 +71,7 @@
   }
 
   // Item matching deliberately distinguishes a material category from an exact item.
-  // The bag UI will consume this later; no bag interface is introduced here.
+  // The bag UI consumes this without upgrading unknown categories to acceptance.
   function assessItem(location, item, condition = 'ready', onDate = today(), sources = null) {
     if (!sources || locationIssues(location, sources, onDate).length) return { status: 'review_required', reason: 'The place needs source review before item matching.' };
     if (!item || !item.id || !item.material) return { status: 'not_listed', reason: 'No supported item definition.' };

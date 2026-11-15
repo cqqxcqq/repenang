@@ -16,7 +16,7 @@ If an essential field is missing or conflicting, remove the entry from `director
 
 Only after manual review should the maintainer update the curated fields and the corresponding `source-review.observations[].expected` values. `scripts/source-parsers.cjs` extracts public fields to assist comparison; it does not approve facts. Guidance section fingerprints should only be refreshed after reviewing the changed section. Never advance review dates just to satisfy a test.
 
-## Rules for the upcoming bag
+## Rules for the bag
 
 Acceptance rules contain a material, original publisher wording, source ID, known item forms and separately sourced preparation guidance. `forms: []` means a material is listed without an exact-item promise. Explicit exclusions take precedence. Plastic film does not match a bottles-only collection. Glass-bottle wording does not establish jar acceptance. An unspecified battery listing leaves chemistry as a question.
 
@@ -36,4 +36,4 @@ The 56 RECYCLEnCASH inventory entries provide device coordinates but lack site-l
 
 MAMPAN's “All day” wording is retained with a timing-confirmation note; it is not used to calculate open-now status. Operator Waze geohashes were decoded to their coordinate-cell centres; their approximately five-metre encoding resolution is not a surveyed accuracy claim. Riiicycle programme acceptance is only applied to the named stations, with its restrictions preserved.
 
-Suggest links to PGC's real registration/contact channels. PGC receives those submissions; they do not automatically update Pulang. No public submission backend, personal bag interface, road travel-time calculation, live capacity feed or measured recycling-impact claim is implemented.
+Suggest links to PGC's real registration/contact channels. PGC receives those submissions; they do not automatically update Pulang. No public submission backend, road travel-time calculation, live capacity feed or measured recycling-impact claim is implemented.
