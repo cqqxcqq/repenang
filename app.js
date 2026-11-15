@@ -721,7 +721,7 @@ async function initialize() {
       $('search').value = ''; $('material').value = 'all';
       renderPoints();
       selectPoint(id, $('bag-toggle'));
-    }, updateBagMap);
+    }, updateBagMap, () => map ? {lat:map.getCenter().lat,lng:map.getCenter().lng} : null);
   } catch (error) {
     dataState = 'error';
     $('resultcount').textContent = 'Directory unavailable';

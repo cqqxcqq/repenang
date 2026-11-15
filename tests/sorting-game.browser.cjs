@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
 
       await page.locator('[data-bag-item="newspaper"]').click();
       await page.locator('[data-bag-item="plastic-bottle"]').click();
-      assert.equal(await page.locator('#map .demo-marker').count(),3);
+      assert((await page.locator('#map .demo-marker').count())>3);
       assert.equal(await page.locator('#bag-count').textContent(),'2');
       assert.equal(await page.locator('.bag-choice svg').count(),17);
       await page.screenshot({path:path.join(root,'outputs',`bag-picker-${viewport.width}.png`),fullPage:true});
@@ -46,12 +46,21 @@ const server = http.createServer((req, res) => {
       const markerTitles=await page.locator('#map .demo-marker').evaluateAll(nodes=>nodes.map(n=>n.title));
       assert.equal(markerTitles.length,suggestedNames.length);
       for(const name of suggestedNames)assert(markerTitles.some(title=>title.startsWith(name)));
+      assert(suggestedNames.length>20);
+      assert((await page.locator('.bag-group-heading').allTextContents()).some(t=>t.startsWith('Check first')));
+      await page.locator('[data-result-group="confirm"]').click();
+      assert((await page.locator('.bag-place-name').count())>3);
+      assert.equal(await page.locator('#map .demo-marker').count(),await page.locator('.bag-place-name').count());
+      assert(!(await page.locator('.bag-place-name').allTextContents()).includes('Auto City Recycling Station'));
+      await page.locator('[data-result-group="all"]').click();
       assert.equal(await page.locator('#bag-nav-main').getAttribute('aria-expanded'),'true');
       await page.getByRole('button',{name:'Edit items',exact:true}).click();
       await page.locator('[data-edit-item="plastic-bottle"]').click();
       await page.locator('[data-condition="needs_preparation"]').click();
       await page.getByRole('button',{name:'Find places · 2',exact:true}).click();
       assert(!(await page.locator('.bag-suggestions').innerText()).includes('2/2 listed'));
+      assert((await page.locator('#map .demo-marker').count())>3);
+      assert((await page.locator('.bag-suggestions').innerText()).includes('to prepare'));
       await page.getByRole('button',{name:'Edit items',exact:true}).click();
       await page.locator('[data-edit-item="plastic-bottle"]').click();
       await page.locator('[data-condition="ready"]').click();

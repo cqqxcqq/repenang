@@ -1002,6 +1002,13 @@ button:disabled, select:disabled, input:disabled {
 .bag-suggestion p,.bag-suggestion summary,.bag-unmatched {font-size:13px;line-height:1.6;}
 .bag-coverage {color:var(--active);margin:8px 0 4px;}
 .bag-hours {color:var(--muted);margin:0 0 12px;}
+.bag-result-tools {display:flex;justify-content:space-between;align-items:center;gap:12px;padding:17px 0;color:var(--muted);font-size:13px;}
+.bag-result-tools button {border:0;background:none;color:var(--active);font:inherit;padding:4px 0;text-decoration:underline;text-underline-offset:4px;}
+.bag-group-heading {font-size:14px;color:var(--muted);font-weight:normal;margin:20px 0 0;padding-bottom:10px;border-bottom:1px solid var(--line);}
+.bag-distance {color:var(--muted);font-size:12px;margin:0 0 10px;}
+.bag-result-filters {display:flex;flex-wrap:wrap;gap:6px;}
+.bag-result-filters button {font:inherit;font-size:12px;padding:7px 8px;background:none;border:1px solid var(--line);color:var(--muted);}
+.bag-result-filters button[aria-pressed=true] {background:var(--selected);border-color:#879f95;color:var(--active);}
 .bag-suggestion summary {color:var(--muted);cursor:pointer;}
 .bag-view {font:inherit;font-size:13px;color:var(--active);border:0;border-bottom:1px solid currentColor;padding:4px 0;margin-top:14px;background:none;}
 .bag-panel :focus-visible,.bag-toggle:focus-visible {outline:2px solid var(--active);outline-offset:2px;}

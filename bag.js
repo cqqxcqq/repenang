@@ -1,13 +1,21 @@
 'use strict';
 (function(root){
-  function suggestions(directory, items, entries, onDate) {
+  function suggestions(directory, items, entries, onDate, origin=null) {
     const sources=Object.fromEntries(directory.sources.map(s=>[s.id,s]));
     return directory.locations.map(place=>{
       const matches=entries.map(entry=>({item:items.find(i=>i.id===entry.id),...root.PulangDirectory.assessItem(place,items.find(i=>i.id===entry.id),entry.condition,onDate,sources)}));
-      return {place,matches,listed:matches.filter(m=>m.status==='source_listed').length,confirm:matches.filter(m=>m.status==='confirm_item').length};
-    }).filter(r=>r.listed+r.confirm>0).sort((a,b)=>b.listed-a.listed||b.confirm-a.confirm||a.place.name.localeCompare(b.place.name));
+      const listed=matches.filter(m=>m.status==='source_listed').length,confirm=matches.filter(m=>m.status==='confirm_item').length,prepare=matches.filter(m=>m.status==='prepare_first').length;
+      const coverage=listed+confirm+prepare;
+      const group=coverage<entries.length?'partial':prepare?'prepare':confirm?'confirm':'whole';
+      const rad=Math.PI/180;
+      const distance=origin&&Number.isFinite(origin.lat)&&Number.isFinite(origin.lng)?6371*2*Math.asin(Math.min(1,Math.sqrt(Math.sin((place.lat-origin.lat)*rad/2)**2+Math.cos(origin.lat*rad)*Math.cos(place.lat*rad)*Math.sin((place.lng-origin.lng)*rad/2)**2))):null;
+      return {place,matches,listed,confirm,prepare,coverage,group,distance};
+    }).filter(r=>r.coverage>0).sort((a,b)=>({whole:0,confirm:1,prepare:2,partial:3}[a.group]-{whole:0,confirm:1,prepare:2,partial:3}[b.group])||b.coverage-a.coverage||b.listed-a.listed||(a.distance!==null&&b.distance!==null?a.distance-b.distance:0)||a.place.name.localeCompare(b.place.name));
   }
-  let directory,items=[],entries=[],selectPlace,updateMap,opened=false;
+  let directory,items=[],entries=[],selectPlace,updateMap,getOrigin,origin=null,opened=false;
+  const rankedPlaces=()=>suggestions(directory,items,entries,root.PulangDirectory.today(),origin);
+  let resultGroup='all';
+  const shownPlaces=()=>rankedPlaces().filter(r=>resultGroup==='all'||r.group===resultGroup);
   const $=id=>document.getElementById(id);
   const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;};
   function syncNavigation(active){
@@ -16,8 +24,8 @@
     else {nav.removeAttribute('aria-current');const mapButton=document.querySelector('[data-tab="map"]');mapButton.classList.add('active');mapButton.setAttribute('aria-current','page');}
   }
   function close(){const wasOpen=opened;opened=false;$('bag-panel').hidden=true;$('bag-toggle').setAttribute('aria-expanded','false');if(wasOpen)syncNavigation(false);}
-  function save(){try{localStorage.setItem('pulang-bag-v1',JSON.stringify(entries));}catch{}$('bag-count').textContent=entries.length;syncMap();}
-  function syncMap(){if(updateMap)updateMap(entries.length?suggestions(directory,items,entries,root.PulangDirectory.today()).slice(0,3).map(r=>r.place.id):null);}
+  function save(){try{localStorage.setItem('pulang-bag-v1',JSON.stringify(entries));}catch{}$('bag-count').textContent=entries.length;resultGroup='all';syncMap();}
+  function syncMap(){if(updateMap)updateMap(entries.length?shownPlaces().map(r=>r.place.id):null);}
   let view='items', editing=null;
   function icon(material){
     const source=Array.from(document.querySelectorAll('#material-options button')).find(b=>b.dataset.value===material)?.querySelector('svg');
@@ -43,26 +51,35 @@
       }
     }else{
       const result=el('section',null,'bag-suggestions');result.setAttribute('aria-label','Suggested collection points');body.append(result);
-      const ranked=entries.length?suggestions(directory,items,entries,root.PulangDirectory.today()):[];
+      const allRanked=entries.length?rankedPlaces():[];
+      const ranked=allRanked.filter(r=>resultGroup==='all'||r.group===resultGroup);
       if(!ranked.length){const live=el('p',entries.length?'No matching places.':'Choose items first.','bag-summary');live.setAttribute('role','status');result.append(live);}
+      else {const tools=el('div',null,'bag-result-tools');const count=el('span',ranked.length+' places');count.setAttribute('role','status');tools.append(count);if(getOrigin){const near=el('button','Use map centre');near.type='button';near.title='Break coverage ties by straight-line distance from the current map centre';near.onclick=()=>{origin=getOrigin();syncMap();draw();};tools.append(near);}result.append(tools);
+        const filters=el('div',null,'bag-result-filters');filters.setAttribute('role','group');filters.setAttribute('aria-label','Collection match type');
+        for(const [group,label] of [['all','All'],['whole','Whole bag'],['confirm','Check first'],['prepare','Prepare first'],['partial','Partial']]){const count=group==='all'?allRanked.length:allRanked.filter(r=>r.group===group).length;if(!count)continue;const button=el('button',label+' · '+count);button.type='button';button.dataset.resultGroup=group;button.setAttribute('aria-pressed',String(resultGroup===group));button.onclick=()=>{resultGroup=group;syncMap();draw();panel.querySelector('[data-result-group="'+group+'"]').focus();};filters.append(button);}result.append(filters);
+      }
       const names={source_listed:'Listed',confirm_item:'Confirm first',prepare_first:'Prepare first',not_accepted:'Not accepted',not_listed:'Not listed',unsuitable:'Separate handling',review_required:'Review needed'};
-      for(const rec of ranked.slice(0,3)){
-        const article=el('article',null,'bag-suggestion');const title=el('button',rec.place.name,'bag-place-name');title.type='button';title.onclick=()=>{close();selectPlace(rec.place.id);};article.append(title,el('p',rec.listed+'/'+entries.length+' listed'+(rec.confirm?' · '+rec.confirm+' to confirm':''),'bag-coverage'),el('p',rec.place.hours.display,'bag-hours'));
+      let lastGroup=null;
+      for(const rec of ranked){
+        if(rec.group!==lastGroup){const labels={whole:'Whole bag',confirm:'Check first',prepare:'Prepare first',partial:'Part of your bag'};result.append(el('h3',labels[rec.group]+' · '+ranked.filter(r=>r.group===rec.group).length,'bag-group-heading'));lastGroup=rec.group;}
+        const article=el('article',null,'bag-suggestion');const title=el('button',rec.place.name,'bag-place-name');title.type='button';title.onclick=()=>{close();selectPlace(rec.place.id);};article.append(title,el('p',rec.listed+'/'+entries.length+' listed'+(rec.confirm?' · '+rec.confirm+' to confirm':'')+(rec.prepare?' · '+rec.prepare+' to prepare':''),'bag-coverage'),el('p',rec.place.hours.display,'bag-hours'));
+        if(rec.distance!==null)article.append(el('p',rec.distance.toFixed(1)+' km from map centre','bag-distance'));
         const details=el('details');details.append(el('summary','Items'));for(const match of rec.matches)details.append(el('p',match.item.label+' · '+names[match.status]));article.append(details);
         const open=el('button','View on map','bag-view');open.type='button';open.onclick=()=>{close();selectPlace(rec.place.id);};article.append(open);result.append(article);
       }
-      const covered=new Set(ranked.flatMap(r=>r.matches.filter(m=>['source_listed','confirm_item'].includes(m.status)).map(m=>m.item.id)));
+      const covered=new Set(allRanked.flatMap(r=>r.matches.filter(m=>['source_listed','confirm_item','prepare_first'].includes(m.status)).map(m=>m.item.id)));
       for(const entry of entries.filter(e=>!covered.has(e.id))){const item=items.find(i=>i.id===entry.id);result.append(el('p',item.label+' · '+(entry.condition==='needs_preparation'?'Prepare first':item.route==='residual'?'Residual waste':entry.condition==='damaged'?'Contact a specialist':'No listed match'),'bag-unmatched'));}
     }
     const footer=el('div',null,'bag-footer');const action=el('button',view==='items'?'Find places'+(entries.length?' · '+entries.length:''):'Edit items','bag-primary');action.type='button';action.disabled=view==='items'&&!entries.length;action.onclick=()=>switchView(view==='items'?'places':'items');footer.append(action);
     if(entries.length){const clear=el('button','Empty bag','bag-clear');clear.type='button';clear.onclick=()=>{entries=[];editing=null;view='items';save();draw();};footer.append(clear);}panel.append(footer);
   }
-  async function mount(data,onSelect,onChange){
-    directory=data;selectPlace=onSelect;updateMap=onChange;
+  async function mount(data,onSelect,onChange,mapOrigin){
+    directory=data;selectPlace=onSelect;updateMap=onChange;getOrigin=mapOrigin;
     const toggle=$('bag-toggle');toggle.hidden=false;
     try { const saved=JSON.parse(localStorage.getItem('pulang-bag-v1')); if(Array.isArray(saved))$('bag-count').textContent=Math.min(17,new Set(saved.filter(e=>typeof e?.id==='string').map(e=>e.id)).size); } catch {}
     toggle.onclick=async()=>{
       if(opened){close();return;}
+      origin=getOrigin?.()||origin;
       opened=true;$('bag-panel').hidden=false;toggle.setAttribute('aria-expanded','true');syncNavigation(true);
       if(items.length){syncMap();draw();$('bag-panel').querySelector('.bag-close').focus();return;}
       $('bag-panel').textContent='Opening your bag…';
