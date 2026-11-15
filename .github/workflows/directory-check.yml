@@ -1,0 +1,25 @@
+name: Directory data checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  directory:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/check-directory.cjs
+      - run: node --test tests/directory.test.cjs tests/reviewed-directory.test.cjs tests/sorting-game.test.cjs
+      - name: Check published source pages
+        if: github.event_name == 'workflow_dispatch'
+        run: node scripts/check-sources.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: directory-review-results
+          path: outputs/*check.json

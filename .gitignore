@@ -1,0 +1,5 @@
+outputs/
+tmp/
+node_modules/
+.vercel/
+github-upload/

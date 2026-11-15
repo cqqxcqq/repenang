@@ -5,6 +5,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const data = require('../data/sorting-game.json');
+const directory = require('../data/directory.json');
 const server = http.createServer((req, res) => {
   const file = path.resolve(root, '.' + new URL(req.url, 'http://localhost').pathname);
   if (file !== root && !file.startsWith(root + path.sep)) { res.writeHead(403).end(); return; }
@@ -29,6 +30,18 @@ const server = http.createServer((req, res) => {
       await page.goto(`http://127.0.0.1:${server.address().port}/`, { waitUntil: 'domcontentloaded' });
       assert(await page.locator('.brand img').evaluate((image) => image.complete && image.naturalWidth > 0));
       await page.locator('#material-options .material-option').first().waitFor({ state: 'attached' });
+      assert.equal(await page.locator('#results .result').count(), directory.locations.length);
+      await page.locator('#results .result').first().click();
+      await page.getByRole('link', { name: 'Get directions', exact: true }).waitFor();
+      assert.match(await page.locator('#mobile-detail a[href^="tel:"]').first().getAttribute('href'), /^tel:\+60/);
+      assert(!(await page.locator('#mobile-detail').innerText()).includes('Unknown'));
+      assert(!(await page.locator('#mobile-detail').innerText()).includes('Unavailable until verified'));
+      await page.locator('#mobile-detail summary').click();
+      assert((await page.locator('#mobile-detail').innerText()).includes('battery'));
+      const detailBox=await page.locator('#mobile-sheet').boundingBox(), mapBox=await page.locator('#map').boundingBox();
+      assert(detailBox.x+detailBox.width<=mapBox.x+1 || detailBox.y+detailBox.height<=mapBox.y+1);
+      await page.screenshot({ path:path.join(root,'outputs',`directory-${viewport.width}.png`), fullPage:true });
+      await page.getByRole('button', { name:'Close details', exact:true }).click();
       await page.locator('#material-menu summary').click();
       assert.equal(await page.locator('#material-options svg').count(), await page.locator('#material-options button').count());
       await page.locator('[data-value="paper"]').click();
@@ -73,6 +86,8 @@ const server = http.createServer((req, res) => {
       assert.match(await page.locator('.game-feedback').textContent(), /food oil/);
       await page.locator('#destination-residual').click();
       await page.locator('[data-tab="feedback"]').click();
+      assert.equal(await page.getByRole('link', { name:'Open MAMPAN registration', exact:true }).getAttribute('href'),'https://forms.gle/T7zUfkomaaQ7uoPu5');
+      assert.equal(await page.locator('.suggestion-form').count(),0);
       await page.locator('[data-tab="guide"]').click();
       await page.locator('[data-item="phone"]').waitFor();
       assert.equal(await page.locator('.game-item:disabled').count(), 1);
@@ -102,6 +117,16 @@ const server = http.createServer((req, res) => {
     await failurePage.locator('.game-item').first().waitFor();
     console.log('passed: failed game-data response and retry');
     await failureContext.close();
+    const incompleteContext = await browser.newContext();
+    const incompletePage = await incompleteContext.newPage();
+    const incomplete = structuredClone(directory); incomplete.locations[0].contacts=[];
+    await incompletePage.route('**/data/directory.json', (route) => route.fulfill({ json: incomplete }));
+    await incompletePage.goto(`http://127.0.0.1:${server.address().port}/`, { waitUntil:'domcontentloaded' });
+    await incompletePage.getByRole('link', { name:'MAMPAN directory', exact:true }).waitFor();
+    assert.equal(await incompletePage.locator('#results .result').count(),0);
+    assert.equal(await incompletePage.locator('#map .demo-marker').count(),0);
+    console.log('passed: incomplete directory cannot publish a point; official-source fallback remains usable');
+    await incompleteContext.close();
   } finally {
     if (browser) await browser.close();
     await new Promise((resolve) => server.close(resolve));

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15",
+  "reviewDueAt": "2026-12-15",
+  "scope": "Starter item catalogue for the future bag. Collection rules are evaluated separately for each place.",
+  "items": [
+    {
+      "id": "newspaper",
+      "label": "Newspaper",
+      "material": "paper",
+      "preparation": "Keep clean and dry.",
+      "route": "recycling",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "cardboard",
+      "label": "Cardboard box",
+      "material": "paper",
+      "preparation": "Keep dry; remove food-soiled parts.",
+      "route": "recycling",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "plastic-bottle",
+      "label": "Plastic drink bottle",
+      "material": "plastic",
+      "preparation": "Empty and remove residue.",
+      "route": "recycling",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "plastic-container",
+      "label": "Plastic container",
+      "material": "plastic",
+      "preparation": "Empty and clean; check the packaging type.",
+      "route": "recycling",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "aluminium-can",
+      "label": "Aluminium drink can",
+      "material": "metal",
+      "preparation": "Empty and remove residue.",
+      "route": "recycling",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "glass-bottle",
+      "label": "Glass drink bottle",
+      "material": "glass",
+      "preparation": "Empty and keep separate; use a collector listing container glass.",
+      "route": "special",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "glass-jar",
+      "label": "Glass food jar",
+      "material": "glass",
+      "preparation": "Empty and keep separate; check that jars are accepted.",
+      "route": "special",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "drink-carton",
+      "label": "Drink carton",
+      "material": "drink packets",
+      "preparation": "Empty and clean; confirm beverage-carton collection.",
+      "route": "recycling",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "wearable-clothes",
+      "label": "Wearable clothes",
+      "material": "clothes",
+      "preparation": "Keep clean and dry; choose reuse for good-condition clothes.",
+      "route": "reuse",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "used-cooking-oil",
+      "label": "Used cooking oil",
+      "material": "cooking oil",
+      "preparation": "Keep separate; never mix with engine oil.",
+      "route": "special",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "phone",
+      "label": "Old phone",
+      "material": "e waste",
+      "preparation": "Back up and remove personal data; ask about device acceptance.",
+      "route": "special",
+      "sourceId": "device-privacy",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "household-battery",
+      "label": "Non-rechargeable household battery",
+      "material": "battery",
+      "preparation": "Keep separate and protect terminals; confirm chemistry with the collection office.",
+      "route": "special",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "fluorescent-tube",
+      "label": "Fluorescent tube",
+      "material": "fluorescent lights",
+      "preparation": "Protect against breakage and ask the collector about packing.",
+      "route": "special",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "packaging-foam",
+      "label": "Clean packaging foam",
+      "material": "poly foam",
+      "preparation": "Keep clean; confirm the foam type.",
+      "route": "special",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "plastic-film",
+      "label": "Plastic bag or film",
+      "material": "plastic",
+      "preparation": "Keep clean and dry; a bottles-only collection does not cover film.",
+      "route": "special",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "greasy-paper",
+      "label": "Greasy takeaway paper",
+      "material": "paper",
+      "preparation": "Separate from clean paper.",
+      "route": "residual",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    },
+    {
+      "id": "used-tissue",
+      "label": "Used tissue",
+      "material": "paper",
+      "preparation": "Keep with residual waste.",
+      "route": "residual",
+      "sourceId": "faq",
+      "caution": "Damaged, leaking or contaminated items need specific handling; do not treat a material category as confirmation."
+    }
+  ]
+}

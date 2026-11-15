@@ -1,5 +1,7 @@
 # Research audit — 9 November 2026
 
+**Superseded for the public map by the 15 November 2026 review.** The runtime dataset is now `directory.json`; `source-review.json` records 45 published entries and 79 archived decisions from the 124 research records. See `../docs/DATA_MAINTENANCE.md`. The older observations below are research history, not the current publication state.
+
 This is an audit of selected source groups, not verification that every listed location is operating. No calls or site visits were made.
 
 ## Corrections made

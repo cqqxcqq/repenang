@@ -17,6 +17,12 @@ let sheetTrigger;
 let currentTab = 'map';
 let viewChanged = false;
 let locationRequest = 0;
+let directorySources = {};
+
+function isSourceReviewed(point) {
+  return point.status === 'source_reviewed' && Boolean(window.PulangDirectory) &&
+    window.PulangDirectory.locationIssues(point.reviewRecord || point, directorySources).length === 0;
+}
 
 // Exact aliases only: do not guess the material for ambiguous items.
 const aliases = new Map([
@@ -90,7 +96,7 @@ function locateNearest() {
     renderPoints();
     viewChanged = true;
     map.setView([nearest.point.lat, nearest.point.lng], Math.max(map.getZoom(), 15), { animate: false });
-    nearestStatus(`Closest mapped match: ${nearest.point.name} · ${nearest.distance.toFixed(1)} km straight line. Availability unverified.`);
+    nearestStatus(`Closest listed match: ${nearest.point.name} · ${nearest.distance.toFixed(1)} km straight line. Check its collection times and item conditions.`);
   }, (error) => {
     if (request !== locationRequest) return;
     nearestStatus(error.code === 1 ? 'Location permission denied. Allow location in your browser to find the nearest place.' :
@@ -142,7 +148,7 @@ function hasMapLocation(point) {
   return Number.isFinite(point.lat) && Number.isFinite(point.lng) &&
     point.lat >= navigationBounds[0][0] && point.lat <= navigationBounds[1][0] &&
     point.lng >= navigationBounds[0][1] && point.lng <= navigationBounds[1][1] &&
-    (point.status === 'demo' || (point.coordinatesVerified === true && Boolean(safeUrl(point.coordinateSourceUrl))) ||
+    (isSourceReviewed(point) || point.status === 'demo' || (point.coordinatesVerified === true && Boolean(safeUrl(point.coordinateSourceUrl))) ||
       (point.status === 'source_listed_not_currently_verified' && Boolean(safeUrl(point.sourceUrl))));
 }
 
@@ -184,7 +190,7 @@ function prepareRecords(records) {
       lat: hasMapLocation(record) ? record.lat : null,
       lng: hasMapLocation(record) ? record.lng : null,
       status: isDemo ? 'demo' : record.status,
-      materials: Array.isArray(record.materials)
+      materials: record.status === 'source_reviewed' && Array.isArray(record.acceptance) ? record.acceptance.map((rule) => rule.material) : Array.isArray(record.materials)
         ? record.materials.filter((value) => typeof value === 'string' && value.trim()).map((value) => value.trim())
         : [],
       reportedMaterials: reportedMaterialKeys(record),
@@ -197,7 +203,7 @@ function prepareRecords(records) {
       sourcePages: Array.isArray(record.sourcePages) ? record.sourcePages : [],
       sourceCategories: Array.isArray(record.sourceCategories) ? record.sourceCategories.filter((value) => typeof value === 'string') : [],
       sourceStatus: typeof record.sourceStatus === 'string' ? record.sourceStatus : '',
-      hours: typeof record.hours === 'string' ? record.hours.trim() : '',
+      hours: typeof record.hours === 'string' ? record.hours.trim() : record.hours?.display || '',
       phone: typeof record.phone === 'string' ? record.phone.trim() : '',
       sourceUrl: record.sourceUrl,
       materialsSourceUrl: record.materialsSourceUrl,
@@ -209,7 +215,8 @@ function prepareRecords(records) {
       sourceReportedMaterials: typeof record.sourceReportedMaterials === 'string' ? record.sourceReportedMaterials :
         Array.isArray(record.sourceReportedMaterials) ? record.sourceReportedMaterials.join(', ') : '',
       sourceReportedFacilityTypes: Array.isArray(record.sourceReportedFacilityTypes) ? record.sourceReportedFacilityTypes : [],
-      verifiedAt: record.verifiedAt
+      verifiedAt: record.verifiedAt,
+      reviewRecord: record.status === 'source_reviewed' ? record : null
     }];
   });
 }
@@ -293,6 +300,46 @@ function details(point) {
     else content.append(value);
     data.append(element('span', 'k', label), content);
   };
+  if (isSourceReviewed(point)) {
+    const record = point.reviewRecord;
+    const labels = window.PulangDirectory.materialLabels;
+    row('Address', record.address);
+    row('Accepts', record.acceptance.map((rule) => labels[rule.material]).join(', '));
+    const conditions = element('details');
+    conditions.append(element('summary', '', 'Check item conditions'));
+    for (const rule of record.acceptance) conditions.append(element('p', '', `${labels[rule.material]}: ${rule.condition}`));
+    if (record.exclusions.length) conditions.append(element('p', '', `Not accepted: ${[...new Set(record.exclusions.map((rule) => rule.reason))].join(' ')}`));
+    row('Items', conditions);
+    row('Collection', record.hours.display + (record.hours.note ? ` — ${record.hours.note}` : ''));
+    const contacts = document.createDocumentFragment();
+    for (const [index, contact] of record.contacts.entries()) {
+      if (index) contacts.append(document.createTextNode(' · '));
+      const link = element('a', 'detail-link', contact.label);
+      link.href = `tel:${contact.value}`;
+      contacts.append(link);
+    }
+    row('Contact', contacts);
+    row('Visit', record.access.instructions);
+    const sourceLinks = document.createDocumentFragment();
+    for (const [index, id] of [...new Set(Object.values(record.evidence).map((entry) => entry.sourceId).concat(record.acceptance.flatMap((rule) => [rule.sourceId, rule.conditionSourceId, rule.supplementalSourceId]).filter(Boolean)))].entries()) {
+      const source = directorySources[id];
+      if (index) sourceLinks.append(document.createTextNode(' · '));
+      const link = element('a', 'detail-link', id === 'mampan' ? 'MAMPAN record' : id === 'faq' ? 'Preparation guide' : id === 'device-privacy' ? 'Device data guide' : source.publisher === 'Riiicycle' ? 'Operator details' : 'Acceptance rules');
+      link.href = source.url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      sourceLinks.append(link);
+    }
+    row('Sources', sourceLinks);
+    row('Checked', `${record.reviewedAt} · published sources; no site visit`);
+    const directions = element('a', 'detail-link', 'Get directions');
+    directions.href = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${point.lat},${point.lng}`)}`;
+    directions.target = '_blank';
+    directions.rel = 'noopener noreferrer';
+    row('Directions', directions);
+    fragment.append(data);
+    return fragment;
+  }
   row('Address', point.address || 'Not listed');
   if (point.historical) {
     row('Source date', `${point.sourceYear || 'Unknown'} · pages ${point.sourcePages.join(', ')}`);
@@ -437,7 +484,8 @@ function renderPoints() {
     label.append(element('span', 'resultname', point.name), element('span', 'sub',
       point.status === 'demo' ? 'Fictional sample · not a recycling centre'
         : point.historical ? `2005 listing · ${hasMapLocation(point) ? 'building pin only' : 'not mapped'}${point.region !== 'Penang' ? ' · outside Penang' : ''}`
-          : (hasMapLocation(point) ? 'Source-listed · unverified' : 'No coordinates · not mapped')));
+          : isSourceReviewed(point) ? (point.hours === 'All day' ? 'Collection point · call to confirm timing' : point.hours)
+            : (hasMapLocation(point) ? 'Source-listed · unverified' : 'No coordinates · not mapped')));
     const arrow = element('span', 'arrow', '›');
     arrow.setAttribute('aria-hidden', 'true');
     button.append(element('span', 'mark'), label, arrow);
@@ -481,9 +529,6 @@ function openTab(tab) {
   if (isMap) requestAnimationFrame(resizeMap);
 }
 
-// Set this only when a real submission form has been configured.
-const suggestionFormUrl = null;
-
 function renderSection(tab) {
   const content = document.querySelector('.placeholder-inner');
   content.classList.remove('game-page');
@@ -501,50 +546,22 @@ function renderSection(tab) {
     });
   } else {
     content.append(element('h2', '', 'Suggest a place'));
-    paragraph('Suggest a collection point or report a correction. This form saves a draft on this device only.');
-    const form = element('form', 'suggestion-form');
-    const name = element('input');
-    name.id = 'suggest-name';
-    name.maxLength = 200;
-    const message = element('textarea');
-    message.id = 'suggest-message';
-    message.maxLength = 3000;
-    message.required = true;
-    for (const [text, input] of [['Place name (optional)', name], ['Suggestion or correction', message]]) {
-      const label = element('label', '', text);
-      label.htmlFor = input.id;
-      form.append(label, input);
-    }
-    const status = element('p', 'draft-status');
-    status.setAttribute('role', 'status');
-    try {
-      const draft = JSON.parse(localStorage.getItem('repenang-suggestion') || 'null');
-      if (draft && typeof draft.name === 'string' && typeof draft.message === 'string') {
-        name.value = draft.name.slice(0, 200);
-        message.value = draft.message.slice(0, 3000);
-        status.textContent = 'Draft restored from this device — not submitted.';
-      }
-    } catch { status.textContent = 'Local storage is unavailable or the saved draft could not be read.'; }
-    const save = element('button', '', 'Save draft on this device');
-    save.type = 'submit';
-    form.append(save, status);
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (!message.value.trim()) { status.textContent = 'Enter a suggestion first.'; return; }
-      try {
-        localStorage.setItem('repenang-suggestion', JSON.stringify({name: name.value.trim(), message: message.value.trim()}));
-        status.textContent = 'Saved on this device only — not submitted.';
-      } catch { status.textContent = 'Could not save on this device. Copy your text before leaving this page.'; }
-    });
-    content.append(form);
-    const endpoint = safeUrl(suggestionFormUrl);
-    if (endpoint) {
-      const link = element('a', 'detail-link', 'Open submission form');
-      link.href = endpoint;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      content.append(link);
-    } else paragraph('Online submission is not configured.');
+    paragraph('New collection points can be submitted to Penang Green Council’s MAMPAN directory. PGC manages the registration form.');
+    const registration = element('a', 'detail-link', 'Open MAMPAN registration');
+    registration.href = 'https://forms.gle/T7zUfkomaaQ7uoPu5';
+    registration.target = '_blank';
+    registration.rel = 'noopener noreferrer';
+    content.append(registration);
+    content.append(element('h3', '', 'Correct an existing place'));
+    paragraph('For access, accepted items or session changes, use the collection contact in the map details. For a MAMPAN listing correction, contact Penang Green Council.');
+    const contact = element('a', 'detail-link', 'Contact the MAMPAN team');
+    contact.href = 'mailto:eeopgc2020@gmail.com';
+    content.append(contact);
+    paragraph('These channels go directly to the source publisher. Pulang reviews source changes before updating its own directory.');
+    const source = element('a', 'detail-link', 'PGC directory and submission information');
+    source.href = 'https://www.pgc.com.my/en/mampan-directory/';
+    source.target = '_blank'; source.rel = 'noopener noreferrer';
+    content.append(source);
   }
 }
 
@@ -635,28 +652,31 @@ async function initialize() {
   }
 
   try {
-    const response = await fetch('data/penang-recycling-research.json');
+    const response = await fetch('data/directory.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const research = await response.json();
-    points = prepareRecords(research.locations.filter((record) =>
-      ['source_listed_not_currently_verified', 'not_independently_confirmed'].includes(record.status)));
+    const directory = await response.json();
+    if (!window.PulangDirectory) throw new Error('Directory validation could not load.');
+    const issues = window.PulangDirectory.validateDirectory(directory);
+    if (issues.length) throw new Error(`Directory review required: ${issues.join('; ')}`);
+    directorySources = Object.fromEntries(directory.sources.map((source) => [source.id, source]));
+    points = prepareRecords(directory.locations);
     populateMaterials();
     const hasDemo = points.some((point) => point.status === 'demo');
     const hasHistorical = points.some((point) => point.historical);
     $('mapmode').textContent = hasDemo ? 'Sample locations — not verified'
-      : hasHistorical ? '2005 directory · recycling not reconfirmed' : 'Source-listed locations · not verified';
+      : hasHistorical ? '2005 directory · recycling not reconfirmed' : `Sources checked · ${directory.reviewedAt}`;
     if (map) {
       for (const point of points) {
         if (!hasMapLocation(point)) continue;
         const description = point.status === 'demo' ? `${point.name} — fictional sample`
-          : point.historical ? `${point.name} — historical listing; building location only` : `${point.name} — source-listed, not verified`;
+          : point.historical ? `${point.name} — historical listing; building location only` : `${point.name} — published collection details`;
         const marker = L.marker([point.lat, point.lng], {
           title: description,
           alt: description,
           icon: L.divIcon({ className: 'demo-marker', html: '<span></span>', iconSize: [28, 34], iconAnchor: [14, 30] })
         });
         marker.bindTooltip(element('span', '', point.status === 'demo' ? `${point.name} · not verified`
-          : point.historical ? `${point.name} · recycling not reconfirmed` : `${point.name} · unverified`));
+          : point.historical ? `${point.name} · recycling not reconfirmed` : `${point.name} · ${point.hours}`));
         marker.on('click', () => {
           locationRequest += 1;
           nearestStatus();
@@ -672,7 +692,12 @@ async function initialize() {
   } catch (error) {
     dataState = 'error';
     $('resultcount').textContent = 'Directory unavailable';
-    $('results').replaceChildren(element('p', 'noresult', 'Could not load locations. Serve this folder over HTTP, check data/penang-recycling-research.json and reload.'));
+    $('results').replaceChildren(element('p', 'noresult', 'Collection information is temporarily unavailable. Please use the official MAMPAN directory or Riiicycle station list.'));
+    for (const [label, url] of [['MAMPAN directory', 'https://pgc.com.my/mampan_directory/zero_waste_network_list.php'], ['Riiicycle stations', 'https://www.riiicycle.com/recycling-stations']]) {
+      const link = element('a', 'detail-link', label);
+      link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      const paragraph = element('p', 'noresult'); paragraph.append(link); $('results').append(paragraph);
+    }
     console.error('RePenang directory:', error);
   }
 }

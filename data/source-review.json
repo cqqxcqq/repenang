@@ -1,0 +1,2533 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15",
+  "policy": "Only complete, source-reviewed records are published. The original research dataset remains unchanged; omission is not evidence of closure.",
+  "sources": [
+    {
+      "id": "mampan",
+      "publisher": "Penang Green Council",
+      "title": "MAMPAN recycling directory",
+      "url": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "e4ebfe7cab642e035263619c12eb0c5ea829f164aaf64a42951750a06dd5ead2"
+    },
+    {
+      "id": "riiicycle",
+      "publisher": "Riiicycle",
+      "title": "Operator station addresses, contacts, map links and weekly sessions",
+      "url": "https://www.riiicycle.com/recycling-stations",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "3ec84e59a1257b405609259827b23077e23d7597fe79c897da23d806b9de9cc7"
+    },
+    {
+      "id": "ecochamps",
+      "publisher": "Penang Green Council",
+      "title": "EcoChamps 2026 named stations and acceptance restrictions",
+      "url": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "936a0a783dc2d1fbdba5f0af8406d38238c81d52b04cdd90615f8d33bbf9ea34",
+      "guidanceSha256": "8196360936ceeae2f6621393c5b5010523e9e00a0eecdc1f903530b55877136e"
+    },
+    {
+      "id": "faq",
+      "publisher": "Penang Green Council",
+      "title": "Local sorting and specialist collection guidance (directory section dated July 2024)",
+      "url": "https://www.pgc.com.my/en/faq/",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "c57bccf84372cd5f0b16cd83996ea029fb2417dec34174d751edb8e7f69f3f1a",
+      "guidanceSha256": "5aa55d0cb16076fa5b65d9af726b14a088b0842fb78d48f88aeda4752606908b"
+    },
+    {
+      "id": "rnc",
+      "publisher": "RECYCLEnCASH",
+      "title": "Deployed device inventory; no site-level schedule",
+      "url": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "3eb0e85263fa90ab5125de59a01d5750838f0c669f35a3d9c84f3304313e5732"
+    },
+    {
+      "id": "rnc-contact",
+      "publisher": "RECYCLEnCASH",
+      "title": "Operator head office contact, not a station contact",
+      "url": "https://info.recyclencash.com.my/index.php/contact-us/",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "40e86d9bffd1489c7e31ee3559bac70f70771189b2f649f66812cf08e2822bd5"
+    },
+    {
+      "id": "tzuchi",
+      "publisher": "Tzu Chi Malaysia",
+      "title": "Operator collection sessions; Lumba Kuda conflicts with MAMPAN hours",
+      "url": "https://tzuchi.my/en/join-us/recycling-centres/locationtable",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "addef85400bf1f04cf11ce3f1037743c7262a3fd75d3adbf4287277a5e2323dd"
+    },
+    {
+      "id": "device-privacy",
+      "publisher": "Apple Support",
+      "title": "Preparing a device before transfer; device-specific instructions",
+      "url": "https://support.apple.com/en-my/109511",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "0a71b10fcb275bab52fa3311bf511ccde1bc0adfa0e0b8e21b952d29dcbf2075"
+    },
+    {
+      "id": "mampan-info",
+      "publisher": "Penang Green Council",
+      "title": "MAMPAN public registration and contact channels",
+      "url": "https://www.pgc.com.my/en/mampan-directory/",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "e80baa36bcd546557f5fa4c7bdd1cdb2c3998ca12e998383c970953a79db586c"
+    }
+  ],
+  "observations": [
+    {
+      "sourceId": "mampan",
+      "recordId": "350",
+      "locationId": "mbpp-candidate-1",
+      "expected": {
+        "name": "Hub 3R @ Taman Serina",
+        "address": "32, Hilir Sungai Pinang, George Town",
+        "coordinates": "5.402617, 100.326987",
+        "phone": "04-2592020",
+        "hours": "All day : 8am - 6pm",
+        "materials": [
+          {
+            "category": "E-Waste",
+            "detail": "Batteries and light tube"
+          }
+        ],
+        "remarks": "Located at Astaka Taman Serena",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "355",
+      "locationId": "mbpp-candidate-6",
+      "expected": {
+        "name": "Hub 3R @ Lebuh Cecil",
+        "address": "24, Lebuh Cecil, George Town",
+        "coordinates": "5.407759, 100.328857",
+        "phone": "04-2592020",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, Paper, Metal"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "357",
+      "locationId": "mbpp-candidate-8",
+      "expected": {
+        "name": "Hub 3R @ Jalan Gangsa",
+        "address": "Jalan Gangsa, Island Park",
+        "coordinates": "5.392306, 100.297779",
+        "phone": "04-2592020",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, Paper, Metal"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothes"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "358",
+      "locationId": "mbpp-candidate-9",
+      "expected": {
+        "name": "Hub 3R @ Penang Hill",
+        "address": "Lower Station, Penang Hill",
+        "coordinates": "5.407979, 100.27762",
+        "phone": "04-2592020",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, Paper, Metal"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "359",
+      "locationId": "mbpp-candidate-11",
+      "expected": {
+        "name": "Hub 3R @ Giant Bayan Baru",
+        "address": "78, Lintang Bayan, Bayan Baru",
+        "coordinates": "5.321319, 100.28505",
+        "phone": "04-2592020",
+        "hours": "All day : 10am - 10pm",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, Paper, Tin"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "360",
+      "locationId": "mbpp-candidate-12",
+      "expected": {
+        "name": "PPR Jalan Sungai",
+        "address": "Jalan Sungai, George Town",
+        "coordinates": "5.407453, 100.324509",
+        "phone": "04-2592020",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Paper, Plastic"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "300",
+      "locationId": "mampan-candidate-2",
+      "expected": {
+        "name": "Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)",
+        "address": "Dewan Orang Ramai Panchur Mutiara, Jalan Belatuk, Taman Bukit Panchor, 14300 Nibong Tebal.",
+        "coordinates": "5.173707, 100.486703",
+        "phone": "012-7305615",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium), cans, drink packets"
+          },
+          {
+            "category": "Food Waste",
+            "detail": "Used cooking oil"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "329",
+      "locationId": "mampan-candidate-3",
+      "expected": {
+        "name": "Pusat Kitar Semula Kampung Permatang Pasir",
+        "address": "Permatang Pasir, Permatang Pauh",
+        "coordinates": "5.419719, 100.436832",
+        "phone": "019-4770606",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, metals (aluminium)"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "365",
+      "locationId": "mampan-candidate-5",
+      "expected": {
+        "name": "Pusat Kitar Semula Mak Mandin",
+        "address": "Tingkat Mak Mandin 1, Butterworth",
+        "coordinates": "5.42598, 100.38823",
+        "phone": "012-4561323",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, Paper, Glass, Aluminium"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothes"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "366",
+      "locationId": "mampan-candidate-6",
+      "expected": {
+        "name": "Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor",
+        "address": "Jalan Pengkalan Batu, 13300 Tasek Gelugor",
+        "coordinates": "5.47219, 100.49341",
+        "phone": "04-5497661",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, fluorescent lights, aluminium, cans, drink packets"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "299",
+      "locationId": "mampan-candidate-7",
+      "expected": {
+        "name": "Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)",
+        "address": "Dewan Serbaguna JKKK Jawi, Lorong 2, Perkampungan Jawi, 14200 Sungai Jawi",
+        "coordinates": "5.213351, 100.495337",
+        "phone": "012-4571850",
+        "hours": "Everyday: 10am-11pm",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, metals (iron, aluminium, copper), cans"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Old clothes"
+          },
+          {
+            "category": "Food Waste",
+            "detail": "Used cooking oil"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "323",
+      "locationId": "mampan-candidate-8",
+      "expected": {
+        "name": "Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)",
+        "address": "Kampung Padang Benggali, 13100 Butterworth Penang",
+        "coordinates": "5.497505, 100.378827",
+        "phone": "011-61452803",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Paper, Plastic, Cans"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "322",
+      "locationId": "mampan-candidate-9",
+      "expected": {
+        "name": "Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)",
+        "address": "Lorong Nurul Huda, Kampung Baru, 13100 Penaga, Pulau Pinang",
+        "coordinates": "5.531042, 100.378677",
+        "phone": "011-61452803",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Paper, plastic, cans"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "324",
+      "locationId": "mampan-candidate-11",
+      "expected": {
+        "name": "Pusat Kitar Semula Taman Cengal",
+        "address": "Lorong Cengal 2, 13440 Butterworth",
+        "coordinates": "5.43791, 100.39647",
+        "phone": "016-4943589",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "334",
+      "locationId": "mampan-candidate-12",
+      "expected": {
+        "name": "Pusat Kitar Semula Taman Halaman Indah",
+        "address": "Jalan Halaman Indah, 14200 Sungai Jawi",
+        "coordinates": "5.19478, 100.51077",
+        "phone": "013-4862495",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "326",
+      "locationId": "mampan-candidate-13",
+      "expected": {
+        "name": "Pusat Kitar Semula Taman Kerapu",
+        "address": "29, Lintang Kerapu, Taman Kerapu, 13400 Butterworth",
+        "coordinates": "5.40857, 100.39799",
+        "phone": "016-4122433",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "318",
+      "locationId": "mampan-candidate-14",
+      "expected": {
+        "name": "Pusat Kitar Semula Taman Mutiara",
+        "address": "Persiaran Janggus, Taman Mutiara, 14000 Bukit Mertajam.",
+        "coordinates": "5.359874, 100.446468",
+        "phone": "019-4451522",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "327",
+      "locationId": "mampan-candidate-15",
+      "expected": {
+        "name": "Pusat Kitar Semula Taman Segar Indah",
+        "address": "8, Lorong Segar Indah 8, Taman Bayu, 13400 Butterworth",
+        "coordinates": "5.42522, 100.39006",
+        "phone": "012-4561323",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "296",
+      "locationId": "mampan-candidate-16",
+      "expected": {
+        "name": "Pusat Kitar Semula Tambi Kecil",
+        "address": "Jalan Bunga Raya 2, Taman Bunga Raya, 13000 Butterworth",
+        "coordinates": "5.436186, 100.384440",
+        "phone": "019-5753328",
+        "hours": "Everyday: 10am-10pm",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, fluorescent lights, metals (iron)"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Old clothes"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "302",
+      "locationId": "mampan-candidate-18",
+      "expected": {
+        "name": "Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah",
+        "address": "Lorong Tambun Indah 3, Taman Tambun Indah, 14100 Simpang Ampat",
+        "coordinates": "5.279153, 100.463906",
+        "phone": "019-4222258",
+        "hours": "Tue & Thurs: 9am-1pm",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Old clothes"
+          },
+          {
+            "category": "Food Waste",
+            "detail": "Used cooking oil"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "69",
+      "locationId": "mampan-candidate-19",
+      "expected": {
+        "name": "Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)",
+        "address": "MAJLIS BANDARAYA SEBERANG PERAI Menara Bandaraya, Jalan Perda Utama, Bandar Perda",
+        "coordinates": "5.370670764442157, 100.43261101792159",
+        "phone": "04-5497639/654",
+        "hours": "Mon - Fri: 7:30am-5:30pm",
+        "materials": [
+          {
+            "category": "E-Waste",
+            "detail": "Used phone battery, light tubes, batteries"
+          }
+        ],
+        "remarks": "Public drop off only. ** For safety purpose, please wrap items properly before dispose.",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "107",
+      "locationId": "mampan-candidate-21",
+      "expected": {
+        "name": "Pusat Pengumpulan Gereja St. Ann",
+        "address": "Gereja St.Ann",
+        "coordinates": "5.3525733499662715, 100.47728512592977",
+        "phone": "04-538 4060",
+        "hours": "9.30am-5.30pm (except Sat & Mon)",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Papers, Cartons, Plastics, Aluminium Cans, etc."
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Old Clothes (wearable & clean)"
+          },
+          {
+            "category": "E-Waste",
+            "detail": "General Ewaste"
+          }
+        ],
+        "remarks": "Area: Bukit Mertajam",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "303",
+      "locationId": "mampan-candidate-23",
+      "expected": {
+        "name": "Pusat Pengumpulan Surau Taman Jawi Jaya",
+        "address": "Jalan Jawi Jaya, Taman Jawi Jaya, 14200 Sungai Jawi, Pulau Pinang",
+        "coordinates": "5.194716, 100.496703",
+        "phone": "019-4774131",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, metals (iron, aluminium, copper), cans, drink packets"
+          },
+          {
+            "category": "Food Waste",
+            "detail": "Used cooking oil"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "99",
+      "locationId": "mampan-candidate-24",
+      "expected": {
+        "name": "Pusat Sumber Alam Sekitar Bandar Tasek Mutiara",
+        "address": "Pasar Awam Bandar Tasek Mutiara",
+        "coordinates": "5.28348, 100.48121",
+        "phone": "019-411 5347",
+        "hours": "24 Hours",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "All common recyclables except for glass"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothes (in wearable conditions)"
+          },
+          {
+            "category": "E-Waste",
+            "detail": "All electronics items (refrigerator, TV, computer, batteries etc.)"
+          }
+        ],
+        "remarks": "* Drop off allowed, please put it in the container provided accordingly. * Please segregate before reycle * Not collecting glass and furniture",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "293",
+      "locationId": "mampan-candidate-25",
+      "expected": {
+        "name": "Pusat Sumber Alam Sekitar Taman Bagan Lalang",
+        "address": "Taman Bagan Lalang, 13400 Butterworth, Pulau Pinang",
+        "coordinates": "5.434263, 100.401083",
+        "phone": "019-4754248",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Old clothes"
+          },
+          {
+            "category": "Food Waste",
+            "detail": "Used cooking oil"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "307",
+      "locationId": "mampan-candidate-26",
+      "expected": {
+        "name": "Pusat Sumber Alam Sekitar Taman Makok",
+        "address": "Lorong Janggus 2, 14000 Bukit Mertajam",
+        "coordinates": "5.362988, 100.447136",
+        "phone": "012-4336371",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Old clothes"
+          },
+          {
+            "category": "Food Waste",
+            "detail": "Used cooking oil"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "298",
+      "locationId": "mampan-candidate-27",
+      "expected": {
+        "name": "Pusat Sumber Alam Sekitar Taman Puteri Gunung",
+        "address": "Lorong Puteri Gunung 40, Taman Puteri Gunung, 14120 Simpang Ampat, Pulau Pinang",
+        "coordinates": "5.283811, 100.501830",
+        "phone": "019-4115347",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets"
+          },
+          {
+            "category": "Reusable Materials",
+            "detail": "Old clothes"
+          },
+          {
+            "category": "Food Waste",
+            "detail": "Used cooking oil"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "371",
+      "locationId": "mampan-pink-bin-1",
+      "expected": {
+        "name": "MBPP Pink Bin @Bangunan IOC Jalan Timah",
+        "address": "Jalan Timah",
+        "coordinates": "5.41075, 100.32566",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "388",
+      "locationId": "mampan-pink-bin-2",
+      "expected": {
+        "name": "MBPP Pink Bin @Dewan MPKK Jalan Tengah",
+        "address": "Jalan Tengah Selatan, Pangsapuri Jalan Tengah",
+        "coordinates": "5.3196155, 100.2858482",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "381",
+      "locationId": "mampan-pink-bin-3",
+      "expected": {
+        "name": "MBPP Pink Bin @Dewan MPKK Ladang Lada",
+        "address": "Fettes W Ave",
+        "coordinates": "5.45617, 100.30089",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "383",
+      "locationId": "mampan-pink-bin-4",
+      "expected": {
+        "name": "MBPP Pink Bin @Kebun Komuniti Kampung Baru",
+        "address": "Jalan Padang Tembak",
+        "coordinates": "5.40794, 100.29349",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "369",
+      "locationId": "mampan-pink-bin-5",
+      "expected": {
+        "name": "MBPP Pink Bin @Pusat Gelandangan Jalan Magazine",
+        "address": "19, Jalan C.Y.Choy",
+        "coordinates": "5.41148, 100.33361",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "380",
+      "locationId": "mampan-pink-bin-6",
+      "expected": {
+        "name": "MBPP Pink Bin @Pusat Kitar Semula Mount Erskine",
+        "address": "Tingkat Mount Erskine 1, Taman Teguh",
+        "coordinates": "5.44060, 100.30352",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "378",
+      "locationId": "mampan-pink-bin-7",
+      "expected": {
+        "name": "MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP",
+        "address": "Jalan Pasar, Pulau Tikus",
+        "coordinates": "5.42996, 100.31220",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "368",
+      "locationId": "mampan-pink-bin-8",
+      "expected": {
+        "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP",
+        "address": "Pesara Claimant",
+        "coordinates": "5.41685, 100.33450",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "370",
+      "locationId": "mampan-pink-bin-9",
+      "expected": {
+        "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP",
+        "address": "Lebuh Presgrave",
+        "coordinates": "5.41131, 100.33000",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "374",
+      "locationId": "mampan-pink-bin-10",
+      "expected": {
+        "name": "MBPP Pink Bin @Rumah Awam Jalan Irrawadi",
+        "address": "Jalan Irrawadi",
+        "coordinates": "5.42450, 100.32314",
+        "phone": "012-3493227",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Reusable Materials",
+            "detail": "Clothings, jewellery, toys and more"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "mampan",
+      "recordId": "354",
+      "locationId": "mbpp-candidate-18",
+      "expected": {
+        "name": "Hub 3R @ Batu Lancang",
+        "address": "25, Lintang Batu Lancang, Jelutong",
+        "coordinates": "5.390039, 100.30658",
+        "phone": "04-2592020",
+        "hours": "All day",
+        "materials": [
+          {
+            "category": "Recyclable Materials",
+            "detail": "Plastic, Paper, Metal"
+          }
+        ],
+        "remarks": "",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "sourceId": "riiicycle",
+      "recordId": "Straits Quay Recycling Station",
+      "locationId": "mbpp-candidate-5",
+      "expected": {
+        "name": "Straits Quay Recycling Station",
+        "address": "Jalan Seri Tanjung Pinang, Seri Tanjung Pinang, 10470, Tanjong Tokong, Pulau Pinang, Malaysia",
+        "phone": "+6011-26699168",
+        "maps": [
+          "https://waze.com/ul/hw0zr49tpy",
+          "https://maps.app.goo.gl/ypwV5oaB1MosrAZC9"
+        ],
+        "closed": false,
+        "weekly": [
+          {
+            "day": "Monday",
+            "session": "Closed"
+          },
+          {
+            "day": "Tuesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Wednesday",
+            "session": "17:00 - 20:00"
+          },
+          {
+            "day": "Thursday",
+            "session": "Closed"
+          },
+          {
+            "day": "Friday",
+            "session": "Closed"
+          },
+          {
+            "day": "Saturday",
+            "session": "Closed"
+          },
+          {
+            "day": "Sunday",
+            "session": "17:00 - 20:00"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "riiicycle",
+      "recordId": "New World Park Recycling Station",
+      "locationId": "mbpp-candidate-3",
+      "expected": {
+        "name": "New World Park Recycling Station",
+        "address": "102, Jalan Burma, George Town, 10500, Georgetown, Pulau Pinang, Malaysia",
+        "phone": "+601126699168",
+        "maps": [
+          "https://waze.com/ul/hw0zqffzud",
+          "https://maps.app.goo.gl/uwJU4FWvE6rLeRAi9"
+        ],
+        "closed": false,
+        "weekly": [
+          {
+            "day": "Monday",
+            "session": "Closed"
+          },
+          {
+            "day": "Tuesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Wednesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Thursday",
+            "session": "Closed"
+          },
+          {
+            "day": "Friday",
+            "session": "Closed"
+          },
+          {
+            "day": "Saturday",
+            "session": "Closed"
+          },
+          {
+            "day": "Sunday",
+            "session": "13:00 - 16:00"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "riiicycle",
+      "recordId": "Setia Spice Recycling Station",
+      "locationId": "mbpp-candidate-4",
+      "expected": {
+        "name": "Setia Spice Recycling Station",
+        "address": "108C, Jalan Tun Dr Awang, Bayan Baru, 11900, Bayan Lepas, Pulau Pinang, Malaysia",
+        "phone": "+601126699168",
+        "maps": [
+          "https://waze.com/ul/hw0zq3fm9m",
+          "https://maps.app.goo.gl/bPxRiJvAhXYVm6XD8"
+        ],
+        "closed": false,
+        "weekly": [
+          {
+            "day": "Monday",
+            "session": "Closed"
+          },
+          {
+            "day": "Tuesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Wednesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Thursday",
+            "session": "14:30 - 17:30"
+          },
+          {
+            "day": "Friday",
+            "session": "Closed"
+          },
+          {
+            "day": "Saturday",
+            "session": "09:30 - 12:30"
+          },
+          {
+            "day": "Sunday",
+            "session": "Closed"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "riiicycle",
+      "recordId": "Karpal Singh Drive Recycling Station",
+      "locationId": "riiicycle-candidate-4",
+      "expected": {
+        "name": "Karpal Singh Drive Recycling Station",
+        "address": "Maritime Suite, Karpal Singh Dr, 11600, George Town, Pulau Pinang, Malaysia",
+        "phone": "+601126699168",
+        "maps": [
+          "https://waze.com/ul/hw0zqen9qf",
+          "https://goo.gl/maps/mEZ9yxjMYC3SemiQ9"
+        ],
+        "closed": false,
+        "weekly": [
+          {
+            "day": "Monday",
+            "session": "Closed"
+          },
+          {
+            "day": "Tuesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Wednesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Thursday",
+            "session": "Closed"
+          },
+          {
+            "day": "Friday",
+            "session": "Closed"
+          },
+          {
+            "day": "Saturday",
+            "session": "16:00 - 19:00"
+          },
+          {
+            "day": "Sunday",
+            "session": "Closed"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "riiicycle",
+      "recordId": "Auto City Recycling Station",
+      "locationId": "riiicycle-candidate-5",
+      "expected": {
+        "name": "Auto City Recycling Station",
+        "address": "C24, Auto City Fashion Market, Lorong Perusahaan Maju 8, 13600, Bukit Tengah, Pulau Pinang, Malaysia",
+        "phone": "+601126699168",
+        "maps": [
+          "https://waze.com/ul/hw0zqm78mx",
+          "https://goo.gl/maps/PwoGhBeCsFaafA8P8"
+        ],
+        "closed": false,
+        "weekly": [
+          {
+            "day": "Monday",
+            "session": "Closed"
+          },
+          {
+            "day": "Tuesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Wednesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Thursday",
+            "session": "Closed"
+          },
+          {
+            "day": "Friday",
+            "session": "Closed"
+          },
+          {
+            "day": "Saturday",
+            "session": "Closed"
+          },
+          {
+            "day": "Sunday",
+            "session": "09:00 - 12:00"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "riiicycle",
+      "recordId": "MPKK Tanjung Bungah Recycling Station",
+      "locationId": "riiicycle-candidate-6",
+      "expected": {
+        "name": "MPKK Tanjung Bungah Recycling Station",
+        "address": "Tanjung Bungah night market (center court) , Jalan Sungai Kelian, Tanjung Tokong, 11200, Tanjung Bungah, Pulau Pinang, Malaysia",
+        "phone": "+601126699168",
+        "maps": [
+          "https://waze.com/ul/hw0zr44c0k",
+          "https://maps.app.goo.gl/88hUwS9zSmfPPYcDA"
+        ],
+        "closed": false,
+        "weekly": [
+          {
+            "day": "Monday",
+            "session": "Closed"
+          },
+          {
+            "day": "Tuesday",
+            "session": "17:30 - 19:00"
+          },
+          {
+            "day": "Wednesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Thursday",
+            "session": "Closed"
+          },
+          {
+            "day": "Friday",
+            "session": "Closed"
+          },
+          {
+            "day": "Saturday",
+            "session": "Closed"
+          },
+          {
+            "day": "Sunday",
+            "session": "Closed"
+          }
+        ]
+      }
+    },
+    {
+      "sourceId": "riiicycle",
+      "recordId": "Midlands Recycling Station",
+      "locationId": "riiicycle-candidate-9",
+      "expected": {
+        "name": "Midlands Recycling Station",
+        "address": "488, JALAN BURMA, 10350 GEORGETOWN, PULAU PINANG, 10350, GEORGETOWN, Pulau Pinang, Malaysia",
+        "phone": "+6011 2669 9168",
+        "maps": [
+          "https://ul.waze.com/ul?place=ChIJuzizMczDSjARlIY_2HtGJwg&ll=5.43308200%2C100.30637700&navigate=yes",
+          "https://maps.app.goo.gl/r2R29rbcn25HBV5v7"
+        ],
+        "closed": false,
+        "weekly": [
+          {
+            "day": "Monday",
+            "session": "Closed"
+          },
+          {
+            "day": "Tuesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Wednesday",
+            "session": "Closed"
+          },
+          {
+            "day": "Thursday",
+            "session": "Closed"
+          },
+          {
+            "day": "Friday",
+            "session": "15:00 - 17:00"
+          },
+          {
+            "day": "Saturday",
+            "session": "15:00 - 17:00"
+          },
+          {
+            "day": "Sunday",
+            "session": "Closed"
+          }
+        ]
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "mbpp-candidate-1",
+      "name": "Hub 3R @ Taman Serina",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "350"
+    },
+    {
+      "id": "mbpp-candidate-2",
+      "name": "Hub 3R @ Midlands Park",
+      "decision": "archive",
+      "reasons": [
+        "No explicit material description"
+      ],
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "351"
+    },
+    {
+      "id": "mbpp-candidate-6",
+      "name": "Hub 3R @ Lebuh Cecil",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "355"
+    },
+    {
+      "id": "mbpp-candidate-7",
+      "name": "Hub 3R @ Kampung Baru, Air Itam",
+      "decision": "archive",
+      "reasons": [
+        "No explicit material description"
+      ],
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "356"
+    },
+    {
+      "id": "mbpp-candidate-8",
+      "name": "Hub 3R @ Jalan Gangsa",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "357"
+    },
+    {
+      "id": "mbpp-candidate-9",
+      "name": "Hub 3R @ Penang Hill",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "358"
+    },
+    {
+      "id": "mbpp-candidate-11",
+      "name": "Hub 3R @ Giant Bayan Baru",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "359"
+    },
+    {
+      "id": "mbpp-candidate-12",
+      "name": "PPR Jalan Sungai",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "360"
+    },
+    {
+      "id": "mampan-candidate-1",
+      "name": "Pusat Kitar Semula Balai Raya Bukit Tambun",
+      "decision": "archive",
+      "reasons": [
+        "No published collection contact"
+      ],
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "333"
+    },
+    {
+      "id": "mampan-candidate-2",
+      "name": "Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "300"
+    },
+    {
+      "id": "mampan-candidate-3",
+      "name": "Pusat Kitar Semula Kampung Permatang Pasir",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "329"
+    },
+    {
+      "id": "mampan-candidate-4",
+      "name": "Pusat Kitar Semula Kampung Sekolah, Juru",
+      "decision": "archive",
+      "reasons": [
+        "No published collection contact"
+      ],
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "331"
+    },
+    {
+      "id": "mampan-candidate-5",
+      "name": "Pusat Kitar Semula Mak Mandin",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "365"
+    },
+    {
+      "id": "mampan-candidate-6",
+      "name": "Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "366"
+    },
+    {
+      "id": "mampan-candidate-7",
+      "name": "Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "299"
+    },
+    {
+      "id": "mampan-candidate-8",
+      "name": "Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "323"
+    },
+    {
+      "id": "mampan-candidate-9",
+      "name": "Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "322"
+    },
+    {
+      "id": "mampan-candidate-10",
+      "name": "Pusat Kitar Semula Surau Taman Pauh Jaya",
+      "decision": "archive",
+      "reasons": [
+        "No published collection schedule"
+      ],
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "332"
+    },
+    {
+      "id": "mampan-candidate-11",
+      "name": "Pusat Kitar Semula Taman Cengal",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "324"
+    },
+    {
+      "id": "mampan-candidate-12",
+      "name": "Pusat Kitar Semula Taman Halaman Indah",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "334"
+    },
+    {
+      "id": "mampan-candidate-13",
+      "name": "Pusat Kitar Semula Taman Kerapu",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "326"
+    },
+    {
+      "id": "mampan-candidate-14",
+      "name": "Pusat Kitar Semula Taman Mutiara",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "318"
+    },
+    {
+      "id": "mampan-candidate-15",
+      "name": "Pusat Kitar Semula Taman Segar Indah",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "327"
+    },
+    {
+      "id": "mampan-candidate-16",
+      "name": "Pusat Kitar Semula Tambi Kecil",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "296"
+    },
+    {
+      "id": "mampan-candidate-17",
+      "name": "Pusat Kitar Semula Yayasan Humanistik",
+      "decision": "archive",
+      "reasons": [
+        "No explicit material description"
+      ],
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "152"
+    },
+    {
+      "id": "mampan-candidate-18",
+      "name": "Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "302"
+    },
+    {
+      "id": "mampan-candidate-19",
+      "name": "Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "69"
+    },
+    {
+      "id": "mampan-candidate-21",
+      "name": "Pusat Pengumpulan Gereja St. Ann",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "107"
+    },
+    {
+      "id": "mampan-candidate-22",
+      "name": "Pusat Pengumpulan Kitar Semula JKKP Sempilai Jaya",
+      "decision": "archive",
+      "reasons": [
+        "No explicit material description"
+      ],
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "71"
+    },
+    {
+      "id": "mampan-candidate-23",
+      "name": "Pusat Pengumpulan Surau Taman Jawi Jaya",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "303"
+    },
+    {
+      "id": "mampan-candidate-24",
+      "name": "Pusat Sumber Alam Sekitar Bandar Tasek Mutiara",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "99"
+    },
+    {
+      "id": "mampan-candidate-25",
+      "name": "Pusat Sumber Alam Sekitar Taman Bagan Lalang",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "293"
+    },
+    {
+      "id": "mampan-candidate-26",
+      "name": "Pusat Sumber Alam Sekitar Taman Makok",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "307"
+    },
+    {
+      "id": "mampan-candidate-27",
+      "name": "Pusat Sumber Alam Sekitar Taman Puteri Gunung",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "298"
+    },
+    {
+      "id": "mampan-pink-bin-1",
+      "name": "MBPP Pink Bin @Bangunan IOC Jalan Timah",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "371"
+    },
+    {
+      "id": "mampan-pink-bin-2",
+      "name": "MBPP Pink Bin @Dewan MPKK Jalan Tengah",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "388"
+    },
+    {
+      "id": "mampan-pink-bin-3",
+      "name": "MBPP Pink Bin @Dewan MPKK Ladang Lada",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "381"
+    },
+    {
+      "id": "mampan-pink-bin-4",
+      "name": "MBPP Pink Bin @Kebun Komuniti Kampung Baru",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "383"
+    },
+    {
+      "id": "mampan-pink-bin-5",
+      "name": "MBPP Pink Bin @Pusat Gelandangan Jalan Magazine",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "369"
+    },
+    {
+      "id": "mampan-pink-bin-6",
+      "name": "MBPP Pink Bin @Pusat Kitar Semula Mount Erskine",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "380"
+    },
+    {
+      "id": "mampan-pink-bin-7",
+      "name": "MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "378"
+    },
+    {
+      "id": "mampan-pink-bin-8",
+      "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "368"
+    },
+    {
+      "id": "mampan-pink-bin-9",
+      "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "370"
+    },
+    {
+      "id": "mampan-pink-bin-10",
+      "name": "MBPP Pink Bin @Rumah Awam Jalan Irrawadi",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "374"
+    },
+    {
+      "id": "mbpp-candidate-18",
+      "name": "Hub 3R @ Batu Lancang",
+      "decision": "publish",
+      "sourceIds": [
+        "mampan"
+      ],
+      "sourceRecordId": "354"
+    },
+    {
+      "id": "mbpp-candidate-5",
+      "name": "Straits Quay Recycling Station",
+      "decision": "publish",
+      "sourceIds": [
+        "riiicycle",
+        "ecochamps"
+      ],
+      "coordinateChange": {
+        "from": [
+          5.45795,
+          100.313129
+        ],
+        "to": [
+          5.458810329437256,
+          100.31232118606567
+        ]
+      }
+    },
+    {
+      "id": "mbpp-candidate-3",
+      "name": "New World Park Recycling Station",
+      "decision": "publish",
+      "sourceIds": [
+        "riiicycle",
+        "ecochamps"
+      ],
+      "coordinateChange": {
+        "from": [
+          5.42031,
+          100.326872
+        ],
+        "to": [
+          5.421173572540283,
+          100.32691240310669
+        ]
+      }
+    },
+    {
+      "id": "mbpp-candidate-4",
+      "name": "Setia Spice Recycling Station",
+      "decision": "publish",
+      "sourceIds": [
+        "riiicycle",
+        "ecochamps"
+      ],
+      "coordinateChange": {
+        "from": [
+          5.33019,
+          100.280173
+        ],
+        "to": [
+          5.3299784660339355,
+          100.28000593185425
+        ]
+      }
+    },
+    {
+      "id": "riiicycle-candidate-4",
+      "name": "Karpal Singh Drive Recycling Station",
+      "decision": "publish",
+      "sourceIds": [
+        "riiicycle",
+        "ecochamps"
+      ],
+      "coordinateChange": {
+        "from": [
+          5.398215,
+          100.329706
+        ],
+        "to": [
+          5.398213863372803,
+          100.32897233963013
+        ]
+      }
+    },
+    {
+      "id": "riiicycle-candidate-5",
+      "name": "Auto City Recycling Station",
+      "decision": "publish",
+      "sourceIds": [
+        "riiicycle",
+        "ecochamps"
+      ],
+      "coordinateChange": {
+        "from": [
+          5.3375278,
+          100.4266667
+        ],
+        "to": [
+          5.337574481964111,
+          100.4266905784607
+        ]
+      }
+    },
+    {
+      "id": "riiicycle-candidate-6",
+      "name": "MPKK Tanjung Bungah Recycling Station",
+      "decision": "publish",
+      "sourceIds": [
+        "riiicycle",
+        "ecochamps"
+      ],
+      "coordinateChange": {
+        "from": [
+          5.463558870978095,
+          100.28467374433843
+        ],
+        "to": [
+          5.464389324188232,
+          100.2847695350647
+        ]
+      }
+    },
+    {
+      "id": "riiicycle-candidate-9",
+      "name": "Midlands Recycling Station",
+      "decision": "publish",
+      "sourceIds": [
+        "riiicycle",
+        "ecochamps"
+      ],
+      "coordinateChange": {
+        "from": [
+          5.433082,
+          100.306377
+        ],
+        "to": [
+          5.433082,
+          100.306377
+        ]
+      }
+    },
+    {
+      "id": "mbpp-candidate-10",
+      "name": "Hub 3R @ Jalan Tengah",
+      "decision": "archive",
+      "reasons": [
+        "No complete, consistent combination of specific acceptance, collection schedule and collection contact in reviewed sources"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula"
+    },
+    {
+      "id": "mbpp-candidate-13",
+      "name": "Masjid Maqbul, Kampung Selut",
+      "decision": "archive",
+      "reasons": [
+        "No complete, consistent combination of specific acceptance, collection schedule and collection contact in reviewed sources"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula"
+    },
+    {
+      "id": "mbpp-candidate-14",
+      "name": "Dewan Aktiviti Taman Tun Sardon",
+      "decision": "archive",
+      "reasons": [
+        "No complete, consistent combination of specific acceptance, collection schedule and collection contact in reviewed sources"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula"
+    },
+    {
+      "id": "mbpp-candidate-15",
+      "name": "MPKK Mahsuri, Sungai Nibong",
+      "decision": "archive",
+      "reasons": [
+        "No complete, consistent combination of specific acceptance, collection schedule and collection contact in reviewed sources"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula"
+    },
+    {
+      "id": "mbpp-candidate-16",
+      "name": "TNB Sungai Ara",
+      "decision": "archive",
+      "reasons": [
+        "No complete, consistent combination of specific acceptance, collection schedule and collection contact in reviewed sources"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula"
+    },
+    {
+      "id": "mbpp-candidate-17",
+      "name": "SMK Pondok Upeh, Balik Pulau",
+      "decision": "archive",
+      "reasons": [
+        "No complete, consistent combination of specific acceptance, collection schedule and collection contact in reviewed sources"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula"
+    },
+    {
+      "id": "riiicycle-candidate-1",
+      "name": "Straits Quay Recycling Station",
+      "decision": "archive",
+      "reasons": [
+        "Duplicate record; retained in original research archive"
+      ],
+      "originalStatus": "duplicate_of_source_listed_location",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations"
+    },
+    {
+      "id": "riiicycle-candidate-2",
+      "name": "New World Park Recycling Station",
+      "decision": "archive",
+      "reasons": [
+        "Duplicate record; retained in original research archive"
+      ],
+      "originalStatus": "duplicate_of_source_listed_location",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations"
+    },
+    {
+      "id": "riiicycle-candidate-3",
+      "name": "Setia Spice Recycling Station",
+      "decision": "archive",
+      "reasons": [
+        "Duplicate record; retained in original research archive"
+      ],
+      "originalStatus": "duplicate_of_source_listed_location",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations"
+    },
+    {
+      "id": "riiicycle-candidate-7",
+      "name": "MPKK Pantai Molek Recycling Station",
+      "decision": "archive",
+      "reasons": [
+        "Publisher reports closure or relocation"
+      ],
+      "originalStatus": "closed_until_further_notice",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations"
+    },
+    {
+      "id": "riiicycle-candidate-8",
+      "name": "Udini Square Recycling Station",
+      "decision": "archive",
+      "reasons": [
+        "Publisher reports closure or relocation"
+      ],
+      "originalStatus": "closed_and_relocated",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations"
+    },
+    {
+      "id": "riiicycle-candidate-10",
+      "name": "Balik Pulau Recycling Station",
+      "decision": "archive",
+      "reasons": [
+        "Publisher reports closure or relocation"
+      ],
+      "originalStatus": "closed_until_further_notice",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations"
+    },
+    {
+      "id": "rnc-candidate-1",
+      "name": "JPKKP KG DODOL",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-2",
+      "name": "JPKKP TAMAN SERENA",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-3",
+      "name": "JPKKP KG DESA PINANG 1",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-4",
+      "name": "JPKKP TAMAN SAMAK",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-5",
+      "name": "JPKKP TAMAN SRI PINANG",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-6",
+      "name": "JPKKP KG SEBERANG PAYA",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-7",
+      "name": "JPKKP KG PERSIARAN STADIUM",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-8",
+      "name": "JPKKP KG SELUT",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-9",
+      "name": "JPKKP KG JALAN PATANI",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-10",
+      "name": "JPKKP KG JELUTONG",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-11",
+      "name": "JPKKP TAMAN PONDOK UPEH",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-12",
+      "name": "JPKKP TAMAN SRI INDAH",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "tzuchi-candidate-1",
+      "name": "Lumba Kuda Recycling Education Centre",
+      "decision": "archive",
+      "reasons": [
+        "Schedule conflict: operator lists Mon/Wed/Fri at 8pm; MAMPAN lists daily 9am–5pm. No closing time in operator entry"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://tzuchi.my/en/join-us/recycling-centres/locationtable"
+    },
+    {
+      "id": "rnc-candidate-13",
+      "name": "JPKKP KG PISANG AWAK",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-14",
+      "name": "BPB PANGSAPURI SERI SERDANG",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-15",
+      "name": "MPKK KG MAKAM",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-16",
+      "name": "JPKKP KG DESA BERTAM INDAH",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-17",
+      "name": "MPKK BUKIT MINYAK MUKIM 13",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-18",
+      "name": "MPKK SUNGAI DURI MK. 5",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-19",
+      "name": "MPKK PADANG LALANG",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-20",
+      "name": "PP BERTAM PERDANA",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-21",
+      "name": "MPKK SUNGAI KECHIL",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-22",
+      "name": "MPKK TASEK MUTIARA UTARA A",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-23",
+      "name": "BPB PANGSAPURI INDAH FASA 1C",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-24",
+      "name": "MPKK BERTAM INDAH",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-25",
+      "name": "MPKK TASEK MUTIARA UTARA B",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-26",
+      "name": "MPKK MENGKUANG TITI",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-27",
+      "name": "MPKK KG BARU SUNGAI KECHIL",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-28",
+      "name": "MPKK KG BARU WELLESLEY",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-29",
+      "name": "MPKK TASEK",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-30",
+      "name": "MPKK KG CHANGKAT DAIN",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-31",
+      "name": "MPKK KG BESAR",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-32",
+      "name": "PP TAMAN BAKAP INDAH SPS",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-33",
+      "name": "JPKKP TAMAN SRI DAMAI",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-34",
+      "name": "JPKKP KG JALAN KURAU",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-35",
+      "name": "JPKKP KG DESA PENAGA",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-36",
+      "name": "JPKKP KG MAQBUL",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-37",
+      "name": "JPKKP KG DESA PINANG",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-38",
+      "name": "JPKKP KG PERMATANG TENGAH",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-39",
+      "name": "JPKKP KG BARU SUNGAI ARA",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-40",
+      "name": "UNIVERSITI SAINS MALAYSIA",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-41",
+      "name": "JPKKP KEBUN LAMA",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-42",
+      "name": "JPKKP KG PAYA KONGSI",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-43",
+      "name": "JPKKP TAMAN SUNGAI ARA",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-44",
+      "name": "JPKKP KG SUNGAI PINANG",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-45",
+      "name": "JPKKP KG BAYAN LEPAS",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-46",
+      "name": "JPKKP KG SAUJANA HEIGHTS",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-47",
+      "name": "JPKKP KG TERANG",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-48",
+      "name": "PP MAYANG PASIR 1",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-candidate-49",
+      "name": "JPKKP KG DESA MAYANG A & B",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-extra-1",
+      "name": "PP MAYANG PASIR 4",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-extra-2",
+      "name": "JPKKP KG BINJAI",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-extra-3",
+      "name": "JPKKP KG PONDOK UPEH",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-extra-4",
+      "name": "BPB SAUJANA HEIGHTS APARTMENT",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-extra-5",
+      "name": "PP MAYANG PASIR 2",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-extra-6",
+      "name": "PP MAYANG PASIR 3",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "rnc-extra-7",
+      "name": "PP MAYANG PASIR 5",
+      "decision": "archive",
+      "reasons": [
+        "Operator inventory gives device coordinates, but no site address or collection schedule; headquarters phone does not establish site access"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://info.recyclencash.com.my/index.php/rnc-iot-facilities/"
+    },
+    {
+      "id": "pgc-hazardous-1",
+      "name": "Stor JPP MBPP, Jalan Sungai",
+      "decision": "archive",
+      "reasons": [
+        "No complete, consistent combination of specific acceptance, collection schedule and collection contact in reviewed sources"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://www.pgc.com.my/en/faq/"
+    },
+    {
+      "id": "pgc-hazardous-2",
+      "name": "MBSP Menara Bandaraya hazardous household waste collection",
+      "decision": "archive",
+      "reasons": [
+        "Duplicate record; retained in original research archive"
+      ],
+      "originalStatus": "duplicate_of_source_listed_location",
+      "sourceUrl": "https://www.pgc.com.my/en/faq/"
+    },
+    {
+      "id": "mbpp-candidate-19",
+      "name": "Pasar Tanjung Bungah recycling point",
+      "decision": "archive",
+      "reasons": [
+        "No complete, consistent combination of specific acceptance, collection schedule and collection contact in reviewed sources"
+      ],
+      "originalStatus": "source_listed_not_currently_verified",
+      "sourceUrl": "https://www.mbpp.gov.my/ms/medias/arkib/arkib-berita/89-berita-2024/96-jabatan-khidmat-pengurusan/810-lokasi-kitar-semula"
+    }
+  ]
+}

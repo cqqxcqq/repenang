@@ -1,0 +1,4786 @@
+{
+  "schemaVersion": 1,
+  "title": "Pulang reviewed recycling directory",
+  "reviewedAt": "2026-11-15",
+  "reviewDueAt": "2026-12-15",
+  "reviewScope": "Published-source review only; not live availability or an on-site inspection.",
+  "sources": [
+    {
+      "id": "mampan",
+      "publisher": "Penang Green Council",
+      "title": "MAMPAN recycling directory",
+      "url": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "e4ebfe7cab642e035263619c12eb0c5ea829f164aaf64a42951750a06dd5ead2"
+    },
+    {
+      "id": "riiicycle",
+      "publisher": "Riiicycle",
+      "title": "Operator station addresses, contacts, map links and weekly sessions",
+      "url": "https://www.riiicycle.com/recycling-stations",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "3ec84e59a1257b405609259827b23077e23d7597fe79c897da23d806b9de9cc7"
+    },
+    {
+      "id": "ecochamps",
+      "publisher": "Penang Green Council",
+      "title": "EcoChamps 2026 named stations and acceptance restrictions",
+      "url": "https://www.pgc.com.my/en/penang-green-citizens/i-am-ecochamps-penang-recycling-competition/",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "936a0a783dc2d1fbdba5f0af8406d38238c81d52b04cdd90615f8d33bbf9ea34",
+      "guidanceSha256": "8196360936ceeae2f6621393c5b5010523e9e00a0eecdc1f903530b55877136e"
+    },
+    {
+      "id": "faq",
+      "publisher": "Penang Green Council",
+      "title": "Local sorting and specialist collection guidance (directory section dated July 2024)",
+      "url": "https://www.pgc.com.my/en/faq/",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "c57bccf84372cd5f0b16cd83996ea029fb2417dec34174d751edb8e7f69f3f1a",
+      "guidanceSha256": "5aa55d0cb16076fa5b65d9af726b14a088b0842fb78d48f88aeda4752606908b"
+    },
+    {
+      "id": "device-privacy",
+      "publisher": "Apple Support",
+      "title": "Preparing a device before transfer; device-specific instructions",
+      "url": "https://support.apple.com/en-my/109511",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "0a71b10fcb275bab52fa3311bf511ccde1bc0adfa0e0b8e21b952d29dcbf2075"
+    },
+    {
+      "id": "mampan-info",
+      "publisher": "Penang Green Council",
+      "title": "MAMPAN public registration and contact channels",
+      "url": "https://www.pgc.com.my/en/mampan-directory/",
+      "checkedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "method": "published_page_review",
+      "contentSha256": "e80baa36bcd546557f5fa4c7bdd1cdb2c3998ca12e998383c970953a79db586c"
+    }
+  ],
+  "locations": [
+    {
+      "id": "mbpp-candidate-1",
+      "name": "Hub 3R @ Taman Serina",
+      "address": "32, Hilir Sungai Pinang, George Town",
+      "lat": 5.402617,
+      "lng": 100.326987,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "battery",
+          "forms": [],
+          "sourceText": "Batteries and light tube",
+          "sourceId": "mampan",
+          "condition": "Ask which battery chemistries are accepted. Keep batteries separate and protect terminals; damaged batteries need specific advice.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Batteries and light tube",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day : 8am - 6pm",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan"
+      },
+      "contacts": [
+        {
+          "label": "04-2592020",
+          "value": "+6042592020",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 350: Hub 3R @ Taman Serina"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 350: Hub 3R @ Taman Serina"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 350: Hub 3R @ Taman Serina"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 350: Hub 3R @ Taman Serina"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 350: Hub 3R @ Taman Serina"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 350: Hub 3R @ Taman Serina"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "Located at Astaka Taman Serena",
+      "sourceRecordUpdatedAt": "2025-04-23",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mbpp-candidate-6",
+      "name": "Hub 3R @ Lebuh Cecil",
+      "address": "24, Lebuh Cecil, George Town",
+      "lat": 5.407759,
+      "lng": 100.328857,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "04-2592020",
+          "value": "+6042592020",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 355: Hub 3R @ Lebuh Cecil"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 355: Hub 3R @ Lebuh Cecil"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 355: Hub 3R @ Lebuh Cecil"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 355: Hub 3R @ Lebuh Cecil"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 355: Hub 3R @ Lebuh Cecil"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 355: Hub 3R @ Lebuh Cecil"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-04-23",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mbpp-candidate-8",
+      "name": "Hub 3R @ Jalan Gangsa",
+      "address": "Jalan Gangsa, Island Park",
+      "lat": 5.392306,
+      "lng": 100.297779,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothes",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "04-2592020",
+          "value": "+6042592020",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 357: Hub 3R @ Jalan Gangsa"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 357: Hub 3R @ Jalan Gangsa"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 357: Hub 3R @ Jalan Gangsa"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 357: Hub 3R @ Jalan Gangsa"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 357: Hub 3R @ Jalan Gangsa"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 357: Hub 3R @ Jalan Gangsa"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-04-23",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mbpp-candidate-9",
+      "name": "Hub 3R @ Penang Hill",
+      "address": "Lower Station, Penang Hill",
+      "lat": 5.407979,
+      "lng": 100.27762,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "04-2592020",
+          "value": "+6042592020",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 358: Hub 3R @ Penang Hill"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 358: Hub 3R @ Penang Hill"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 358: Hub 3R @ Penang Hill"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 358: Hub 3R @ Penang Hill"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 358: Hub 3R @ Penang Hill"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 358: Hub 3R @ Penang Hill"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-04-23",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mbpp-candidate-11",
+      "name": "Hub 3R @ Giant Bayan Baru",
+      "address": "78, Lintang Bayan, Bayan Baru",
+      "lat": 5.321319,
+      "lng": 100.28505,
+      "district": "Daerah Barat Daya/ South-West Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Tin",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Tin",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Tin",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day : 10am - 10pm",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan"
+      },
+      "contacts": [
+        {
+          "label": "04-2592020",
+          "value": "+6042592020",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 359: Hub 3R @ Giant Bayan Baru"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 359: Hub 3R @ Giant Bayan Baru"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 359: Hub 3R @ Giant Bayan Baru"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 359: Hub 3R @ Giant Bayan Baru"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 359: Hub 3R @ Giant Bayan Baru"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 359: Hub 3R @ Giant Bayan Baru"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-04-23",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mbpp-candidate-12",
+      "name": "PPR Jalan Sungai",
+      "address": "Jalan Sungai, George Town",
+      "lat": 5.407453,
+      "lng": 100.324509,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Paper, Plastic",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Paper, Plastic",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "04-2592020",
+          "value": "+6042592020",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 360: PPR Jalan Sungai"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 360: PPR Jalan Sungai"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 360: PPR Jalan Sungai"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 360: PPR Jalan Sungai"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 360: PPR Jalan Sungai"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 360: PPR Jalan Sungai"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-04-23",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-2",
+      "name": "Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)",
+      "address": "Dewan Orang Ramai Panchur Mutiara, Jalan Belatuk, Taman Bukit Panchor, 14300 Nibong Tebal.",
+      "lat": 5.173707,
+      "lng": 100.486703,
+      "district": "Seberang Perai Selatan/ Southern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "drink packets",
+          "forms": [
+            "drink-carton"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty and clean beverage cartons; confirm the packaging format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "cooking oil",
+          "forms": [
+            "used-cooking-oil"
+          ],
+          "sourceText": "Used cooking oil",
+          "sourceId": "mampan",
+          "condition": "Used cooking oil only, not engine oil. Keep it separate from other liquids.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-7305615",
+          "value": "+60127305615",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 300: Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 300: Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 300: Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 300: Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 300: Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 300: Pusat Kitar Semula JKKK Bukit Panchor (Dewan Orang Ramai Panchur Mutiara)"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-09",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-3",
+      "name": "Pusat Kitar Semula Kampung Permatang Pasir",
+      "address": "Permatang Pasir, Permatang Pauh",
+      "lat": 5.419719,
+      "lng": 100.436832,
+      "district": "Seberang Perai Tengah/ Central Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, metals (aluminium)",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, metals (aluminium)",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, metals (aluminium)",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, metals (aluminium)",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "019-4770606",
+          "value": "+60194770606",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 329: Pusat Kitar Semula Kampung Permatang Pasir"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 329: Pusat Kitar Semula Kampung Permatang Pasir"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 329: Pusat Kitar Semula Kampung Permatang Pasir"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 329: Pusat Kitar Semula Kampung Permatang Pasir"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 329: Pusat Kitar Semula Kampung Permatang Pasir"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 329: Pusat Kitar Semula Kampung Permatang Pasir"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-09",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-5",
+      "name": "Pusat Kitar Semula Mak Mandin",
+      "address": "Tingkat Mak Mandin 1, Butterworth",
+      "lat": 5.42598,
+      "lng": 100.38823,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Glass, Aluminium",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Glass, Aluminium",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Glass, Aluminium",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Glass, Aluminium",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothes",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-4561323",
+          "value": "+60124561323",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 365: Pusat Kitar Semula Mak Mandin"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 365: Pusat Kitar Semula Mak Mandin"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 365: Pusat Kitar Semula Mak Mandin"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 365: Pusat Kitar Semula Mak Mandin"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 365: Pusat Kitar Semula Mak Mandin"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 365: Pusat Kitar Semula Mak Mandin"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-09",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-6",
+      "name": "Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor",
+      "address": "Jalan Pengkalan Batu, 13300 Tasek Gelugor",
+      "lat": 5.47219,
+      "lng": 100.49341,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, aluminium, cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, aluminium, cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, aluminium, cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, aluminium, cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, aluminium, cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "drink packets",
+          "forms": [
+            "drink-carton"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, aluminium, cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty and clean beverage cartons; confirm the packaging format.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "04-5497661",
+          "value": "+6045497661",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 366: Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 366: Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 366: Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 366: Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 366: Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 366: Pusat Kitar Semula Pandu Lalu Pusat Pendidikan Hijau Tasek Gelugor"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-09",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-7",
+      "name": "Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)",
+      "address": "Dewan Serbaguna JKKK Jawi, Lorong 2, Perkampungan Jawi, 14200 Sungai Jawi",
+      "lat": 5.213351,
+      "lng": 100.495337,
+      "district": "Seberang Perai Selatan/ Southern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, metals (iron, aluminium, copper), cans",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, metals (iron, aluminium, copper), cans",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, metals (iron, aluminium, copper), cans",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, metals (iron, aluminium, copper), cans",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Old clothes",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "cooking oil",
+          "forms": [
+            "used-cooking-oil"
+          ],
+          "sourceText": "Used cooking oil",
+          "sourceId": "mampan",
+          "condition": "Used cooking oil only, not engine oil. Keep it separate from other liquids.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "Everyday: 10am-11pm",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan"
+      },
+      "contacts": [
+        {
+          "label": "012-4571850",
+          "value": "+60124571850",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 299: Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 299: Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 299: Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 299: Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 299: Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 299: Pusat Kitar Semula Perkampungan Jawi (Dewan Serbaguna JKKK Jawi)"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-8",
+      "name": "Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)",
+      "address": "Kampung Padang Benggali, 13100 Butterworth Penang",
+      "lat": 5.497505,
+      "lng": 100.378827,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Paper, Plastic, Cans",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Paper, Plastic, Cans",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Paper, Plastic, Cans",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "011-61452803",
+          "value": "+601161452803",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 323: Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 323: Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 323: Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 323: Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 323: Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 323: Pusat Kitar Semula Sungai Abdul, Penaga (Jeti Nelayan)"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-9",
+      "name": "Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)",
+      "address": "Lorong Nurul Huda, Kampung Baru, 13100 Penaga, Pulau Pinang",
+      "lat": 5.531042,
+      "lng": 100.378677,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Paper, plastic, cans",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Paper, plastic, cans",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Paper, plastic, cans",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "011-61452803",
+          "value": "+601161452803",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 322: Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 322: Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 322: Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 322: Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 322: Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 322: Pusat Kitar Semula Sungai Penaga (Jeti Nelayan)"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-11",
+      "name": "Pusat Kitar Semula Taman Cengal",
+      "address": "Lorong Cengal 2, 13440 Butterworth",
+      "lat": 5.43791,
+      "lng": 100.39647,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "016-4943589",
+          "value": "+60164943589",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 324: Pusat Kitar Semula Taman Cengal"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 324: Pusat Kitar Semula Taman Cengal"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 324: Pusat Kitar Semula Taman Cengal"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 324: Pusat Kitar Semula Taman Cengal"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 324: Pusat Kitar Semula Taman Cengal"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 324: Pusat Kitar Semula Taman Cengal"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-12",
+      "name": "Pusat Kitar Semula Taman Halaman Indah",
+      "address": "Jalan Halaman Indah, 14200 Sungai Jawi",
+      "lat": 5.19478,
+      "lng": 100.51077,
+      "district": "Seberang Perai Selatan/ Southern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "013-4862495",
+          "value": "+60134862495",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 334: Pusat Kitar Semula Taman Halaman Indah"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 334: Pusat Kitar Semula Taman Halaman Indah"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 334: Pusat Kitar Semula Taman Halaman Indah"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 334: Pusat Kitar Semula Taman Halaman Indah"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 334: Pusat Kitar Semula Taman Halaman Indah"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 334: Pusat Kitar Semula Taman Halaman Indah"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-09",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-13",
+      "name": "Pusat Kitar Semula Taman Kerapu",
+      "address": "29, Lintang Kerapu, Taman Kerapu, 13400 Butterworth",
+      "lat": 5.40857,
+      "lng": 100.39799,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "016-4122433",
+          "value": "+60164122433",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 326: Pusat Kitar Semula Taman Kerapu"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 326: Pusat Kitar Semula Taman Kerapu"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 326: Pusat Kitar Semula Taman Kerapu"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 326: Pusat Kitar Semula Taman Kerapu"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 326: Pusat Kitar Semula Taman Kerapu"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 326: Pusat Kitar Semula Taman Kerapu"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-14",
+      "name": "Pusat Kitar Semula Taman Mutiara",
+      "address": "Persiaran Janggus, Taman Mutiara, 14000 Bukit Mertajam.",
+      "lat": 5.359874,
+      "lng": 100.446468,
+      "district": "Seberang Perai Tengah/ Central Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "drink packets",
+          "forms": [
+            "drink-carton"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty and clean beverage cartons; confirm the packaging format.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "019-4451522",
+          "value": "+60194451522",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 318: Pusat Kitar Semula Taman Mutiara"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 318: Pusat Kitar Semula Taman Mutiara"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 318: Pusat Kitar Semula Taman Mutiara"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 318: Pusat Kitar Semula Taman Mutiara"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 318: Pusat Kitar Semula Taman Mutiara"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 318: Pusat Kitar Semula Taman Mutiara"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-15",
+      "name": "Pusat Kitar Semula Taman Segar Indah",
+      "address": "8, Lorong Segar Indah 8, Taman Bayu, 13400 Butterworth",
+      "lat": 5.42522,
+      "lng": 100.39006,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-4561323",
+          "value": "+60124561323",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 327: Pusat Kitar Semula Taman Segar Indah"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 327: Pusat Kitar Semula Taman Segar Indah"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 327: Pusat Kitar Semula Taman Segar Indah"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 327: Pusat Kitar Semula Taman Segar Indah"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 327: Pusat Kitar Semula Taman Segar Indah"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 327: Pusat Kitar Semula Taman Segar Indah"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-16",
+      "name": "Pusat Kitar Semula Tambi Kecil",
+      "address": "Jalan Bunga Raya 2, Taman Bunga Raya, 13000 Butterworth",
+      "lat": 5.436186,
+      "lng": 100.38444,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron)",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron)",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron)",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron)",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron)",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Old clothes",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "Everyday: 10am-10pm",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan"
+      },
+      "contacts": [
+        {
+          "label": "019-5753328",
+          "value": "+60195753328",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 296: Pusat Kitar Semula Tambi Kecil"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 296: Pusat Kitar Semula Tambi Kecil"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 296: Pusat Kitar Semula Tambi Kecil"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 296: Pusat Kitar Semula Tambi Kecil"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 296: Pusat Kitar Semula Tambi Kecil"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 296: Pusat Kitar Semula Tambi Kecil"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-18",
+      "name": "Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah",
+      "address": "Lorong Tambun Indah 3, Taman Tambun Indah, 14100 Simpang Ampat",
+      "lat": 5.279153,
+      "lng": 100.463906,
+      "district": "Seberang Perai Selatan/ Southern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle",
+            "glass-jar"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq",
+          "supplementalSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "drink packets",
+          "forms": [
+            "drink-carton"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam",
+          "sourceId": "mampan",
+          "condition": "Empty and clean beverage cartons; confirm the packaging format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "poly foam",
+          "forms": [
+            "packaging-foam"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets, poly foam",
+          "sourceId": "mampan",
+          "condition": "Clean packaging foam only; confirm the foam type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Old clothes",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "cooking oil",
+          "forms": [
+            "used-cooking-oil"
+          ],
+          "sourceText": "Used cooking oil",
+          "sourceId": "mampan",
+          "condition": "Used cooking oil only, not engine oil. Keep it separate from other liquids.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "Tue & Thurs: 9am-1pm",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan"
+      },
+      "contacts": [
+        {
+          "label": "019-4222258",
+          "value": "+60194222258",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 302: Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 302: Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 302: Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 302: Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 302: Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 302: Pusat Pendidikan Alam Sekitar Tzu Chi Tambun Indah"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-19",
+      "name": "Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)",
+      "address": "MAJLIS BANDARAYA SEBERANG PERAI Menara Bandaraya, Jalan Perda Utama, Bandar Perda",
+      "lat": 5.370670764442157,
+      "lng": 100.43261101792159,
+      "district": "Seberang Perai Tengah/ Central Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "battery",
+          "forms": [],
+          "sourceText": "Used phone battery, light tubes, batteries",
+          "sourceId": "mampan",
+          "condition": "Ask which battery chemistries are accepted. Keep batteries separate and protect terminals; damaged batteries need specific advice.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Used phone battery, light tubes, batteries",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "Mon - Fri: 7:30am-5:30pm",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan"
+      },
+      "contacts": [
+        {
+          "label": "04-5497639/654",
+          "value": "+6045497639",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Public drop-off only. Wrap items properly and contact the collection office about the battery or lamp type."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 69: Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 69: Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 69: Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 69: Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 69: Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 69: Pusat Pengumpulan E - Waste Majlis Bandaraya Seberang Perai (MBSP)"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "Public drop off only. ** For safety purpose, please wrap items properly before dispose.",
+      "sourceRecordUpdatedAt": "2025-11-27",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-21",
+      "name": "Pusat Pengumpulan Gereja St. Ann",
+      "address": "Gereja St.Ann",
+      "lat": 5.3525733499662715,
+      "lng": 100.47728512592977,
+      "district": "Seberang Perai Tengah/ Central Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Papers, Cartons, Plastics, Aluminium Cans, etc.",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Papers, Cartons, Plastics, Aluminium Cans, etc.",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [
+            "aluminium-can"
+          ],
+          "sourceText": "Papers, Cartons, Plastics, Aluminium Cans, etc.",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [
+            "wearable-clothes"
+          ],
+          "sourceText": "Old Clothes (wearable & clean)",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "General Ewaste",
+          "sourceId": "mampan",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "9.30am-5.30pm (except Sat & Mon)",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan"
+      },
+      "contacts": [
+        {
+          "label": "04-538 4060",
+          "value": "+6045384060",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 107: Pusat Pengumpulan Gereja St. Ann"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 107: Pusat Pengumpulan Gereja St. Ann"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 107: Pusat Pengumpulan Gereja St. Ann"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 107: Pusat Pengumpulan Gereja St. Ann"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 107: Pusat Pengumpulan Gereja St. Ann"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 107: Pusat Pengumpulan Gereja St. Ann"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "Area: Bukit Mertajam",
+      "sourceRecordUpdatedAt": "2023-10-23",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-23",
+      "name": "Pusat Pengumpulan Surau Taman Jawi Jaya",
+      "address": "Jalan Jawi Jaya, Taman Jawi Jaya, 14200 Sungai Jawi, Pulau Pinang",
+      "lat": 5.194716,
+      "lng": 100.496703,
+      "district": "Seberang Perai Selatan/ Southern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "drink packets",
+          "forms": [
+            "drink-carton"
+          ],
+          "sourceText": "Plastic, paper, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty and clean beverage cartons; confirm the packaging format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "cooking oil",
+          "forms": [
+            "used-cooking-oil"
+          ],
+          "sourceText": "Used cooking oil",
+          "sourceId": "mampan",
+          "condition": "Used cooking oil only, not engine oil. Keep it separate from other liquids.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "019-4774131",
+          "value": "+60194774131",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 303: Pusat Pengumpulan Surau Taman Jawi Jaya"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 303: Pusat Pengumpulan Surau Taman Jawi Jaya"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 303: Pusat Pengumpulan Surau Taman Jawi Jaya"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 303: Pusat Pengumpulan Surau Taman Jawi Jaya"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 303: Pusat Pengumpulan Surau Taman Jawi Jaya"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 303: Pusat Pengumpulan Surau Taman Jawi Jaya"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-09",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-24",
+      "name": "Pusat Sumber Alam Sekitar Bandar Tasek Mutiara",
+      "address": "Pasar Awam Bandar Tasek Mutiara",
+      "lat": 5.28348,
+      "lng": 100.48121,
+      "district": "Seberang Perai Selatan/ Southern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [
+            "wearable-clothes"
+          ],
+          "sourceText": "Clothes (in wearable conditions)",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "battery",
+          "forms": [],
+          "sourceText": "All electronics items (refrigerator, TV, computer, batteries etc.)",
+          "sourceId": "mampan",
+          "condition": "Ask which battery chemistries are accepted. Keep batteries separate and protect terminals; damaged batteries need specific advice.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "All electronics items (refrigerator, TV, computer, batteries etc.)",
+          "sourceId": "mampan",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [
+        {
+          "material": "glass",
+          "reason": "This collection point explicitly excludes glass.",
+          "sourceId": "mampan"
+        },
+        {
+          "material": "furniture",
+          "reason": "Furniture is excluded by the directory remarks.",
+          "sourceId": "mampan"
+        }
+      ],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "24 Hours",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan"
+      },
+      "contacts": [
+        {
+          "label": "019-411 5347",
+          "value": "+60194115347",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 99: Pusat Sumber Alam Sekitar Bandar Tasek Mutiara"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 99: Pusat Sumber Alam Sekitar Bandar Tasek Mutiara"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 99: Pusat Sumber Alam Sekitar Bandar Tasek Mutiara"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 99: Pusat Sumber Alam Sekitar Bandar Tasek Mutiara"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 99: Pusat Sumber Alam Sekitar Bandar Tasek Mutiara"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 99: Pusat Sumber Alam Sekitar Bandar Tasek Mutiara"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "* Drop off allowed, please put it in the container provided accordingly. * Please segregate before reycle * Not collecting glass and furniture",
+      "sourceRecordUpdatedAt": "2023-11-06",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-25",
+      "name": "Pusat Sumber Alam Sekitar Taman Bagan Lalang",
+      "address": "Taman Bagan Lalang, 13400 Butterworth, Pulau Pinang",
+      "lat": 5.434263,
+      "lng": 100.401083,
+      "district": "Seberang Perai Utara/ Northern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "drink packets",
+          "forms": [
+            "drink-carton"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty and clean beverage cartons; confirm the packaging format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Old clothes",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "cooking oil",
+          "forms": [
+            "used-cooking-oil"
+          ],
+          "sourceText": "Used cooking oil",
+          "sourceId": "mampan",
+          "condition": "Used cooking oil only, not engine oil. Keep it separate from other liquids.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "019-4754248",
+          "value": "+60194754248",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 293: Pusat Sumber Alam Sekitar Taman Bagan Lalang"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 293: Pusat Sumber Alam Sekitar Taman Bagan Lalang"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 293: Pusat Sumber Alam Sekitar Taman Bagan Lalang"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 293: Pusat Sumber Alam Sekitar Taman Bagan Lalang"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 293: Pusat Sumber Alam Sekitar Taman Bagan Lalang"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 293: Pusat Sumber Alam Sekitar Taman Bagan Lalang"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-03-04",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-26",
+      "name": "Pusat Sumber Alam Sekitar Taman Makok",
+      "address": "Lorong Janggus 2, 14000 Bukit Mertajam",
+      "lat": 5.362988,
+      "lng": 100.447136,
+      "district": "Seberang Perai Tengah/ Central Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "drink packets",
+          "forms": [
+            "drink-carton"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty and clean beverage cartons; confirm the packaging format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Old clothes",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "cooking oil",
+          "forms": [
+            "used-cooking-oil"
+          ],
+          "sourceText": "Used cooking oil",
+          "sourceId": "mampan",
+          "condition": "Used cooking oil only, not engine oil. Keep it separate from other liquids.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-4336371",
+          "value": "+60124336371",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 307: Pusat Sumber Alam Sekitar Taman Makok"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 307: Pusat Sumber Alam Sekitar Taman Makok"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 307: Pusat Sumber Alam Sekitar Taman Makok"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 307: Pusat Sumber Alam Sekitar Taman Makok"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 307: Pusat Sumber Alam Sekitar Taman Makok"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 307: Pusat Sumber Alam Sekitar Taman Makok"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-09",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-candidate-27",
+      "name": "Pusat Sumber Alam Sekitar Taman Puteri Gunung",
+      "address": "Lorong Puteri Gunung 40, Taman Puteri Gunung, 14120 Simpang Ampat, Pulau Pinang",
+      "lat": 5.283811,
+      "lng": 100.50183,
+      "district": "Seberang Perai Selatan/ Southern Seberang Perai",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "glass",
+          "forms": [
+            "glass-bottle"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Food and drink containers only; keep separate and confirm the container type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "fluorescent lights",
+          "forms": [
+            "fluorescent-tube"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Keep tubes separate and protect against breakage; ask about the exact lamp type.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "drink packets",
+          "forms": [
+            "drink-carton"
+          ],
+          "sourceText": "Plastic, paper, glass bottles, fluorescent lights, metals (iron, aluminium, copper), cans, drink packets",
+          "sourceId": "mampan",
+          "condition": "Empty and clean beverage cartons; confirm the packaging format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Old clothes",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "cooking oil",
+          "forms": [
+            "used-cooking-oil"
+          ],
+          "sourceText": "Used cooking oil",
+          "sourceId": "mampan",
+          "condition": "Used cooking oil only, not engine oil. Keep it separate from other liquids.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "019-4115347",
+          "value": "+60194115347",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 298: Pusat Sumber Alam Sekitar Taman Puteri Gunung"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 298: Pusat Sumber Alam Sekitar Taman Puteri Gunung"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 298: Pusat Sumber Alam Sekitar Taman Puteri Gunung"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 298: Pusat Sumber Alam Sekitar Taman Puteri Gunung"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 298: Pusat Sumber Alam Sekitar Taman Puteri Gunung"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 298: Pusat Sumber Alam Sekitar Taman Puteri Gunung"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-09",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-1",
+      "name": "MBPP Pink Bin @Bangunan IOC Jalan Timah",
+      "address": "Jalan Timah",
+      "lat": 5.41075,
+      "lng": 100.32566,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 371: MBPP Pink Bin @Bangunan IOC Jalan Timah"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 371: MBPP Pink Bin @Bangunan IOC Jalan Timah"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 371: MBPP Pink Bin @Bangunan IOC Jalan Timah"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 371: MBPP Pink Bin @Bangunan IOC Jalan Timah"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 371: MBPP Pink Bin @Bangunan IOC Jalan Timah"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 371: MBPP Pink Bin @Bangunan IOC Jalan Timah"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-2",
+      "name": "MBPP Pink Bin @Dewan MPKK Jalan Tengah",
+      "address": "Jalan Tengah Selatan, Pangsapuri Jalan Tengah",
+      "lat": 5.3196155,
+      "lng": 100.2858482,
+      "district": "Daerah Barat Daya/ South-West Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 388: MBPP Pink Bin @Dewan MPKK Jalan Tengah"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 388: MBPP Pink Bin @Dewan MPKK Jalan Tengah"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 388: MBPP Pink Bin @Dewan MPKK Jalan Tengah"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 388: MBPP Pink Bin @Dewan MPKK Jalan Tengah"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 388: MBPP Pink Bin @Dewan MPKK Jalan Tengah"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 388: MBPP Pink Bin @Dewan MPKK Jalan Tengah"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-3",
+      "name": "MBPP Pink Bin @Dewan MPKK Ladang Lada",
+      "address": "Fettes W Ave",
+      "lat": 5.45617,
+      "lng": 100.30089,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 381: MBPP Pink Bin @Dewan MPKK Ladang Lada"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 381: MBPP Pink Bin @Dewan MPKK Ladang Lada"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 381: MBPP Pink Bin @Dewan MPKK Ladang Lada"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 381: MBPP Pink Bin @Dewan MPKK Ladang Lada"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 381: MBPP Pink Bin @Dewan MPKK Ladang Lada"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 381: MBPP Pink Bin @Dewan MPKK Ladang Lada"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-4",
+      "name": "MBPP Pink Bin @Kebun Komuniti Kampung Baru",
+      "address": "Jalan Padang Tembak",
+      "lat": 5.40794,
+      "lng": 100.29349,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 383: MBPP Pink Bin @Kebun Komuniti Kampung Baru"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 383: MBPP Pink Bin @Kebun Komuniti Kampung Baru"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 383: MBPP Pink Bin @Kebun Komuniti Kampung Baru"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 383: MBPP Pink Bin @Kebun Komuniti Kampung Baru"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 383: MBPP Pink Bin @Kebun Komuniti Kampung Baru"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 383: MBPP Pink Bin @Kebun Komuniti Kampung Baru"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-5",
+      "name": "MBPP Pink Bin @Pusat Gelandangan Jalan Magazine",
+      "address": "19, Jalan C.Y.Choy",
+      "lat": 5.41148,
+      "lng": 100.33361,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 369: MBPP Pink Bin @Pusat Gelandangan Jalan Magazine"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 369: MBPP Pink Bin @Pusat Gelandangan Jalan Magazine"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 369: MBPP Pink Bin @Pusat Gelandangan Jalan Magazine"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 369: MBPP Pink Bin @Pusat Gelandangan Jalan Magazine"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 369: MBPP Pink Bin @Pusat Gelandangan Jalan Magazine"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 369: MBPP Pink Bin @Pusat Gelandangan Jalan Magazine"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-6",
+      "name": "MBPP Pink Bin @Pusat Kitar Semula Mount Erskine",
+      "address": "Tingkat Mount Erskine 1, Taman Teguh",
+      "lat": 5.4406,
+      "lng": 100.30352,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 380: MBPP Pink Bin @Pusat Kitar Semula Mount Erskine"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 380: MBPP Pink Bin @Pusat Kitar Semula Mount Erskine"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 380: MBPP Pink Bin @Pusat Kitar Semula Mount Erskine"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 380: MBPP Pink Bin @Pusat Kitar Semula Mount Erskine"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 380: MBPP Pink Bin @Pusat Kitar Semula Mount Erskine"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 380: MBPP Pink Bin @Pusat Kitar Semula Mount Erskine"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-7",
+      "name": "MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP",
+      "address": "Jalan Pasar, Pulau Tikus",
+      "lat": 5.42996,
+      "lng": 100.3122,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 378: MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 378: MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 378: MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 378: MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 378: MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 378: MBPP Pink Bin @Pusat Panggilan Nama Pulau Tikus MBPP"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-8",
+      "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP",
+      "address": "Pesara Claimant",
+      "lat": 5.41685,
+      "lng": 100.3345,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 368: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 368: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 368: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 368: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 368: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 368: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Campbell MBPP"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-9",
+      "name": "MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP",
+      "address": "Lebuh Presgrave",
+      "lat": 5.41131,
+      "lng": 100.33,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 370: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 370: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 370: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 370: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 370: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 370: MBPP Pink Bin @Pusat Pangillan Nama Lebuh Presgrave MBPP"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mampan-pink-bin-10",
+      "name": "MBPP Pink Bin @Rumah Awam Jalan Irrawadi",
+      "address": "Jalan Irrawadi",
+      "lat": 5.4245,
+      "lng": 100.32314,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "clothes",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Keep reusable clothing clean and dry; ask about worn-out textiles.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "toys",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and size before donating toys.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "jewellery",
+          "forms": [],
+          "sourceText": "Clothings, jewellery, toys and more",
+          "sourceId": "mampan",
+          "condition": "Ask about condition and collection arrangements.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "012-3493227",
+          "value": "+60123493227",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 374: MBPP Pink Bin @Rumah Awam Jalan Irrawadi"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 374: MBPP Pink Bin @Rumah Awam Jalan Irrawadi"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 374: MBPP Pink Bin @Rumah Awam Jalan Irrawadi"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 374: MBPP Pink Bin @Rumah Awam Jalan Irrawadi"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 374: MBPP Pink Bin @Rumah Awam Jalan Irrawadi"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 374: MBPP Pink Bin @Rumah Awam Jalan Irrawadi"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-10-14",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mbpp-candidate-18",
+      "name": "Hub 3R @ Batu Lancang",
+      "address": "25, Lintang Batu Lancang, Jelutong",
+      "lat": 5.390039,
+      "lng": 100.30658,
+      "district": "Daerah Timur Laut/ North-East Penang Island",
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "plastic",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "paper",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [],
+          "sourceText": "Plastic, Paper, Metal",
+          "sourceId": "mampan",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        }
+      ],
+      "exclusions": [],
+      "hours": {
+        "kind": "publisher_text",
+        "display": "All day",
+        "timezone": "Asia/Kuala_Lumpur",
+        "sourceId": "mampan",
+        "note": "The directory says “All day”; days and staffed hours are not specified. Confirm timing with the listed contact."
+      },
+      "contacts": [
+        {
+          "label": "04-2592020",
+          "value": "+6042592020",
+          "scope": "Directory-listed collection enquiry",
+          "sourceId": "mampan"
+        }
+      ],
+      "access": {
+        "mode": "confirm_first_visit",
+        "instructions": "Contact the listed collection number before your first visit; use the collection containers and keep materials separate."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 354: Hub 3R @ Batu Lancang"
+        },
+        "coordinates": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 354: Hub 3R @ Batu Lancang"
+        },
+        "materials": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 354: Hub 3R @ Batu Lancang"
+        },
+        "hours": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 354: Hub 3R @ Batu Lancang"
+        },
+        "contact": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 354: Hub 3R @ Batu Lancang"
+        },
+        "access": {
+          "sourceId": "mampan",
+          "locator": "MAMPAN company 354: Hub 3R @ Batu Lancang"
+        }
+      },
+      "coordinateMethod": "publisher_coordinates",
+      "notes": "",
+      "sourceRecordUpdatedAt": "2025-04-23",
+      "sourceUrl": "https://pgc.com.my/mampan_directory/zero_waste_network_list.php"
+    },
+    {
+      "id": "mbpp-candidate-5",
+      "name": "Straits Quay Recycling Station",
+      "address": "Jalan Seri Tanjung Pinang, Seri Tanjung Pinang, 10470, Tanjong Tokong, Pulau Pinang, Malaysia",
+      "lat": 5.458810329437256,
+      "lng": 100.31232118606567,
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "paper",
+          "forms": [
+            "newspaper",
+            "cardboard"
+          ],
+          "sourceText": "Paper (newspaper, mixed paper) and carton box",
+          "sourceId": "ecochamps",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "plastic",
+          "forms": [
+            "plastic-bottle",
+            "plastic-container"
+          ],
+          "sourceText": "Plastic bottles and plastic containers only; no mixed plastic",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [
+            "aluminium-can"
+          ],
+          "sourceText": "Aluminium, tin and scrap metal",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "E-waste; exact device type and size must be checked",
+          "sourceId": "ecochamps",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [
+        {
+          "material": "clothes",
+          "reason": "Fabric is excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "material": "fluorescent lights",
+          "reason": "Light bulbs and fluorescent lights are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "glass-bottle",
+          "material": "glass",
+          "reason": "Glass bottles are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "household-battery",
+          "material": "battery",
+          "reason": "Non-rechargeable batteries are excluded. Ask about rechargeable battery types separately.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "plastic-film",
+          "material": "plastic",
+          "reason": "Only plastic bottles and containers are listed; mixed plastic is excluded.",
+          "sourceId": "ecochamps"
+        }
+      ],
+      "hours": {
+        "kind": "weekly",
+        "display": "Wed 17:00–20:00; Sun 17:00–20:00; other days closed",
+        "timezone": "Asia/Kuala_Lumpur",
+        "weekly": [
+          {
+            "day": 3,
+            "opens": "17:00",
+            "closes": "20:00"
+          },
+          {
+            "day": 0,
+            "opens": "17:00",
+            "closes": "20:00"
+          }
+        ],
+        "sourceId": "riiicycle"
+      },
+      "contacts": [
+        {
+          "label": "+6011-26699168",
+          "value": "+601126699168",
+          "scope": "Riiicycle station enquiries",
+          "sourceId": "riiicycle"
+        }
+      ],
+      "access": {
+        "mode": "scheduled_drop_off",
+        "instructions": "Visit during the published collection session. Separate clean, dry items. Contact Riiicycle about device types, session changes and app requirements."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "riiicycle",
+          "locator": "Straits Quay Recycling Station"
+        },
+        "coordinates": {
+          "sourceId": "riiicycle",
+          "locator": "Straits Quay Recycling Station"
+        },
+        "materials": {
+          "sourceId": "ecochamps",
+          "locator": "What Can You Recycle? / Where to Recycle? / Straits Quay Recycling Station"
+        },
+        "hours": {
+          "sourceId": "riiicycle",
+          "locator": "Straits Quay Recycling Station"
+        },
+        "contact": {
+          "sourceId": "riiicycle",
+          "locator": "Straits Quay Recycling Station"
+        },
+        "access": {
+          "sourceId": "riiicycle",
+          "locator": "Straits Quay Recycling Station"
+        }
+      },
+      "coordinateMethod": "operator_map_geohash",
+      "publisherMapUrl": "https://maps.app.goo.gl/ypwV5oaB1MosrAZC9",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "notes": "Acceptance is published programme information for these named stations. Online source review; no phone call or site visit.",
+      "coordinatePrecisionMeters": 5
+    },
+    {
+      "id": "mbpp-candidate-3",
+      "name": "New World Park Recycling Station",
+      "address": "102, Jalan Burma, George Town, 10500, Georgetown, Pulau Pinang, Malaysia",
+      "lat": 5.421173572540283,
+      "lng": 100.32691240310669,
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "paper",
+          "forms": [
+            "newspaper",
+            "cardboard"
+          ],
+          "sourceText": "Paper (newspaper, mixed paper) and carton box",
+          "sourceId": "ecochamps",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "plastic",
+          "forms": [
+            "plastic-bottle",
+            "plastic-container"
+          ],
+          "sourceText": "Plastic bottles and plastic containers only; no mixed plastic",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [
+            "aluminium-can"
+          ],
+          "sourceText": "Aluminium, tin and scrap metal",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "E-waste; exact device type and size must be checked",
+          "sourceId": "ecochamps",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [
+        {
+          "material": "clothes",
+          "reason": "Fabric is excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "material": "fluorescent lights",
+          "reason": "Light bulbs and fluorescent lights are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "glass-bottle",
+          "material": "glass",
+          "reason": "Glass bottles are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "household-battery",
+          "material": "battery",
+          "reason": "Non-rechargeable batteries are excluded. Ask about rechargeable battery types separately.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "plastic-film",
+          "material": "plastic",
+          "reason": "Only plastic bottles and containers are listed; mixed plastic is excluded.",
+          "sourceId": "ecochamps"
+        }
+      ],
+      "hours": {
+        "kind": "weekly",
+        "display": "Sun 13:00–16:00; other days closed",
+        "timezone": "Asia/Kuala_Lumpur",
+        "weekly": [
+          {
+            "day": 0,
+            "opens": "13:00",
+            "closes": "16:00"
+          }
+        ],
+        "sourceId": "riiicycle"
+      },
+      "contacts": [
+        {
+          "label": "+601126699168",
+          "value": "+601126699168",
+          "scope": "Riiicycle station enquiries",
+          "sourceId": "riiicycle"
+        }
+      ],
+      "access": {
+        "mode": "scheduled_drop_off",
+        "instructions": "Visit during the published collection session. Separate clean, dry items. Contact Riiicycle about device types, session changes and app requirements."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "riiicycle",
+          "locator": "New World Park Recycling Station"
+        },
+        "coordinates": {
+          "sourceId": "riiicycle",
+          "locator": "New World Park Recycling Station"
+        },
+        "materials": {
+          "sourceId": "ecochamps",
+          "locator": "What Can You Recycle? / Where to Recycle? / New World Park Recycling Station"
+        },
+        "hours": {
+          "sourceId": "riiicycle",
+          "locator": "New World Park Recycling Station"
+        },
+        "contact": {
+          "sourceId": "riiicycle",
+          "locator": "New World Park Recycling Station"
+        },
+        "access": {
+          "sourceId": "riiicycle",
+          "locator": "New World Park Recycling Station"
+        }
+      },
+      "coordinateMethod": "operator_map_geohash",
+      "publisherMapUrl": "https://maps.app.goo.gl/uwJU4FWvE6rLeRAi9",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "notes": "Acceptance is published programme information for these named stations. Online source review; no phone call or site visit.",
+      "coordinatePrecisionMeters": 5
+    },
+    {
+      "id": "mbpp-candidate-4",
+      "name": "Setia Spice Recycling Station",
+      "address": "108C, Jalan Tun Dr Awang, Bayan Baru, 11900, Bayan Lepas, Pulau Pinang, Malaysia",
+      "lat": 5.3299784660339355,
+      "lng": 100.28000593185425,
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "paper",
+          "forms": [
+            "newspaper",
+            "cardboard"
+          ],
+          "sourceText": "Paper (newspaper, mixed paper) and carton box",
+          "sourceId": "ecochamps",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "plastic",
+          "forms": [
+            "plastic-bottle",
+            "plastic-container"
+          ],
+          "sourceText": "Plastic bottles and plastic containers only; no mixed plastic",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [
+            "aluminium-can"
+          ],
+          "sourceText": "Aluminium, tin and scrap metal",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "E-waste; exact device type and size must be checked",
+          "sourceId": "ecochamps",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [
+        {
+          "material": "clothes",
+          "reason": "Fabric is excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "material": "fluorescent lights",
+          "reason": "Light bulbs and fluorescent lights are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "glass-bottle",
+          "material": "glass",
+          "reason": "Glass bottles are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "household-battery",
+          "material": "battery",
+          "reason": "Non-rechargeable batteries are excluded. Ask about rechargeable battery types separately.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "plastic-film",
+          "material": "plastic",
+          "reason": "Only plastic bottles and containers are listed; mixed plastic is excluded.",
+          "sourceId": "ecochamps"
+        }
+      ],
+      "hours": {
+        "kind": "weekly",
+        "display": "Thu 14:30–17:30; Sat 09:30–12:30; other days closed",
+        "timezone": "Asia/Kuala_Lumpur",
+        "weekly": [
+          {
+            "day": 4,
+            "opens": "14:30",
+            "closes": "17:30"
+          },
+          {
+            "day": 6,
+            "opens": "09:30",
+            "closes": "12:30"
+          }
+        ],
+        "sourceId": "riiicycle"
+      },
+      "contacts": [
+        {
+          "label": "+601126699168",
+          "value": "+601126699168",
+          "scope": "Riiicycle station enquiries",
+          "sourceId": "riiicycle"
+        }
+      ],
+      "access": {
+        "mode": "scheduled_drop_off",
+        "instructions": "Visit during the published collection session. Separate clean, dry items. Contact Riiicycle about device types, session changes and app requirements."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "riiicycle",
+          "locator": "Setia Spice Recycling Station"
+        },
+        "coordinates": {
+          "sourceId": "riiicycle",
+          "locator": "Setia Spice Recycling Station"
+        },
+        "materials": {
+          "sourceId": "ecochamps",
+          "locator": "What Can You Recycle? / Where to Recycle? / Setia Spice Recycling Station"
+        },
+        "hours": {
+          "sourceId": "riiicycle",
+          "locator": "Setia Spice Recycling Station"
+        },
+        "contact": {
+          "sourceId": "riiicycle",
+          "locator": "Setia Spice Recycling Station"
+        },
+        "access": {
+          "sourceId": "riiicycle",
+          "locator": "Setia Spice Recycling Station"
+        }
+      },
+      "coordinateMethod": "operator_map_geohash",
+      "publisherMapUrl": "https://maps.app.goo.gl/bPxRiJvAhXYVm6XD8",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "notes": "Acceptance is published programme information for these named stations. Online source review; no phone call or site visit.",
+      "coordinatePrecisionMeters": 5
+    },
+    {
+      "id": "riiicycle-candidate-4",
+      "name": "Karpal Singh Drive Recycling Station",
+      "address": "Maritime Suite, Karpal Singh Dr, 11600, George Town, Pulau Pinang, Malaysia",
+      "lat": 5.398213863372803,
+      "lng": 100.32897233963013,
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "paper",
+          "forms": [
+            "newspaper",
+            "cardboard"
+          ],
+          "sourceText": "Paper (newspaper, mixed paper) and carton box",
+          "sourceId": "ecochamps",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "plastic",
+          "forms": [
+            "plastic-bottle",
+            "plastic-container"
+          ],
+          "sourceText": "Plastic bottles and plastic containers only; no mixed plastic",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [
+            "aluminium-can"
+          ],
+          "sourceText": "Aluminium, tin and scrap metal",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "E-waste; exact device type and size must be checked",
+          "sourceId": "ecochamps",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [
+        {
+          "material": "clothes",
+          "reason": "Fabric is excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "material": "fluorescent lights",
+          "reason": "Light bulbs and fluorescent lights are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "glass-bottle",
+          "material": "glass",
+          "reason": "Glass bottles are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "household-battery",
+          "material": "battery",
+          "reason": "Non-rechargeable batteries are excluded. Ask about rechargeable battery types separately.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "plastic-film",
+          "material": "plastic",
+          "reason": "Only plastic bottles and containers are listed; mixed plastic is excluded.",
+          "sourceId": "ecochamps"
+        }
+      ],
+      "hours": {
+        "kind": "weekly",
+        "display": "Sat 16:00–19:00; other days closed",
+        "timezone": "Asia/Kuala_Lumpur",
+        "weekly": [
+          {
+            "day": 6,
+            "opens": "16:00",
+            "closes": "19:00"
+          }
+        ],
+        "sourceId": "riiicycle"
+      },
+      "contacts": [
+        {
+          "label": "+601126699168",
+          "value": "+601126699168",
+          "scope": "Riiicycle station enquiries",
+          "sourceId": "riiicycle"
+        }
+      ],
+      "access": {
+        "mode": "scheduled_drop_off",
+        "instructions": "Visit during the published collection session. Separate clean, dry items. Contact Riiicycle about device types, session changes and app requirements."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "riiicycle",
+          "locator": "Karpal Singh Drive Recycling Station"
+        },
+        "coordinates": {
+          "sourceId": "riiicycle",
+          "locator": "Karpal Singh Drive Recycling Station"
+        },
+        "materials": {
+          "sourceId": "ecochamps",
+          "locator": "What Can You Recycle? / Where to Recycle? / Karpal Singh Drive Recycling Station"
+        },
+        "hours": {
+          "sourceId": "riiicycle",
+          "locator": "Karpal Singh Drive Recycling Station"
+        },
+        "contact": {
+          "sourceId": "riiicycle",
+          "locator": "Karpal Singh Drive Recycling Station"
+        },
+        "access": {
+          "sourceId": "riiicycle",
+          "locator": "Karpal Singh Drive Recycling Station"
+        }
+      },
+      "coordinateMethod": "operator_map_geohash",
+      "publisherMapUrl": "https://goo.gl/maps/mEZ9yxjMYC3SemiQ9",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "notes": "Acceptance is published programme information for these named stations. Online source review; no phone call or site visit.",
+      "coordinatePrecisionMeters": 5
+    },
+    {
+      "id": "riiicycle-candidate-5",
+      "name": "Auto City Recycling Station",
+      "address": "C24, Auto City Fashion Market, Lorong Perusahaan Maju 8, 13600, Bukit Tengah, Pulau Pinang, Malaysia",
+      "lat": 5.337574481964111,
+      "lng": 100.4266905784607,
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "paper",
+          "forms": [
+            "newspaper",
+            "cardboard"
+          ],
+          "sourceText": "Paper (newspaper, mixed paper) and carton box",
+          "sourceId": "ecochamps",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "plastic",
+          "forms": [
+            "plastic-bottle",
+            "plastic-container"
+          ],
+          "sourceText": "Plastic bottles and plastic containers only; no mixed plastic",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [
+            "aluminium-can"
+          ],
+          "sourceText": "Aluminium, tin and scrap metal",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "E-waste; exact device type and size must be checked",
+          "sourceId": "ecochamps",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [
+        {
+          "material": "clothes",
+          "reason": "Fabric is excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "material": "fluorescent lights",
+          "reason": "Light bulbs and fluorescent lights are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "glass-bottle",
+          "material": "glass",
+          "reason": "Glass bottles are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "household-battery",
+          "material": "battery",
+          "reason": "Non-rechargeable batteries are excluded. Ask about rechargeable battery types separately.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "plastic-film",
+          "material": "plastic",
+          "reason": "Only plastic bottles and containers are listed; mixed plastic is excluded.",
+          "sourceId": "ecochamps"
+        }
+      ],
+      "hours": {
+        "kind": "weekly",
+        "display": "Sun 09:00–12:00; other days closed",
+        "timezone": "Asia/Kuala_Lumpur",
+        "weekly": [
+          {
+            "day": 0,
+            "opens": "09:00",
+            "closes": "12:00"
+          }
+        ],
+        "sourceId": "riiicycle"
+      },
+      "contacts": [
+        {
+          "label": "+601126699168",
+          "value": "+601126699168",
+          "scope": "Riiicycle station enquiries",
+          "sourceId": "riiicycle"
+        }
+      ],
+      "access": {
+        "mode": "scheduled_drop_off",
+        "instructions": "Visit during the published collection session. Separate clean, dry items. Contact Riiicycle about device types, session changes and app requirements."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "riiicycle",
+          "locator": "Auto City Recycling Station"
+        },
+        "coordinates": {
+          "sourceId": "riiicycle",
+          "locator": "Auto City Recycling Station"
+        },
+        "materials": {
+          "sourceId": "ecochamps",
+          "locator": "What Can You Recycle? / Where to Recycle? / Auto City Recycling Station"
+        },
+        "hours": {
+          "sourceId": "riiicycle",
+          "locator": "Auto City Recycling Station"
+        },
+        "contact": {
+          "sourceId": "riiicycle",
+          "locator": "Auto City Recycling Station"
+        },
+        "access": {
+          "sourceId": "riiicycle",
+          "locator": "Auto City Recycling Station"
+        }
+      },
+      "coordinateMethod": "operator_map_geohash",
+      "publisherMapUrl": "https://goo.gl/maps/PwoGhBeCsFaafA8P8",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "notes": "Acceptance is published programme information for these named stations. Online source review; no phone call or site visit.",
+      "coordinatePrecisionMeters": 5
+    },
+    {
+      "id": "riiicycle-candidate-6",
+      "name": "MPKK Tanjung Bungah Recycling Station",
+      "address": "Tanjung Bungah night market (center court) , Jalan Sungai Kelian, Tanjung Tokong, 11200, Tanjung Bungah, Pulau Pinang, Malaysia",
+      "lat": 5.464389324188232,
+      "lng": 100.2847695350647,
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "paper",
+          "forms": [
+            "newspaper",
+            "cardboard"
+          ],
+          "sourceText": "Paper (newspaper, mixed paper) and carton box",
+          "sourceId": "ecochamps",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "plastic",
+          "forms": [
+            "plastic-bottle",
+            "plastic-container"
+          ],
+          "sourceText": "Plastic bottles and plastic containers only; no mixed plastic",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [
+            "aluminium-can"
+          ],
+          "sourceText": "Aluminium, tin and scrap metal",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "E-waste; exact device type and size must be checked",
+          "sourceId": "ecochamps",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [
+        {
+          "material": "clothes",
+          "reason": "Fabric is excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "material": "fluorescent lights",
+          "reason": "Light bulbs and fluorescent lights are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "glass-bottle",
+          "material": "glass",
+          "reason": "Glass bottles are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "household-battery",
+          "material": "battery",
+          "reason": "Non-rechargeable batteries are excluded. Ask about rechargeable battery types separately.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "plastic-film",
+          "material": "plastic",
+          "reason": "Only plastic bottles and containers are listed; mixed plastic is excluded.",
+          "sourceId": "ecochamps"
+        }
+      ],
+      "hours": {
+        "kind": "weekly",
+        "display": "Tue 17:30–19:00; other days closed",
+        "timezone": "Asia/Kuala_Lumpur",
+        "weekly": [
+          {
+            "day": 2,
+            "opens": "17:30",
+            "closes": "19:00"
+          }
+        ],
+        "sourceId": "riiicycle"
+      },
+      "contacts": [
+        {
+          "label": "+601126699168",
+          "value": "+601126699168",
+          "scope": "Riiicycle station enquiries",
+          "sourceId": "riiicycle"
+        }
+      ],
+      "access": {
+        "mode": "scheduled_drop_off",
+        "instructions": "Visit during the published collection session. Separate clean, dry items. Contact Riiicycle about device types, session changes and app requirements."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "riiicycle",
+          "locator": "MPKK Tanjung Bungah Recycling Station"
+        },
+        "coordinates": {
+          "sourceId": "riiicycle",
+          "locator": "MPKK Tanjung Bungah Recycling Station"
+        },
+        "materials": {
+          "sourceId": "ecochamps",
+          "locator": "What Can You Recycle? / Where to Recycle? / MPKK Tanjung Bungah Recycling Station"
+        },
+        "hours": {
+          "sourceId": "riiicycle",
+          "locator": "MPKK Tanjung Bungah Recycling Station"
+        },
+        "contact": {
+          "sourceId": "riiicycle",
+          "locator": "MPKK Tanjung Bungah Recycling Station"
+        },
+        "access": {
+          "sourceId": "riiicycle",
+          "locator": "MPKK Tanjung Bungah Recycling Station"
+        }
+      },
+      "coordinateMethod": "operator_map_geohash",
+      "publisherMapUrl": "https://maps.app.goo.gl/88hUwS9zSmfPPYcDA",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "notes": "Acceptance is published programme information for these named stations. Online source review; no phone call or site visit.",
+      "coordinatePrecisionMeters": 5
+    },
+    {
+      "id": "riiicycle-candidate-9",
+      "name": "Midlands Recycling Station",
+      "address": "488, JALAN BURMA, 10350 GEORGETOWN, PULAU PINANG, 10350, GEORGETOWN, Pulau Pinang, Malaysia",
+      "lat": 5.433082,
+      "lng": 100.306377,
+      "status": "source_reviewed",
+      "reviewedAt": "2026-11-15",
+      "reviewDueAt": "2026-12-15",
+      "acceptance": [
+        {
+          "material": "paper",
+          "forms": [
+            "newspaper",
+            "cardboard"
+          ],
+          "sourceText": "Paper (newspaper, mixed paper) and carton box",
+          "sourceId": "ecochamps",
+          "condition": "Keep clean and dry; separate food-soiled paper.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "plastic",
+          "forms": [
+            "plastic-bottle",
+            "plastic-container"
+          ],
+          "sourceText": "Plastic bottles and plastic containers only; no mixed plastic",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue. Confirm the exact plastic format.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "metal",
+          "forms": [
+            "aluminium-can"
+          ],
+          "sourceText": "Aluminium, tin and scrap metal",
+          "sourceId": "ecochamps",
+          "condition": "Empty containers and remove food residue.",
+          "conditionSourceId": "faq"
+        },
+        {
+          "material": "e waste",
+          "forms": [],
+          "sourceText": "E-waste; exact device type and size must be checked",
+          "sourceId": "ecochamps",
+          "condition": "Ask which devices and sizes are accepted; remove personal data before handover.",
+          "conditionSourceId": "device-privacy"
+        }
+      ],
+      "exclusions": [
+        {
+          "material": "clothes",
+          "reason": "Fabric is excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "material": "fluorescent lights",
+          "reason": "Light bulbs and fluorescent lights are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "glass-bottle",
+          "material": "glass",
+          "reason": "Glass bottles are excluded by the programme.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "household-battery",
+          "material": "battery",
+          "reason": "Non-rechargeable batteries are excluded. Ask about rechargeable battery types separately.",
+          "sourceId": "ecochamps"
+        },
+        {
+          "form": "plastic-film",
+          "material": "plastic",
+          "reason": "Only plastic bottles and containers are listed; mixed plastic is excluded.",
+          "sourceId": "ecochamps"
+        }
+      ],
+      "hours": {
+        "kind": "weekly",
+        "display": "Fri 15:00–17:00; Sat 15:00–17:00; other days closed",
+        "timezone": "Asia/Kuala_Lumpur",
+        "weekly": [
+          {
+            "day": 5,
+            "opens": "15:00",
+            "closes": "17:00"
+          },
+          {
+            "day": 6,
+            "opens": "15:00",
+            "closes": "17:00"
+          }
+        ],
+        "sourceId": "riiicycle"
+      },
+      "contacts": [
+        {
+          "label": "+6011 2669 9168",
+          "value": "+601126699168",
+          "scope": "Riiicycle station enquiries",
+          "sourceId": "riiicycle"
+        }
+      ],
+      "access": {
+        "mode": "scheduled_drop_off",
+        "instructions": "Visit during the published collection session. Separate clean, dry items. Contact Riiicycle about device types, session changes and app requirements."
+      },
+      "evidence": {
+        "identity": {
+          "sourceId": "riiicycle",
+          "locator": "Midlands Recycling Station"
+        },
+        "coordinates": {
+          "sourceId": "riiicycle",
+          "locator": "Midlands Recycling Station"
+        },
+        "materials": {
+          "sourceId": "ecochamps",
+          "locator": "What Can You Recycle? / Where to Recycle? / Midlands Recycling Station"
+        },
+        "hours": {
+          "sourceId": "riiicycle",
+          "locator": "Midlands Recycling Station"
+        },
+        "contact": {
+          "sourceId": "riiicycle",
+          "locator": "Midlands Recycling Station"
+        },
+        "access": {
+          "sourceId": "riiicycle",
+          "locator": "Midlands Recycling Station"
+        }
+      },
+      "coordinateMethod": "operator_map_coordinates",
+      "publisherMapUrl": "https://maps.app.goo.gl/r2R29rbcn25HBV5v7",
+      "sourceUrl": "https://www.riiicycle.com/recycling-stations",
+      "notes": "Acceptance is published programme information for these named stations. Online source review; no phone call or site visit."
+    }
+  ]
+}
