@@ -12,37 +12,44 @@
   const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;};
   function close(){opened=false;$('bag-panel').hidden=true;$('bag-toggle').setAttribute('aria-expanded','false');}
   function save(){try{localStorage.setItem('pulang-bag-v1',JSON.stringify(entries));}catch{}$('bag-count').textContent=entries.length;}
+  let view='items', editing=null;
+  function icon(material){
+    const source=Array.from(document.querySelectorAll('#material-options button')).find(b=>b.dataset.value===material)?.querySelector('svg');
+    return source?source.cloneNode(true):document.createTextNode('');
+  }
+  function switchView(next){view=next;editing=null;draw();$('bag-panel').querySelector('.bag-body').scrollTop=0;}
   function draw(){
     const panel=$('bag-panel');panel.replaceChildren();
     const head=el('div',null,'bag-heading');head.append(el('h2','Your bag'));
     const dismiss=el('button','×','bag-close');dismiss.type='button';dismiss.setAttribute('aria-label','Close bag');dismiss.onclick=()=>{close();$('bag-toggle').focus();};head.append(dismiss);panel.append(head);
-    panel.append(el('p','Choose what you have. Suggestions update as you pack.','bag-intro'));
-    if(entries.length){const jump=el('button','See suggestions','bag-view');jump.type='button';jump.onclick=()=>panel.querySelector('.bag-suggestions').scrollIntoView({block:'start',behavior:'smooth'});panel.append(jump);}
-    const list=el('div',null,'bag-items');
-    for(const item of items){
-      const row=el('div',null,'bag-item');const label=el('label');const input=el('input');input.type='checkbox';input.checked=entries.some(e=>e.id===item.id);input.onchange=()=>{entries=entries.filter(e=>e.id!==item.id);if(input.checked)entries.push({id:item.id,condition:'ready'});save();draw();panel.querySelector(`input[data-bag-item="${item.id}"]`)?.focus();};input.dataset.bagItem=item.id;label.append(input,document.createTextNode(item.label));row.append(label);
-      const entry=entries.find(e=>e.id===item.id);
-      if(entry){row.append(el('p',item.preparation,'bag-preparation'));const condition=el('select');condition.setAttribute('aria-label',`${item.label} condition`);for(const [value,text] of [['ready','Ready to hand over'],['needs_preparation','Needs preparation'],['damaged','Damaged / contaminated']]){const option=el('option',text);option.value=value;condition.append(option);}condition.value=entry.condition;condition.onchange=()=>{entry.condition=condition.value;save();draw();panel.querySelector(`select[data-bag-item="${item.id}"]`)?.focus();};condition.dataset.bagItem=item.id;row.append(condition);}
-      list.append(row);
-    }
-    panel.append(list);
-    const result=el('section',null,'bag-suggestions');result.setAttribute('aria-label','Suggested collection points');result.append(el('h3','Places for your bag'));
-    const live=el('p',null,'bag-summary');live.setAttribute('role','status');
-    if(!entries.length){live.textContent='Add an item to see matching collection points.';result.append(live);}
-    else{
-      const ranked=suggestions(directory,items,entries,root.PulangDirectory.today());
-      live.textContent=ranked.length?'Ranked by published item coverage. Collection times and access still apply.':'No published match for this bag. Check item condition or contact a suitable collector.';result.append(live);
-      const names={source_listed:'Listed for this item',confirm_item:'Call to confirm this item',prepare_first:'Prepare first',not_accepted:'Not accepted',not_listed:'Not listed here',unsuitable:'Separate handling',review_required:'Source review needed'};
+    const nav=el('div',null,'bag-nav');
+    for(const [id,label] of [['items','Items'],['places','Places']]){const button=el('button',label+(id==='items'&&entries.length?' · '+entries.length:''));button.type='button';button.setAttribute('aria-pressed',String(view===id));button.onclick=()=>switchView(id);nav.append(button);}panel.append(nav);
+    const body=el('div',null,'bag-body');panel.append(body);
+    if(view==='items'){
+      body.append(el('p','What are you taking?','bag-intro'));
+      const grid=el('div',null,'bag-items');
+      for(const item of items){const selected=entries.some(e=>e.id===item.id);const button=el('button',null,'bag-choice');button.type='button';button.dataset.bagItem=item.id;button.setAttribute('aria-pressed',String(selected));button.append(icon(item.material),el('span',item.label));button.onclick=()=>{entries=entries.filter(e=>e.id!==item.id);if(!selected)entries.push({id:item.id,condition:'ready'});save();draw();panel.querySelector('[data-bag-item="'+item.id+'"]').focus();};grid.append(button);}body.append(grid);
+      if(entries.length){
+        const selected=el('section',null,'bag-selected');selected.append(el('h3','In your bag'));
+        for(const entry of entries){const item=items.find(i=>i.id===entry.id);const row=el('div',null,'bag-selected-row');const button=el('button',null,'bag-edit');button.type='button';button.dataset.editItem=item.id;button.setAttribute('aria-expanded',String(editing===item.id));button.append(el('span',item.label),el('span',entry.condition==='ready'?'Ready':entry.condition==='needs_preparation'?'Prepare first':'Separate handling','bag-item-state'));button.onclick=()=>{editing=editing===item.id?null:item.id;draw();panel.querySelector('[data-edit-item="'+item.id+'"]').focus();};row.append(button);
+          if(editing===item.id){row.append(el('p',item.preparation,'bag-preparation'));const group=el('div',null,'bag-conditions');group.setAttribute('role','group');group.setAttribute('aria-label',item.label+' condition');for(const [value,label] of [['ready','Ready'],['needs_preparation','Prepare first'],['damaged','Damaged / dirty']]){const option=el('button',label);option.type='button';option.dataset.condition=value;option.setAttribute('aria-pressed',String(entry.condition===value));option.onclick=()=>{entry.condition=value;save();draw();panel.querySelector('[data-edit-item="'+item.id+'"]').focus();};group.append(option);}row.append(group);}selected.append(row);
+        }body.append(selected);
+      }
+    }else{
+      const result=el('section',null,'bag-suggestions');result.setAttribute('aria-label','Suggested collection points');body.append(result);
+      const ranked=entries.length?suggestions(directory,items,entries,root.PulangDirectory.today()):[];
+      const live=el('p',!entries.length?'Choose items to find places.':ranked.length?'Matched to your items, with collection conditions below.':'No supported match. Check your item conditions.','bag-summary');live.setAttribute('role','status');result.append(live);
+      const names={source_listed:'Listed',confirm_item:'Confirm with collector',prepare_first:'Prepare first',not_accepted:'Not accepted',not_listed:'Not listed',unsuitable:'Separate handling',review_required:'Needs source review'};
       for(const rec of ranked.slice(0,3)){
-        const article=el('article',null,'bag-suggestion');article.append(el('h4',rec.place.name),el('p',`${rec.listed} of ${entries.length} items explicitly listed${rec.confirm?` · ${rec.confirm} need confirmation`:''}`),el('p',rec.place.hours.display));
-        const details=el('details');details.append(el('summary','See each item'));for(const match of rec.matches)details.append(el('p',`${match.item.label}: ${names[match.status]}. ${match.reason}`));article.append(details);
+        const article=el('article',null,'bag-suggestion');const title=el('button',rec.place.name,'bag-place-name');title.type='button';title.onclick=()=>{close();selectPlace(rec.place.id);};article.append(title,el('p',rec.listed+' of '+entries.length+' items explicitly listed'+(rec.confirm?' · '+rec.confirm+' to confirm':''),'bag-coverage'),el('p',rec.place.hours.display,'bag-hours'));
+        const details=el('details');details.append(el('summary','Item details'));for(const match of rec.matches)details.append(el('p',match.item.label+': '+names[match.status]+'. '+match.reason));article.append(details);
         const open=el('button','View place on map','bag-view');open.type='button';open.onclick=()=>{close();selectPlace(rec.place.id);};article.append(open);result.append(article);
       }
       const covered=new Set(ranked.flatMap(r=>r.matches.filter(m=>['source_listed','confirm_item'].includes(m.status)).map(m=>m.item.id)));
-      for(const entry of entries.filter(e=>!covered.has(e.id))){const item=items.find(i=>i.id===entry.id);result.append(el('p',`${item.label}: ${entry.condition==='needs_preparation'?item.preparation:item.route==='residual'?'Keep with residual waste.':entry.condition==='damaged'?item.caution:'No supported collection match in this directory.'}`,'bag-unmatched'));}
+      for(const entry of entries.filter(e=>!covered.has(e.id))){const item=items.find(i=>i.id===entry.id);result.append(el('p',item.label+': '+(entry.condition==='needs_preparation'?item.preparation:item.route==='residual'?'Keep with residual waste.':entry.condition==='damaged'?item.caution:'No supported collection match in this directory.'),'bag-unmatched'));}
     }
-    panel.append(result);
-    if(entries.length){const clear=el('button','Empty bag','bag-clear');clear.type='button';clear.onclick=()=>{entries=[];save();draw();};panel.append(clear);}
+    const footer=el('div',null,'bag-footer');const action=el('button',view==='items'?'Find places'+(entries.length?' · '+entries.length:''):'Edit items','bag-primary');action.type='button';action.disabled=view==='items'&&!entries.length;action.onclick=()=>switchView(view==='items'?'places':'items');footer.append(action);
+    if(entries.length){const clear=el('button','Empty bag','bag-clear');clear.type='button';clear.onclick=()=>{entries=[];editing=null;view='items';save();draw();};footer.append(clear);}panel.append(footer);
   }
   async function mount(data,onSelect){
     directory=data;selectPlace=onSelect;

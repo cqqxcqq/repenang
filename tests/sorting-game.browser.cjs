@@ -32,20 +32,31 @@ const server = http.createServer((req, res) => {
       await page.locator('#material-options .material-option').first().waitFor({ state: 'attached' });
       assert.equal(await page.locator('#results .result').count(), directory.locations.length);
       await page.getByRole('button',{name:'Open your recycling bag',exact:true}).click();
-      await page.locator('#bag-panel input[data-bag-item="newspaper"]').check();
-      await page.locator('#bag-panel input[data-bag-item="plastic-bottle"]').check();
+
+      await page.locator('[data-bag-item="newspaper"]').click();
+      await page.locator('[data-bag-item="plastic-bottle"]').click();
       assert.equal(await page.locator('#bag-count').textContent(),'2');
+      assert.equal(await page.locator('.bag-choice svg').count(),17);
+      await page.screenshot({path:path.join(root,'outputs',`bag-picker-${viewport.width}.png`),fullPage:true});
+      await page.getByRole('button',{name:'Find places · 2',exact:true}).click();
       assert((await page.locator('.bag-suggestions').innerText()).includes('2 of 2 items explicitly listed'));
-      await page.locator('#bag-panel select[data-bag-item="plastic-bottle"]').selectOption('needs_preparation');
+      await page.getByRole('button',{name:'Edit items',exact:true}).click();
+      await page.locator('[data-edit-item="plastic-bottle"]').click();
+      await page.locator('[data-condition="needs_preparation"]').click();
+      await page.getByRole('button',{name:'Find places · 2',exact:true}).click();
       assert(!(await page.locator('.bag-suggestions').innerText()).includes('2 of 2 items explicitly listed'));
-      await page.locator('#bag-panel select[data-bag-item="plastic-bottle"]').selectOption('ready');
-      await page.locator('.bag-suggestion details').first().evaluate(e=>e.textContent); // inspect without altering state
+      await page.getByRole('button',{name:'Edit items',exact:true}).click();
+      await page.locator('[data-edit-item="plastic-bottle"]').click();
+      await page.locator('[data-condition="ready"]').click();
+      await page.screenshot({path:path.join(root,'outputs',`bag-items-${viewport.width}.png`),fullPage:true});
+      await page.getByRole('button',{name:'Find places · 2',exact:true}).click();
       await page.screenshot({path:path.join(root,'outputs',`bag-${viewport.width}.png`),fullPage:true});
-      await page.locator('.bag-view').filter({hasText:'View place on map'}).first().click();
+      await page.getByRole('button',{name:'View place on map',exact:true}).first().click();
       assert(await page.locator('#bag-panel').isHidden());
       await page.getByRole('button',{name:'Close details',exact:true}).click();
       await page.getByRole('button',{name:'Open your recycling bag',exact:true}).click();
-      assert.equal(await page.locator('#bag-panel input:checked').count(),2);
+      await page.getByRole('button',{name:'Edit items',exact:true}).click();
+      assert.equal(await page.locator('.bag-choice[aria-pressed="true"]').count(),2);
       await page.getByRole('button',{name:'Empty bag',exact:true}).click();
       await page.getByRole('button',{name:'Close bag',exact:true}).click();
       await page.locator('#results .result').first().click();
