@@ -18,6 +18,21 @@ let currentTab = 'map';
 let viewChanged = false;
 let locationRequest = 0;
 let directorySources = {};
+let bagVisibleIds = null;
+
+function updateBagMap(ids) {
+  locationRequest += 1;
+  nearestStatus();
+  closeSheet();
+  bagVisibleIds = ids === null ? null : new Set(ids);
+  $('search').value = ''; $('material').value = 'all';
+  renderPoints();
+  if (!map) return;
+  const matches = visiblePoints.filter(hasMapLocation);
+  if (!matches.length) return;
+  viewChanged = true;
+  map.fitBounds(ids === null ? penangBounds : matches.map(point => [point.lat, point.lng]), { padding: [28, 28], maxZoom: 15, animate: false });
+}
 
 function isSourceReviewed(point) {
   return point.status === 'source_reviewed' && Boolean(window.PulangDirectory) &&
@@ -450,7 +465,7 @@ function renderPoints() {
     const matchesQuery = !query || normalize(point.name).includes(query) || normalize(point.address).includes(query) ||
       point.sourceCategories.some((category) => normalize(category).includes(query)) ||
       materials.some((material) => material.includes(queryMaterial));
-    return matchesMaterial && matchesQuery;
+    return matchesMaterial && matchesQuery && (bagVisibleIds === null || bagVisibleIds.has(point.id));
   });
   const onlyDemo = points.length > 0 && points.every((point) => point.status === 'demo');
   const historical = points.some((point) => point.historical);
@@ -458,7 +473,7 @@ function renderPoints() {
   $('resultcount').textContent = `${visiblePoints.length} ${onlyDemo ? 'demo ' : ''}${historical ? 'place' : 'point'}${visiblePoints.length === 1 ? '' : 's'}` +
     ` · ${mappedCount} mapped` +
     (invalidRecords ? ` · ${invalidRecords} invalid record${invalidRecords === 1 ? '' : 's'} omitted` : '');
-  document.querySelector('.reset').disabled = !query && selectedMaterial === 'all';
+  document.querySelector('.reset').disabled = !query && selectedMaterial === 'all' && bagVisibleIds === null;
   $('results').replaceChildren();
   if (!visiblePoints.length) {
     selectedId = null;
@@ -510,6 +525,10 @@ function resizeMap() {
 
 function openTab(tab) {
   window.PulangBag?.close();
+  if (bagVisibleIds !== null) {
+    bagVisibleIds = null;
+    renderPoints();
+  }
   closeSheet();
   locationRequest += 1;
   currentTab = tab;
@@ -601,6 +620,7 @@ async function initialize() {
     locateNearest();
   });
   document.querySelector('.reset').addEventListener('click', () => {
+    bagVisibleIds = null;
     $('search').value = '';
     $('material').value = 'all';
     updateFilters();
@@ -685,6 +705,7 @@ async function initialize() {
         marker.bindTooltip(element('span', '', point.status === 'demo' ? `${point.name} · not verified`
           : point.historical ? `${point.name} · recycling not reconfirmed` : `${point.name} · ${point.hours}`));
         marker.on('click', () => {
+          window.PulangBag?.close();
           locationRequest += 1;
           nearestStatus();
           selectPoint(point.id, marker.getElement());
@@ -700,7 +721,7 @@ async function initialize() {
       $('search').value = ''; $('material').value = 'all';
       renderPoints();
       selectPoint(id, $('bag-toggle'));
-    });
+    }, updateBagMap);
   } catch (error) {
     dataState = 'error';
     $('resultcount').textContent = 'Directory unavailable';

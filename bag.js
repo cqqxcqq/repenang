@@ -7,7 +7,7 @@
       return {place,matches,listed:matches.filter(m=>m.status==='source_listed').length,confirm:matches.filter(m=>m.status==='confirm_item').length};
     }).filter(r=>r.listed+r.confirm>0).sort((a,b)=>b.listed-a.listed||b.confirm-a.confirm||a.place.name.localeCompare(b.place.name));
   }
-  let directory,items=[],entries=[],selectPlace,opened=false;
+  let directory,items=[],entries=[],selectPlace,updateMap,opened=false;
   const $=id=>document.getElementById(id);
   const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(cls)e.className=cls;return e;};
   function syncNavigation(active){
@@ -16,7 +16,8 @@
     else {nav.removeAttribute('aria-current');const mapButton=document.querySelector('[data-tab="map"]');mapButton.classList.add('active');mapButton.setAttribute('aria-current','page');}
   }
   function close(){const wasOpen=opened;opened=false;$('bag-panel').hidden=true;$('bag-toggle').setAttribute('aria-expanded','false');if(wasOpen)syncNavigation(false);}
-  function save(){try{localStorage.setItem('pulang-bag-v1',JSON.stringify(entries));}catch{}$('bag-count').textContent=entries.length;}
+  function save(){try{localStorage.setItem('pulang-bag-v1',JSON.stringify(entries));}catch{}$('bag-count').textContent=entries.length;syncMap();}
+  function syncMap(){if(updateMap)updateMap(entries.length?suggestions(directory,items,entries,root.PulangDirectory.today()).slice(0,3).map(r=>r.place.id):null);}
   let view='items', editing=null;
   function icon(material){
     const source=Array.from(document.querySelectorAll('#material-options button')).find(b=>b.dataset.value===material)?.querySelector('svg');
@@ -56,14 +57,14 @@
     const footer=el('div',null,'bag-footer');const action=el('button',view==='items'?'Find places'+(entries.length?' · '+entries.length:''):'Edit items','bag-primary');action.type='button';action.disabled=view==='items'&&!entries.length;action.onclick=()=>switchView(view==='items'?'places':'items');footer.append(action);
     if(entries.length){const clear=el('button','Empty bag','bag-clear');clear.type='button';clear.onclick=()=>{entries=[];editing=null;view='items';save();draw();};footer.append(clear);}panel.append(footer);
   }
-  async function mount(data,onSelect){
-    directory=data;selectPlace=onSelect;
+  async function mount(data,onSelect,onChange){
+    directory=data;selectPlace=onSelect;updateMap=onChange;
     const toggle=$('bag-toggle');toggle.hidden=false;
     try { const saved=JSON.parse(localStorage.getItem('pulang-bag-v1')); if(Array.isArray(saved))$('bag-count').textContent=Math.min(17,new Set(saved.filter(e=>typeof e?.id==='string').map(e=>e.id)).size); } catch {}
     toggle.onclick=async()=>{
       if(opened){close();return;}
       opened=true;$('bag-panel').hidden=false;toggle.setAttribute('aria-expanded','true');syncNavigation(true);
-      if(items.length){draw();$('bag-panel').querySelector('.bag-close').focus();return;}
+      if(items.length){syncMap();draw();$('bag-panel').querySelector('.bag-close').focus();return;}
       $('bag-panel').textContent='Opening your bag…';
       try{const response=await fetch('data/items.json',{cache:'no-cache'});if(!response.ok)throw Error('catalogue unavailable');const catalogue=await response.json();if(catalogue.reviewDueAt<root.PulangDirectory.today()||!Array.isArray(catalogue.items)||!catalogue.items.length)throw Error('catalogue needs review');items=catalogue.items;
         try{const saved=JSON.parse(localStorage.getItem('pulang-bag-v1'));if(Array.isArray(saved))entries=saved.filter((e,i,a)=>e&&items.some(item=>item.id===e.id)&&['ready','needs_preparation','damaged'].includes(e.condition)&&a.findIndex(x=>x?.id===e.id)===i).map(e=>({id:e.id,condition:e.condition}));}catch{}
