@@ -95,7 +95,7 @@ function locateNearest() {
   const material = $('material').value;
   if (material === 'all') { nearestStatus(); return; }
   if (!visiblePoints.some((point) => hasMapLocation(point) && point.status !== 'demo' && !point.historical)) {
-    nearestStatus('No mapped matches. Some listed places may not have coordinates.');
+    nearestStatus('No matching places. Try another material.');
     return;
   }
   if (!map || !navigator.geolocation) {
@@ -111,11 +111,11 @@ function locateNearest() {
     renderPoints();
     viewChanged = true;
     map.setView([nearest.point.lat, nearest.point.lng], Math.max(map.getZoom(), 15), { animate: false });
-    nearestStatus(`Closest listed match: ${nearest.point.name} · ${nearest.distance.toFixed(1)} km straight line. Check its collection times and item conditions.`);
+    nearestStatus(`${nearest.point.name} · ${nearest.distance.toFixed(1)} km straight line. Check collection times.`);
   }, (error) => {
     if (request !== locationRequest) return;
-    nearestStatus(error.code === 1 ? 'Location permission denied. Allow location in your browser to find the nearest place.' :
-      'Could not get your location. Check settings, choose All materials, then try again.');
+    nearestStatus(error.code === 1 ? 'Location blocked. Browse the matching places below.' :
+      'Location unavailable. Browse the matching places below.');
   }, { enableHighAccuracy: false, timeout: 12000, maximumAge: 60000 });
 }
 
@@ -468,11 +468,9 @@ function renderPoints() {
     return matchesMaterial && matchesQuery && (bagVisibleIds === null || bagVisibleIds.has(point.id));
   });
   const onlyDemo = points.length > 0 && points.every((point) => point.status === 'demo');
-  const historical = points.some((point) => point.historical);
   const mappedCount = visiblePoints.filter(hasMapLocation).length;
-  $('resultcount').textContent = `${visiblePoints.length} ${onlyDemo ? 'demo ' : ''}${historical ? 'place' : 'point'}${visiblePoints.length === 1 ? '' : 's'}` +
-    ` · ${mappedCount} mapped` +
-    (invalidRecords ? ` · ${invalidRecords} invalid record${invalidRecords === 1 ? '' : 's'} omitted` : '');
+  $('resultcount').textContent = `${visiblePoints.length} ${bagVisibleIds !== null ? 'bag matches' : onlyDemo ? 'demo places' : 'places'}` +
+    (mappedCount !== visiblePoints.length ? ` · ${mappedCount} mapped` : '');
   document.querySelector('.reset').disabled = !query && selectedMaterial === 'all' && bagVisibleIds === null;
   $('results').replaceChildren();
   if (!visiblePoints.length) {
@@ -484,17 +482,19 @@ function renderPoints() {
       : 'No usable locations in the directory.'));
     return;
   }
-  if (!visiblePoints.some((point) => point.id === selectedId)) selectedId = visiblePoints[0].id;
+  if (!visiblePoints.some((point) => point.id === selectedId)) selectedId = null;
   const visibleIds = new Set(visiblePoints.map((point) => point.id));
   markers.forEach((marker, id) => {
     if (visibleIds.has(id)) {
       if (!map.hasLayer(marker)) marker.addTo(map);
     } else if (map.hasLayer(marker)) map.removeLayer(marker);
+    marker.getElement()?.classList.toggle('selected', id === selectedId);
   });
   for (const point of visiblePoints) {
     const button = element('button', point.historical ? 'result historical' : 'result');
     button.type = 'button';
     button.dataset.id = point.id;
+    button.setAttribute('aria-pressed', String(point.id === selectedId));
     const label = element('span');
     label.append(element('span', 'resultname', point.name), element('span', 'sub',
       point.status === 'demo' ? 'Fictional sample · not a recycling centre'
@@ -539,7 +539,7 @@ function openTab(tab) {
     else button.removeAttribute('aria-current');
   });
   const isMap = tab === 'map';
-  if ($('bag-toggle')) $('bag-toggle').hidden = !isMap || !window.PulangBag?.ready;
+  $('main').setAttribute('aria-label', isMap ? 'Penang recycling map' : tab === 'guide' ? 'Recycling guide' : 'Suggest a place');
   if (!isMap) window.PulangBag?.close();
   document.querySelector('.sidebar').hidden = !isMap;
   document.querySelector('.workspace').classList.toggle('support-view', !isMap);
@@ -609,6 +609,7 @@ async function initialize() {
     openTab('map');
   });
   const updateFilters = () => {
+    bagVisibleIds = null;
     locationRequest += 1;
     nearestStatus();
     closeSheet();
@@ -683,10 +684,12 @@ async function initialize() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const directory = await response.json();
     if (!window.PulangDirectory) throw new Error('Directory validation could not load.');
-    const issues = window.PulangDirectory.validateDirectory(directory);
-    if (issues.length) throw new Error(`Directory review required: ${issues.join('; ')}`);
-    directorySources = Object.fromEntries(directory.sources.map((source) => [source.id, source]));
-    points = prepareRecords(directory.locations);
+    const published = window.PulangDirectory.selectPublishable(directory);
+    if (!published.locations.length) throw new Error('No reviewed locations available.');
+    if (published.issues.length) console.warn('Withheld directory records:', published.issues);
+    directorySources = published.sources;
+    const publicDirectory = { ...directory, sources: Object.values(directorySources), locations: published.locations };
+    points = prepareRecords(published.locations);
     populateMaterials();
     const hasDemo = points.some((point) => point.status === 'demo');
     const hasHistorical = points.some((point) => point.historical);
@@ -717,10 +720,10 @@ async function initialize() {
     $('material').disabled = false;
     dataState = 'ready';
     renderPoints();
-    window.PulangBag?.mount(directory, (id) => {
+    window.PulangBag?.mount(publicDirectory, (id) => {
       $('search').value = ''; $('material').value = 'all';
       renderPoints();
-      selectPoint(id, $('bag-toggle'));
+      selectPoint(id, $('bag-nav-main'));
     }, updateBagMap, () => map ? {lat:map.getCenter().lat,lng:map.getCenter().lng} : null);
   } catch (error) {
     dataState = 'error';

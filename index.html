@@ -8,13 +8,13 @@
   <link rel="icon" type="image/svg+xml" href="assets/pulang-mark.svg">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-  <link rel="stylesheet" href="styles.css?v=bag-results-20261115">
+  <link rel="stylesheet" href="styles.css?v=final-20261119">
   <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script defer src="sorting-game.js?v=sorting-20261110c"></script>
-  <script defer src="directory-data.js?v=review-20261115"></script>
-  <script defer src="bag.js?v=all-matches-20261115"></script>
-  <script defer src="app.js?v=all-matches-20261115"></script>
+  <script defer src="directory-data.js?v=final-20261119"></script>
+  <script defer src="bag.js?v=final-20261119"></script>
+  <script defer src="app.js?v=final-20261119"></script>
 </head>
 <body>
   <div class="shell">
@@ -22,7 +22,7 @@
       <a class="brand" href="#map" aria-label="Pulang — map"><img src="assets/pulang-mark.svg" width="27" height="30" alt=""><span>pulang</span></a>
       <nav class="nav" aria-label="Main navigation">
         <button type="button" class="active" data-tab="map" aria-current="page">Map</button>
-        <button type="button" id="bag-nav-main" aria-controls="bag-panel" aria-expanded="false" disabled>My bag</button>
+        <button type="button" id="bag-nav-main" aria-label="My bag" aria-controls="bag-panel" aria-expanded="false" disabled>My bag<span id="bag-count" class="bag-nav-count"></span></button>
         <button type="button" data-tab="guide">Guide</button>
         <button type="button" data-tab="feedback"><span class="long-text">Suggest a place</span><span class="short-text">Suggest</span></button>
       </nav>
@@ -67,7 +67,6 @@
         <div id="map" aria-label="Interactive map of Penang Island and Seberang Perai"></div>
         <div class="mapmode" id="mapmode" role="status">Loading recycling locations…</div>
         <div class="map-error" id="map-error" role="alert" hidden></div>
-        <button type="button" id="bag-toggle" class="bag-toggle" aria-label="Open your recycling bag" aria-expanded="false" aria-controls="bag-panel" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Zm3 0V6a4 4 0 0 1 8 0v2"/></svg><span>My bag</span><span id="bag-count">0</span></button>
         <section class="placeholder" id="placeholder" hidden>
           <div class="placeholder-inner"></div>
         </section>

@@ -3,6 +3,8 @@ on:
   push:
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1'
 jobs:
   directory:
     runs-on: ubuntu-latest
@@ -16,7 +18,7 @@ jobs:
       - run: node scripts/check-directory.cjs
       - run: node --test tests/directory.test.cjs tests/reviewed-directory.test.cjs tests/sorting-game.test.cjs tests/bag.test.cjs
       - name: Check published source pages
-        if: github.event_name == 'workflow_dispatch'
+        if: ${{ !cancelled() && (github.event_name == 'workflow_dispatch' || github.event_name == 'schedule') }}
         run: node scripts/check-sources.cjs
       - uses: actions/upload-artifact@v4
         if: always()

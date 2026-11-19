@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
   try {
     browser = await chromium.launch({ headless: true, executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' });
     fs.mkdirSync(path.join(root, 'outputs'), { recursive: true });
-    for (const viewport of [{width:1440,height:900},{width:375,height:812}]) {
+    for (const viewport of [{width:1440,height:900},{width:375,height:812},{width:320,height:740}]) {
       const context = await browser.newContext({ viewport });
       const page = await context.newPage();
       const errors = [];
@@ -31,6 +31,8 @@ const server = http.createServer((req, res) => {
       assert(await page.locator('.brand img').evaluate((image) => image.complete && image.naturalWidth > 0));
       await page.locator('#material-options .material-option').first().waitFor({ state: 'attached' });
       assert.equal(await page.locator('#results .result').count(), directory.locations.length);
+      assert.equal(await page.locator('#bag-toggle').count(),0);
+      assert.equal(await page.locator('#map .demo-marker.selected').count(),0);
       await page.getByRole('button',{name:'My bag',exact:true}).click();
 
       await page.locator('[data-bag-item="newspaper"]').click();
@@ -70,9 +72,21 @@ const server = http.createServer((req, res) => {
       await page.getByRole('button',{name:'View on map',exact:true}).first().click();
       assert(await page.locator('#bag-panel').isHidden());
       await page.getByRole('button',{name:'Close details',exact:true}).click();
-      await page.getByRole('button',{name:'Open your recycling bag',exact:true}).click();
+      await page.locator('#search').fill('Auto City');
+      assert.equal(await page.locator('#results .result').count(),1);
+      await page.locator('.reset').click();
+      assert.equal(await page.locator('#results .result').count(),directory.locations.length);
+      await page.getByRole('button',{name:'My bag',exact:true}).click();
       await page.getByRole('button',{name:'Edit items',exact:true}).click();
       assert.equal(await page.locator('.bag-choice[aria-pressed="true"]').count(),2);
+      await page.reload({waitUntil:'domcontentloaded'});
+      await page.getByRole('button',{name:'My bag',exact:true}).click();
+      await page.locator('.bag-choice').first().waitFor();
+      assert.equal(await page.locator('.bag-choice[aria-pressed="true"]').count(),2);
+      await page.keyboard.press('Escape');
+      assert(await page.locator('#bag-panel').isHidden());
+      assert.equal(await page.locator('#bag-nav-main').evaluate(e=>e===document.activeElement),true);
+      await page.getByRole('button',{name:'My bag',exact:true}).click();
       await page.getByRole('button',{name:'Empty bag',exact:true}).click();
       assert.equal(await page.locator('#map .demo-marker').count(),directory.locations.length);
       await page.locator('[data-bag-item="used-tissue"]').click();
@@ -171,11 +185,40 @@ const server = http.createServer((req, res) => {
     const incomplete = structuredClone(directory); incomplete.locations[0].contacts=[];
     await incompletePage.route('**/data/directory.json', (route) => route.fulfill({ json: incomplete }));
     await incompletePage.goto(`http://127.0.0.1:${server.address().port}/`, { waitUntil:'domcontentloaded' });
-    await incompletePage.getByRole('link', { name:'MAMPAN directory', exact:true }).waitFor();
-    assert.equal(await incompletePage.locator('#results .result').count(),0);
-    assert.equal(await incompletePage.locator('#map .demo-marker').count(),0);
-    console.log('passed: incomplete directory cannot publish a point; official-source fallback remains usable');
+    await incompletePage.locator('#results .result').first().waitFor();
+    assert.equal(await incompletePage.locator('#results .result').count(),directory.locations.length-1);
+    assert.equal(await incompletePage.locator('#map .demo-marker').count(),directory.locations.length-1);
+    console.log('passed: one invalid record is withheld without taking down the directory');
     await incompleteContext.close();
+    const resilientContext = await browser.newContext({viewport:{width:375,height:812}});
+    const resilientPage=await resilientContext.newPage();
+    await resilientPage.addInitScript(()=>localStorage.setItem('pulang-bag-v1','not-json'));
+    await resilientPage.route('**/leaflet.js',route=>route.abort());
+    await resilientPage.route('**/data/items.json',route=>route.fulfill({status:503,body:'Unavailable'}));
+    await resilientPage.goto(`http://127.0.0.1:${server.address().port}/`,{waitUntil:'domcontentloaded'});
+    await resilientPage.locator('#results .result').first().waitFor();
+    assert.equal(await resilientPage.locator('#results .result').count(),directory.locations.length);
+    await resilientPage.getByRole('button',{name:'My bag',exact:true}).click();
+    await resilientPage.getByRole('button',{name:'Try again',exact:true}).waitFor();
+    await resilientPage.unroute('**/data/items.json');
+    await resilientPage.getByRole('button',{name:'Try again',exact:true}).click();
+    await resilientPage.locator('.bag-choice').first().waitFor();
+    assert.equal(await resilientPage.locator('.bag-choice[aria-pressed="true"]').count(),0);
+    await resilientPage.locator('[data-bag-item="newspaper"]').click();
+    await resilientPage.getByRole('button',{name:'Find places · 1',exact:true}).click();
+    assert((await resilientPage.locator('.bag-place-name').count())>3);
+    console.log('passed: unavailable map library, corrupt stored bag, item fetch failure and retry');
+    await resilientContext.close();
+    const expiredContext=await browser.newContext();
+    const expiredPage=await expiredContext.newPage();
+    const expired=structuredClone(directory);expired.locations.forEach(p=>p.reviewDueAt='2000-01-01');
+    await expiredPage.route('**/data/directory.json',route=>route.fulfill({json:expired}));
+    await expiredPage.goto(`http://127.0.0.1:${server.address().port}/`,{waitUntil:'domcontentloaded'});
+    await expiredPage.getByRole('link',{name:'MAMPAN directory',exact:true}).waitFor();
+    assert.equal(await expiredPage.locator('#results .result').count(),0);
+    assert.equal(await expiredPage.locator('#map .demo-marker').count(),0);
+    console.log('passed: fully expired directory shows official sources instead of stale recommendations');
+    await expiredContext.close();
   } finally {
     if (browser) await browser.close();
     await new Promise((resolve) => server.close(resolve));

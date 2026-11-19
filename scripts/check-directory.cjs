@@ -1,7 +1,7 @@
 'use strict';
 const fs = require('node:fs');
 const path = require('node:path');
-const { validateDirectory, today } = require('../directory-data.js');
+const { validateDirectory, validateItems, today } = require('../directory-data.js');
 const root = path.resolve(__dirname, '..');
 const read = (file) => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
 const directory = read('data/directory.json');
@@ -22,6 +22,7 @@ for (const record of original.locations) if (!decisions.has(record.id)) issues.p
 for (const record of directory.locations) if (!review.observations.some((r) => r.locationId === record.id)) issues.push(`No source observation: ${record.id}`);
 const itemIds = new Set();
 const sourceIds = new Set(directory.sources.map((s) => s.id));
+issues.push(...validateItems(catalogue,Object.fromEntries(directory.sources.map(s=>[s.id,s])),onDate));
 for (const item of catalogue.items) {
   if (itemIds.has(item.id) || !item.label || !item.material || !item.preparation || !sourceIds.has(item.sourceId)) issues.push(`Invalid item: ${item.id}`);
   itemIds.add(item.id);

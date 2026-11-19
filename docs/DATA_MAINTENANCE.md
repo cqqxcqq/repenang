@@ -26,9 +26,9 @@ Acceptance rules contain a material, original publisher wording, source ID, know
 
 Run `node scripts/check-directory.cjs`, `node scripts/check-sources.cjs` and `node --test tests/directory.test.cjs tests/reviewed-directory.test.cjs tests/sorting-game.test.cjs`. Reports go into `outputs`. The source checker requests each public source once, compares stored public facts and relevant guidance sections, and reports changed/missing records, unavailable pages and markup changes. It never overwrites accepted facts or review dates. Cached-source replay (`--cache=<directory>`) is a parser regression aid, not a fresh online review.
 
-Use the browser test after schema or rendering changes. It covers desktop/mobile details, telephone/direction links, non-overlapping map layout, filters, game flow and failure fallbacks. It closes its server and browser. A directory validation failure offers direct official-directory links instead of incomplete pins or old research data.
+Use the browser test after schema or rendering changes. It covers desktop/mobile details, telephone/direction links, non-overlapping map layout, filters, game flow and failure fallbacks. It closes its server and browser. Invalid records are withheld individually; if no valid records remain, official-directory links replace the map results. Publication checks still reject any invalid record.
 
-The current review deadline is 15 December 2026. The GitHub workflow validates data/tests on push and pull request; a manual workflow dispatch also checks live sources. It must be pushed before it can run. There is no scheduled monitor, automatic source refresh or operator notification. A static directory cannot promise continuously current service information without maintenance.
+The current review deadline is 15 December 2026. The GitHub workflow validates data/tests on push and pull request; manual and weekly Monday 08:00 Malaysia-time runs also check live sources. It must be pushed before it can run. The scheduled check depends on GitHub Actions execution. There is no automatic fact approval, source refresh or operator notification. A static directory cannot promise continuously current service information without maintenance.
 
 ## Important review decisions
 

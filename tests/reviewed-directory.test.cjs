@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { validateDirectory, locationIssues, assessItem: assessWithSources } = require('../directory-data.js');
+const { validateDirectory, locationIssues, selectPublishable, validateItems, assessItem: assessWithSources } = require('../directory-data.js');
 const directory = require('../data/directory.json');
 const review = require('../data/source-review.json');
 const original = require('../data/penang-recycling-research.json');
@@ -9,6 +9,28 @@ const sources = Object.fromEntries(directory.sources.map((s) => [s.id, s]));
 const copy = (record) => JSON.parse(JSON.stringify(record));
 const now = directory.reviewedAt;
 const assessItem = (place, item, condition = 'ready', date = now) => assessWithSources(place, item, condition, date, sources);
+
+test('runtime withholds one malformed location without losing unrelated reviewed places',()=>{
+  const data=copy(directory);data.locations[0].contacts=[];
+  const selected=selectPublishable(data,now);
+  assert.equal(selected.locations.length,directory.locations.length-1);
+  assert(!selected.locations.some(p=>p.id===data.locations[0].id));
+  assert(selected.issues.length);
+  assert(validateDirectory(data,now).length); // publication checks still fail
+  assert.equal(selectPublishable(directory,'2026-12-16').locations.length,0);
+});
+test('duplicate or malformed identities cannot pick an arbitrary map destination',()=>{
+  const data=copy(directory);data.locations.push(copy(data.locations[0]));
+  assert.equal(selectPublishable(data,now).locations.length,directory.locations.length-1);
+  assert.equal(selectPublishable({schemaVersion:1,sources:null},now).locations.length,0);
+});
+test('item catalogue rejects missing review dates, unsafe sources and duplicated items',()=>{
+  const catalogue=require('../data/items.json');
+  assert.deepEqual(validateItems(catalogue,sources,now),[]);
+  for(const change of [c=>delete c.reviewDueAt,c=>c.items.push(c.items[0]),c=>c.items[0]=null,c=>c.items[0].sourceId='missing',c=>c.items[0].label='',c=>c.items[0].route='invented']){
+    const data=copy(catalogue);change(data);assert(validateItems(data,sources,now).length);
+  }
+});
 
 test('every published point has usable, sourced visit information and no invented verification', () => {
   assert.deepEqual(validateDirectory(directory, now), []);
